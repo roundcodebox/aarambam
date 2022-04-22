@@ -14,6 +14,18 @@ Husky
 
 ## Requirements
 
+## Available Scripts
+
+npm run dev Next dev
+
+npm run start: Next start
+
+npm run build: Next build
+
+npm run analyze: Generate bundle-analyzer
+
+npm run lint: Audit code quality
+
 ## Directory Structure
 
 ## Documentation
