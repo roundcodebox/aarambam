@@ -1,6 +1,4 @@
-# Foobar
-
-Aarambam
+# Aarambam
 
 Aarambam is a starter kit for Next.js based web applications
 
