@@ -1,4 +1,8 @@
-aarambam is a starter kit for Next.js based web applications
+# Foobar
+
+Aarambam
+
+Aarambam Aarambam is a starter kit for Next.js based web applications
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -25,6 +29,16 @@ npm run build: Next build
 npm run analyze: Generate bundle-analyzer
 
 npm run lint: Audit code quality
+
+npm run check-types: runs TypeScript's tsc CLI command and pretty prints any warnings/errors.
+
+npm run check-format: asks Prettier to check all of our files (excluding the ones in .prettierignore) for formatting issues.
+
+npm run check-lint asks ESLint to check for any linting warnings/errors on an .ts, .tsx or .js files.
+
+npm run format tells prettier to automatically re-write all of our files with proper formatting
+
+npm run test-all runs a number of the above commands in sequence.
 
 ## Directory Structure
 
