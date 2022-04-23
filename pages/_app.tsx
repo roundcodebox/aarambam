@@ -1,14 +1,13 @@
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/globals.css";
-
 import type { AppProps } from "next/app";
-import React, { useEffect } from "react";
+
+const bootstrap = require("bootstrap/dist/js/bootstrap");
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap")
-      : undefined;
+    typeof document !== "undefined" ? bootstrap : undefined;
   }, []);
 
   return <Component {...pageProps} />;
