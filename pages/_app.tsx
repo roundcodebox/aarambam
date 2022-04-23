@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     typeof document !== undefined
       ? require("bootstrap/dist/js/bootstrap")
-      : null;
+      : undefined;
   }, []);
 
   return <Component {...pageProps} />;

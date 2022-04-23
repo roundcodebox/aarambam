@@ -7,17 +7,16 @@ module.exports = {
     es6: true,
   },
   extends: [
+    "next",
     "airbnb",
-    "plugin:react/recommended",
     "prettier",
     "eslint:recommended",
+    "plugin:@next/next/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
     "plugin:security/recommended",
-    "plugin:react-hooks/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -26,10 +25,8 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: "latest",
-    sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "simple-import-sort", "import"],
   settings: {
     react: {
       version: "detect",
@@ -39,7 +36,16 @@ module.exports = {
     "no-console": "error",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "simple-import-sort/sort": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "unicorn/filename-case": "off",
+    "react/jsx-filename-extension": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "function-declaration",
+      },
+    ],
+    "unicorn/prefer-module": 0,
   },
 };
