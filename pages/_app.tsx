@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css"; // Add this line
 import "../styles/globals.css";
+
 import type { AppProps } from "next/app";
+import React, { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
