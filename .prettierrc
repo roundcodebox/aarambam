@@ -11,13 +11,13 @@
   "embeddedLanguageFormatting": "auto",
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "tsxSingleQuote": true,
   "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,
   "semi": true,
-  "tabWidth": 2,
+  "tab_size": 2,
   "trailingComma": "es5"
 }
