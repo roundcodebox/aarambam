@@ -30,7 +30,6 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    // "react/jsx-indent-props": [2, "tab"],
     "max-len": ["error", { "code": 120, "ignoreUrls": true }],
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "arrow-body-style": [0],
