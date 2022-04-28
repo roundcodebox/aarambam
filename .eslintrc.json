@@ -35,6 +35,7 @@
     "arrow-body-style": [0],
     "comma-dangle": 0,
     "no-console": 0,
-    "no-tabs": 0
+    "no-tabs": 0,
+    "react/no-unescaped-entities": 0
   }
 }
