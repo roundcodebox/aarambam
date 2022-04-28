@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Container, Row, Col, Button, ToggleButtonGroup, ToggleButton
+  Container, Row, Col, Button, ButtonGroup, ButtonToolbar, ToggleButtonGroup, ToggleButton, Dropdown, DropdownButton
 } from 'react-bootstrap';
 
 function Buttons() {
@@ -179,6 +179,85 @@ function Buttons() {
               Radio 3
             </ToggleButton>
           </ToggleButtonGroup>
+          <h4>Button groups</h4>
+          <ButtonGroup aria-label="Basic example">
+            <Button variant="secondary">Left</Button>
+            <Button variant="secondary">Middle</Button>
+            <Button variant="secondary">Right</Button>
+          </ButtonGroup>
+          <h4>Button toolbar</h4>
+          <ButtonToolbar aria-label="Toolbar with button groups">
+            <ButtonGroup className="me-2" aria-label="First group">
+              <Button>1</Button>
+              {' '}
+              <Button>2</Button>
+              {' '}
+              <Button>3</Button>
+              {' '}
+              <Button>4</Button>
+            </ButtonGroup>
+            <ButtonGroup className="me-2" aria-label="Second group">
+              <Button>5</Button>
+              {' '}
+              <Button>6</Button>
+              {' '}
+              <Button>7</Button>
+            </ButtonGroup>
+            <ButtonGroup aria-label="Third group">
+              <Button>8</Button>
+            </ButtonGroup>
+          </ButtonToolbar>
+          <h4>ButtonGroup Sizing</h4>
+          <ButtonGroup size="lg" className="mb-2">
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
+          <br />
+          <ButtonGroup className="mb-2">
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
+          <br />
+          <ButtonGroup size="sm">
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
+          <h4>ButtonGroup Nesting</h4>
+          <ButtonGroup>
+            <Button>1</Button>
+            <Button>2</Button>
+
+            <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-nested-dropdown">
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+          </ButtonGroup>
+          <h4>ButtonGroup Vertical variation</h4>
+          <ButtonGroup vertical>
+            <Button>Button</Button>
+            <Button>Button</Button>
+
+            <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-1">
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+
+            <Button>Button</Button>
+            <Button>Button</Button>
+
+            <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-2">
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+
+            <DropdownButton as={ButtonGroup} title="Dropdown" id="bg-vertical-dropdown-3">
+              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
+              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
+            </DropdownButton>
+          </ButtonGroup>
         </Col>
       </Row>
     </Container>

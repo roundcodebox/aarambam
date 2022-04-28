@@ -6,6 +6,11 @@ import Buttons from './Components/Buttons';
 import Typography from './Components/Typography';
 import Tables from './Components/Tables';
 import Forms from './Components/Forms';
+import Alerts from './Components/Alerts';
+import AccordionExample from './Components/AccordionExample';
+import Badges from './Components/Badges';
+import Breadcrumbs from './Components/Breadcrumbs';
+import ListGroups from './Components/ListGroups';
 import './App.scss';
 
 function App() {
@@ -17,6 +22,11 @@ function App() {
       <Typography />
       <Tables />
       <Forms />
+      <Alerts />
+      <AccordionExample />
+      <Badges />
+      <Breadcrumbs />
+      <ListGroups />
       <Cards />
     </>
   );
