@@ -21,12 +21,25 @@ function ProgressBars() {
           </div>
         </Col>
         <Col sm={6}>
+          <h4>Progressbar Striped</h4>
           <div>
             <ProgressBar striped variant="success" now={40} />
             <ProgressBar striped variant="info" now={20} />
             <ProgressBar striped variant="warning" now={60} />
             <ProgressBar striped variant="danger" now={80} />
           </div>
+        </Col>
+        <Col sm={6}>
+          <h4>Progressbar Animated</h4>
+          <ProgressBar animated now={45} />
+        </Col>
+        <Col sm={6}>
+          <h4>Progressbar Stacked</h4>
+          <ProgressBar>
+            <ProgressBar striped variant="success" now={35} key={1} />
+            <ProgressBar variant="warning" now={20} key={2} />
+            <ProgressBar striped variant="danger" now={10} key={3} />
+          </ProgressBar>
         </Col>
       </Row>
     </Container>

@@ -7,7 +7,7 @@ function AccordionExample() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col sm={6}>
           <h2>Accordin Basic Example</h2>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
@@ -35,6 +35,8 @@ function AccordionExample() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+        </Col>
+        <Col sm={6}>
           <h4>Accordion Fully Collapsed State</h4>
           <Accordion>
             <Accordion.Item eventKey="0">
@@ -62,6 +64,8 @@ function AccordionExample() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+        </Col>
+        <Col sm={6}>
           <h4>Accordion with Flush</h4>
           <Accordion defaultActiveKey="0" flush>
             <Accordion.Item eventKey="0">
@@ -89,6 +93,8 @@ function AccordionExample() {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
+        </Col>
+        <Col sm={6}>
           <h4>Accordion Always open</h4>
           <Accordion defaultActiveKey={['0']} alwaysOpen>
             <Accordion.Item eventKey="0">
@@ -117,7 +123,6 @@ function AccordionExample() {
             </Accordion.Item>
           </Accordion>
           <h4>Custom Accordions</h4>
-
         </Col>
       </Row>
     </Container>
