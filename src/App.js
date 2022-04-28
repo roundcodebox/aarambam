@@ -11,6 +11,8 @@ import AccordionExample from './Components/AccordionExample';
 import Badges from './Components/Badges';
 import Breadcrumbs from './Components/Breadcrumbs';
 import ListGroups from './Components/ListGroups';
+import Spinners from './Components/Spinners';
+import ProgressBars from './Components/ProgressBars';
 import './App.scss';
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
       <Badges />
       <Breadcrumbs />
       <ListGroups />
+      <Spinners />
+      <ProgressBars />
       <Cards />
     </>
   );
