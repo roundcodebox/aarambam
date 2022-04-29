@@ -11,91 +11,92 @@ function Buttons() {
           <h1>Buttons</h1>
           <br />
           <Button variant="primary">Primary</Button>
-          {' '}
+
           <Button variant="secondary">Secondary</Button>
-          {' '}
+
           <Button variant="success">Success</Button>
-          {' '}
+
           <Button variant="warning">Warning</Button>
-          {' '}
+
           <Button variant="danger">Danger</Button>
-          {' '}
+
           <Button variant="info">Info</Button>
-          {' '}
+
           <Button variant="light">Light</Button>
-          {' '}
+
           <Button variant="dark">Dark</Button>
-          {' '}
+
           <Button variant="link">Link</Button>
-          {' '}
+
         </Col>
         <Col xs={12}>
           <br />
           <Button variant="primary" className="disabled">
             Primary
           </Button>
-          {' '}
+
           <Button variant="secondary" className="disabled">
             Secondary
           </Button>
-          {' '}
+
           <Button variant="success" className="disabled">
             Success
           </Button>
-          {' '}
+
           <Button variant="warning" className="disabled">
             Warning
           </Button>
-          {' '}
+
           <Button variant="danger" className="disabled">
             Danger
           </Button>
-          {' '}
+
           <Button variant="info" className="disabled">
             Info
           </Button>
-          {' '}
+
           <Button variant="light" className="disabled">
             Light
           </Button>
-          {' '}
+
           <Button variant="dark" className="disabled">
             Dark
           </Button>
-          {' '}
+
           <Button variant="link" className="disabled">
             Link
           </Button>
         </Col>
         <Col xs={12}>
+          <h4>Outline Buttons</h4>
           <br />
-          {' '}
+
           <Button variant="outline-primary">Primary</Button>
-          {' '}
+
           <Button variant="outline-secondary">Secondary</Button>
-          {' '}
+
           <Button variant="outline-success">Success</Button>
-          {' '}
+
           <Button variant="outline-warning">Warning</Button>
-          {' '}
+
           <Button variant="outline-danger">Danger</Button>
-          {' '}
+
           <Button variant="outline-info">Info</Button>
-          {' '}
+
           <Button variant="outline-light">Light</Button>
-          {' '}
+
           <Button variant="outline-dark">Dark</Button>
         </Col>
         <Col xs={12}>
           <br />
           <Button href="#">Link</Button>
-          {' '}
+
           <Button type="submit">Button</Button>
-          {' '}
+
           <Button as="input" type="button" value="Input" />
-          {' '}
+
           <Button as="input" type="submit" value="Submit" />
-          {' '}
+
           <Button as="input" type="reset" value="Reset" />
         </Col>
         <Col xs={12}>
@@ -104,7 +105,7 @@ function Buttons() {
             <Button variant="primary" size="lg">
               Large button
             </Button>
-            {' '}
+
             <Button variant="secondary" size="lg">
               Large button
             </Button>
@@ -113,7 +114,7 @@ function Buttons() {
             <Button variant="primary" size="sm">
               Small button
             </Button>
-            {' '}
+
             <Button variant="secondary" size="sm">
               Small button
             </Button>
@@ -135,7 +136,7 @@ function Buttons() {
           <Button variant="primary" size="lg" active>
             Primary button
           </Button>
-          {' '}
+
           <Button variant="secondary" size="lg" active>
             Button
           </Button>
@@ -145,11 +146,11 @@ function Buttons() {
           <Button variant="primary" size="lg" disabled>
             Primary button
           </Button>
-          {' '}
+
           <Button variant="secondary" size="lg" disabled>
             Button
           </Button>
-          {' '}
+
           <Button href="#" variant="secondary" size="lg" disabled>
             Link
           </Button>
@@ -189,18 +190,18 @@ function Buttons() {
           <ButtonToolbar aria-label="Toolbar with button groups">
             <ButtonGroup className="me-2" aria-label="First group">
               <Button>1</Button>
-              {' '}
+
               <Button>2</Button>
-              {' '}
+
               <Button>3</Button>
-              {' '}
+
               <Button>4</Button>
             </ButtonGroup>
             <ButtonGroup className="me-2" aria-label="Second group">
               <Button>5</Button>
-              {' '}
+
               <Button>6</Button>
-              {' '}
+
               <Button>7</Button>
             </ButtonGroup>
             <ButtonGroup aria-label="Third group">
