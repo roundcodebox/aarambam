@@ -13,6 +13,8 @@ import Breadcrumbs from './Components/Breadcrumbs';
 import ListGroups from './Components/ListGroups';
 import Spinners from './Components/Spinners';
 import ProgressBars from './Components/ProgressBars';
+import ModalExamples from './Components/ModalExamples';
+import CarouselsExamples from './Components/CarouselsExamples';
 import './App.scss';
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
       <ListGroups />
       <Spinners />
       <ProgressBars />
+      <ModalExamples />
+      <CarouselsExamples />
       <Cards />
     </>
   );
