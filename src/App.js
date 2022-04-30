@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Navbars from './Components/NavBars';
 import Buttons from './Components/Buttons';
+import Dropdowns from './Components/Dropdowns';
 import Typography from './Components/Typography';
 import Tables from './Components/Tables';
 import Forms from './Components/Forms';
@@ -16,6 +17,7 @@ import ProgressBars from './Components/ProgressBars';
 import ModalExamples from './Components/ModalExamples';
 import CarouselsExamples from './Components/CarouselsExamples';
 import Navs from './Components/Navs';
+import Paginations from './Components/Paginations';
 import './App.scss';
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
       <Navbars />
       <Navs />
       <Buttons />
+      <Dropdowns />
       <Typography />
       <Tables />
       <Forms />
@@ -38,6 +41,7 @@ function App() {
       <ModalExamples />
       <CarouselsExamples />
       <Cards />
+      <Paginations />
     </>
   );
 }
