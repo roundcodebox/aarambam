@@ -1,8 +1,6 @@
 # Aarambam
 
-Aarambam is a starter kit for Next.js based web applications
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Aarambam is a starter kit for React based web applications.
 
 ## Features
 
