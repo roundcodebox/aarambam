@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
+import Shadows from './Components/Shadows';
 import Navbars from './Components/NavBars';
 import Buttons from './Components/Buttons';
 import Dropdowns from './Components/Dropdowns';
@@ -20,6 +21,7 @@ import Navs from './Components/Navs';
 import Paginations from './Components/Paginations';
 import Toasts from './Components/Toasts';
 import Stacks from './Components/Stacks';
+import Borders from './Components/Borders';
 import './App.scss';
 
 function App() {
@@ -43,9 +45,11 @@ function App() {
       <ModalExamples />
       <CarouselsExamples />
       <Cards />
+      <Shadows />
       <Paginations />
       <Toasts />
       <Stacks />
+      <Borders />
     </>
   );
 }

@@ -198,7 +198,6 @@ function Forms() {
               aria-describedby="basic-addon1"
             />
           </InputGroup>
-
           <InputGroup className="mb-3">
             <FormControl
               placeholder="Recipient's username"

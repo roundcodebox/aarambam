@@ -7,7 +7,7 @@ function Buttons() {
   return (
     <Container>
       <Row>
-        <Col xs={12}>
+        <Col sm={12}>
           <h1>Buttons</h1>
           <br />
           <Button variant="primary">Primary</Button>
@@ -38,7 +38,7 @@ function Buttons() {
           {' '}
 
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <Button variant="primary" className="disabled">
             Primary
@@ -85,7 +85,27 @@ function Buttons() {
           </Button>
           {' '}
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
+          <h4>Colored links</h4>
+          <a href="#/" className="link-primary">Primary link</a>
+          {' '}
+          <a href="#/" className="link-secondary">Secondary link</a>
+          {' '}
+          <a href="#/" className="link-success">Success link</a>
+          {' '}
+          <a href="#/" className="link-danger">Danger link</a>
+          {' '}
+          <a href="#/" className="link-warning">Warning link</a>
+          {' '}
+          <a href="#/" className="link-info">Info link</a>
+          {' '}
+          <a href="#/" className="link-light">Light link</a>
+          {' '}
+          <a href="#/" className="link-dark">Dark link</a>
+          {' '}
+
+        </Col>
+        <Col sm={12}>
           <h4>Outline Buttons</h4>
           <br />
           <Button variant="outline-primary">Primary</Button>
@@ -105,7 +125,7 @@ function Buttons() {
           <Button variant="outline-dark">Dark</Button>
           {' '}
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <Button href="#">Link</Button>
           {' '}
@@ -118,7 +138,7 @@ function Buttons() {
           <Button as="input" type="reset" value="Reset" />
           {' '}
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <h4>Button Sizes</h4>
           <div className="mb-2">
@@ -144,7 +164,7 @@ function Buttons() {
             {' '}
           </div>
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <h4>Block buttons</h4>
           <div className="d-grid gap-2">
@@ -158,7 +178,7 @@ function Buttons() {
             {' '}
           </div>
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <Button variant="primary" size="lg" active>
             Primary button
@@ -169,7 +189,7 @@ function Buttons() {
           </Button>
           {' '}
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <Button variant="primary" size="lg" disabled>
             Primary button
@@ -186,7 +206,7 @@ function Buttons() {
           </Button>
           {' '}
         </Col>
-        <Col xs={12}>
+        <Col sm={12}>
           <br />
           <h4>Checkbox / Radio Button</h4>
           <h4>Checkbox / Radio Button Uncontrolled</h4>

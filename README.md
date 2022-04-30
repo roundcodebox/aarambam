@@ -6,7 +6,7 @@ Aarambam is a starter kit for React based web applications.
 
 ## Tech Stack
 
-React.js
+React
 ESLint
 Prettier
 Husky
