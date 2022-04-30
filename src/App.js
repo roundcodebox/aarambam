@@ -15,6 +15,7 @@ import Spinners from './Components/Spinners';
 import ProgressBars from './Components/ProgressBars';
 import ModalExamples from './Components/ModalExamples';
 import CarouselsExamples from './Components/CarouselsExamples';
+import Navs from './Components/Navs';
 import './App.scss';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <>
       <Header />
       <Navbars />
+      <Navs />
       <Buttons />
       <Typography />
       <Tables />
