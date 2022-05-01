@@ -111,8 +111,6 @@ function Heros() {
 
       <div className="b-example-divider" />
 
-      <div className="b-example-divider" />
-
       <div className="bg-dark text-secondary px-4 py-5 text-center">
         <div className="py-5">
           <h1 className="display-5 fw-bold text-white">Dark mode hero</h1>

@@ -37,7 +37,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-danger m-4">
-          <p>Success Borders</p>
+          <p>Danger Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
@@ -47,7 +47,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-warning m-4">
-          <p>Success Borders</p>
+          <p>Warning Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
@@ -57,7 +57,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-info m-4">
-          <p>Success Borders</p>
+          <p>Info Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
@@ -67,7 +67,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-light m-4">
-          <p>Success Borders</p>
+          <p>Light Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
@@ -77,7 +77,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-dark m-4">
-          <p>Success Borders</p>
+          <p>Dark Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
@@ -87,7 +87,7 @@ function Borders() {
           </p>
         </Col>
         <Col sm={3} className="border border-white m-4">
-          <p>Success Borders</p>
+          <p>White Borders</p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laboriosam
             eum esse aliquam corrupti, enim, in non sed magni dolorum vitae
