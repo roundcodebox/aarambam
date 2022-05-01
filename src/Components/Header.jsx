@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Navbar, Nav, NavDropdown, Container
 } from 'react-bootstrap';
+import './Header.scss';
 
 function Header() {
   return (
@@ -254,7 +255,7 @@ function Header() {
       <div className="b-example-divider" />
 
       <header className="py-3 mb-3 border-bottom">
-        <div className="container-fluid d-grid gap-3 align-items-center">
+        <div className="container-fluid d-grid gap-3 align-items-center" style={{ gridTemplateColumns: '1fr 2fr' }}>
           <div className="dropdown">
             <a
               href="#/"
@@ -304,7 +305,7 @@ function Header() {
       </header>
 
       <div className="container-fluid pb-3">
-        <div className="d-grid gap-3">
+        <div className="d-grid gap-3" style={{ gridTemplateColumns: '1fr 2fr' }}>
           <div className="bg-light border rounded-3">
             <br />
             <br />

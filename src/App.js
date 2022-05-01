@@ -24,9 +24,9 @@ import Stacks from './Components/Stacks';
 import Borders from './Components/Borders';
 import Jumbotron from './Components/Jumbotron';
 import Heros from './Components/Heros';
-import './App.scss';
 import Footers from './Components/Footers';
 import Features from './Components/Features';
+import './App.scss';
 
 function App() {
   return (
