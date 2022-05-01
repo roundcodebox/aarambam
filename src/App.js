@@ -22,14 +22,21 @@ import Paginations from './Components/Paginations';
 import Toasts from './Components/Toasts';
 import Stacks from './Components/Stacks';
 import Borders from './Components/Borders';
+import Jumbotron from './Components/Jumbotron';
+import Heros from './Components/Heros';
 import './App.scss';
+import Footers from './Components/Footers';
+import Features from './Components/Features';
 
 function App() {
   return (
     <>
       <Header />
       <Navbars />
+      <Jumbotron />
+      <Heros />
       <Navs />
+      <Features />
       <Buttons />
       <Dropdowns />
       <Typography />
@@ -50,6 +57,7 @@ function App() {
       <Toasts />
       <Stacks />
       <Borders />
+      <Footers />
     </>
   );
 }

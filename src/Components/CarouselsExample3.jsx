@@ -7,7 +7,7 @@ function CarouselsExample3() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assests/images/First-Slide.png"
+          src="/assets/images/First-Slide.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +18,7 @@ function CarouselsExample3() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assests/images/Second-Slide.png"
+          src="/assets/images/Second-Slide.png"
           alt="Second slide"
         />
 
@@ -30,7 +30,7 @@ function CarouselsExample3() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assests/images/Third-Slide.png"
+          src="/assets/images/Third-Slide.png"
           alt="Third slide"
         />
 

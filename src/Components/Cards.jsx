@@ -145,7 +145,7 @@ function Cards() {
         <Col sm={4}>
           <h4>Basic Card</h4>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="/assests/images/card-image-286-180.png" />
+            <Card.Img variant="top" src="/assets/images/card-image-286-180.png" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -178,7 +178,7 @@ function Cards() {
           </Card>
           <h4>Card Kitchen Sink</h4>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="/assests/images/card-image-cap.png" />
+            <Card.Img variant="top" src="/assets/images/card-image-cap.png" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
@@ -243,7 +243,7 @@ function Cards() {
         <Col sm={6}>
           <h4>Card with Image Overlays</h4>
           <Card className="bg-dark text-white">
-            <Card.Img src="/assests/images/card-image-673-270.png" alt="Card image" />
+            <Card.Img src="/assets/images/card-image-673-270.png" alt="Card image" />
             <Card.ImgOverlay>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
