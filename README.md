@@ -1,15 +1,29 @@
 # Aarambam
 
-Aarambam is a starter kit for React based web applications.
+Aarambam is a starter kit for React based web applications. Goal of this repository is to faster and easier to build react project faster.
 
 ## Features
 
+This repository will have more than 50 components and many pages. I will list all the components and page along with the screenshots soon.
+
+### Pages
+
+Below are some of the pages that are available in aarambam.
+
+- Signin
+- Signup
+- Homepage
+
+### Components
+
 ## Tech Stack
 
-React
-ESLint
-Prettier
-Husky
+- React
+- react-bootstrap
+- Sass
+- ESLint
+- Prettier
+- Husky
 
 ## Requirements
 
