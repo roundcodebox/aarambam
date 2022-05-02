@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, Nav
-} from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import NavDropdownExample from './NavDropdownExample';
 
 function Navs() {
@@ -43,7 +41,6 @@ function Navs() {
               <Nav.Link eventKey="link-2">Link</Nav.Link>
             </Nav.Item>
           </Nav>
-
         </Col>
         <Col sm={4}>
           <h4>Alignment and orientation</h4>
@@ -167,9 +164,7 @@ function Navs() {
           <NavDropdownExample />
         </Col>
       </Row>
-
     </Container>
-
   );
 }
 export default Navs;

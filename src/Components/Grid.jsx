@@ -7,12 +7,13 @@ function Grid() {
       <Container>
         <h4>Grid Examples</h4>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 1
           </Col>
@@ -21,12 +22,13 @@ function Grid() {
       <Container fluid="md">
         <h4>Fluid Container</h4>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 1
           </Col>
@@ -35,72 +37,72 @@ function Grid() {
       <Container>
         <h4>Auto-layout columns</h4>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 2
-
           </Col>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             2 of 2
-
           </Col>
         </Row>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 3
-
           </Col>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             2 of 3
-
           </Col>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             3 of 3
-
           </Col>
         </Row>
       </Container>
       <Container>
         <h4>Setting column width</h4>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 3
-
           </Col>
           <Col
             xs={6}
@@ -108,33 +110,32 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             2 of 3 (wider)
-
           </Col>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             3 of 3
-
           </Col>
         </Row>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 3
-
           </Col>
           <Col
             xs={5}
@@ -142,21 +143,20 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             2 of 3 (wider)
-
           </Col>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             3 of 3
-
           </Col>
         </Row>
       </Container>
@@ -170,7 +170,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             1 of 3
@@ -181,11 +181,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             Variable width content
-
           </Col>
           <Col
             xs
@@ -194,22 +193,22 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             3 of 3
           </Col>
         </Row>
         <Row>
-          <Col style={{
-            paddingTop: '0.75rem',
-            paddingBottom: '0.75rem',
-            backgroundColor: '#bbeffd',
-            border: '1px solid #61dafb'
-          }}
+          <Col
+            style={{
+              paddingTop: '0.75rem',
+              paddingBottom: '0.75rem',
+              backgroundColor: '#bbeffd',
+              border: '1px solid #61dafb',
+            }}
           >
             1 of 3
-
           </Col>
           <Col
             md="auto"
@@ -217,11 +216,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             Variable width content
-
           </Col>
           <Col
             xs
@@ -230,7 +228,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             3 of 3
@@ -246,11 +244,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             sm=8
-
           </Col>
           <Col
             sm={4}
@@ -258,11 +255,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             sm=4
-
           </Col>
         </Row>
         <Row>
@@ -272,11 +268,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             sm=true
-
           </Col>
           <Col
             sm
@@ -284,11 +279,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             sm=true
-
           </Col>
           <Col
             sm
@@ -296,11 +290,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             sm=true
-
           </Col>
         </Row>
       </Container>
@@ -315,7 +308,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=12 md=8
@@ -327,7 +320,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6 md=4
@@ -343,7 +336,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6 md=4
@@ -355,7 +348,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6 md=4
@@ -367,7 +360,7 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6 md=4
@@ -382,11 +375,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6
-
           </Col>
           <Col
             xs={6}
@@ -394,11 +386,10 @@ function Grid() {
               paddingTop: '0.75rem',
               paddingBottom: '0.75rem',
               backgroundColor: '#bbeffd',
-              border: '1px solid #61dafb'
+              border: '1px solid #61dafb',
             }}
           >
             xs=6
-
           </Col>
         </Row>
       </Container>

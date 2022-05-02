@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, Stack, Button, Form
-} from 'react-bootstrap';
+import { Container, Row, Col, Stack, Button, Form } from 'react-bootstrap';
 
 function Stacks() {
   return (
@@ -51,7 +49,10 @@ function Stacks() {
         <Col sm={8}>
           <h5>Horizontal Stack with a inline form </h5>
           <Stack direction="horizontal" gap={3}>
-            <Form.Control className="me-auto" placeholder="Add your item here..." />
+            <Form.Control
+              className="me-auto"
+              placeholder="Add your item here..."
+            />
             <Button variant="secondary">Submit</Button>
             <div className="vr" />
             <Button variant="outline-danger">Reset</Button>

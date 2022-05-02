@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col
-} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import ModalExample1 from './ModalExample1';
 import ModalExample2 from './ModalExample2';
 import ModalExample3 from './ModalExample3';

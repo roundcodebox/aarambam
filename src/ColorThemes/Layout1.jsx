@@ -5,7 +5,6 @@ function Layout1() {
     <>
       <h1>Layout1</h1>
       <h1>Navbars</h1>
-
     </>
   );
 }

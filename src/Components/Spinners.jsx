@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, Spinner, Button
-} from 'react-bootstrap';
+import { Container, Row, Col, Spinner, Button } from 'react-bootstrap';
 
 function Spinners() {
   return (

@@ -1,6 +1,16 @@
 import React from 'react';
 import {
-  Container, Col, Row, Form, InputGroup, FormControl, Dropdown, DropdownButton, Button, SplitButton, FloatingLabel
+  Container,
+  Col,
+  Row,
+  Form,
+  InputGroup,
+  FormControl,
+  Dropdown,
+  DropdownButton,
+  Button,
+  SplitButton,
+  FloatingLabel,
 } from 'react-bootstrap';
 import FormValidationExample from './FormValidationExample';
 
@@ -32,15 +42,22 @@ function Forms() {
           </Form>
           <h4>Readonly plain text </h4>
           <Form>
-            <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+            <Form.Group
+              as={Row}
+              className="mb-3"
+              controlId="formPlaintextEmail"
+            >
               <Form.Label column sm="2">
                 Email
               </Form.Label>
               <Col sm="10">
-                <Form.Control plaintext readOnly defaultValue="email@example.com" />
+                <Form.Control
+                  plaintext
+                  readOnly
+                  defaultValue="email@example.com"
+                />
               </Col>
             </Form.Group>
-
           </Form>
           <h4>Disabled forms</h4>
           <Form.Group className="mb-3">
@@ -228,11 +245,16 @@ function Forms() {
           <h2>Form InputGroup Sizing</h2>
           <InputGroup size="sm" className="mb-3">
             <InputGroup.Text id="inputGroup-sizing-sm">Small</InputGroup.Text>
-            <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+            <FormControl
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-sm"
+            />
           </InputGroup>
           <br />
           <InputGroup className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-default">Default</InputGroup.Text>
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Default
+            </InputGroup.Text>
             <FormControl
               aria-label="Default"
               aria-describedby="inputGroup-sizing-default"
@@ -241,7 +263,10 @@ function Forms() {
           <br />
           <InputGroup size="lg">
             <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text>
-            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+            <FormControl
+              aria-label="Large"
+              aria-describedby="inputGroup-sizing-sm"
+            />
           </InputGroup>
           <h2>Checkboxes and radios</h2>
           <InputGroup className="mb-3">
@@ -421,7 +446,11 @@ function Forms() {
             <Form.Control type="password" placeholder="Password" />
           </FloatingLabel>
           <h3>TextAreas Floating labels</h3>
-          <FloatingLabel controlId="floatingTextarea" label="Comments" className="mb-3">
+          <FloatingLabel
+            controlId="floatingTextarea"
+            label="Comments"
+            className="mb-3"
+          >
             <Form.Control as="textarea" placeholder="Leave a comment here" />
           </FloatingLabel>
           <FloatingLabel controlId="floatingTextarea2" label="Comments">
@@ -443,12 +472,18 @@ function Forms() {
           <h3>Floating Label Layout</h3>
           <Row className="g-2">
             <Col md>
-              <FloatingLabel controlId="floatingInputGrid" label="Email address">
+              <FloatingLabel
+                controlId="floatingInputGrid"
+                label="Email address"
+              >
                 <Form.Control type="email" placeholder="name@example.com" />
               </FloatingLabel>
             </Col>
             <Col md>
-              <FloatingLabel controlId="floatingSelectGrid" label="Works with selects">
+              <FloatingLabel
+                controlId="floatingSelectGrid"
+                label="Works with selects"
+              >
                 <Form.Select aria-label="Floating label select example">
                   <option>Open this select menu</option>
                   <option value="1">One</option>
@@ -535,7 +570,11 @@ function Forms() {
           </Form>
           <h3>Horizontal Form Layout</h3>
           <Form>
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+            <Form.Group
+              as={Row}
+              className="mb-3"
+              controlId="formHorizontalEmail"
+            >
               <Form.Label column sm={2}>
                 Email
               </Form.Label>
@@ -544,7 +583,11 @@ function Forms() {
               </Col>
             </Form.Group>
 
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+            <Form.Group
+              as={Row}
+              className="mb-3"
+              controlId="formHorizontalPassword"
+            >
               <Form.Label column sm={2}>
                 Password
               </Form.Label>
@@ -579,7 +622,11 @@ function Forms() {
                 </Col>
               </Form.Group>
             </fieldset>
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
+            <Form.Group
+              as={Row}
+              className="mb-3"
+              controlId="formHorizontalCheck"
+            >
               <Col sm={{ span: 10, offset: 2 }}>
                 <Form.Check label="Remember me" />
               </Col>
@@ -651,7 +698,10 @@ function Forms() {
                 </Form.Label>
                 <InputGroup className="mb-2">
                   <InputGroup.Text>@</InputGroup.Text>
-                  <FormControl id="inlineFormInputGroup" placeholder="Username" />
+                  <FormControl
+                    id="inlineFormInputGroup"
+                    placeholder="Username"
+                  />
                 </InputGroup>
               </Col>
               <Col xs="auto">
@@ -679,16 +729,26 @@ function Forms() {
                 <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
               </Col>
               <Col sm={3} className="my-1">
-                <Form.Label htmlFor="inlineFormInputGroupUsername" visuallyHidden>
+                <Form.Label
+                  htmlFor="inlineFormInputGroupUsername"
+                  visuallyHidden
+                >
                   Username
                 </Form.Label>
                 <InputGroup>
                   <InputGroup.Text>@</InputGroup.Text>
-                  <FormControl id="inlineFormInputGroupUsername" placeholder="Username" />
+                  <FormControl
+                    id="inlineFormInputGroupUsername"
+                    placeholder="Username"
+                  />
                 </InputGroup>
               </Col>
               <Col xs="auto" className="my-1">
-                <Form.Check type="checkbox" id="autoSizingCheck2" label="Remember me" />
+                <Form.Check
+                  type="checkbox"
+                  id="autoSizingCheck2"
+                  label="Remember me"
+                />
               </Col>
               <Col xs="auto" className="my-1">
                 <Button type="submit">Submit</Button>

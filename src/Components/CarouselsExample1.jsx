@@ -35,7 +35,9 @@ function CarouselsExample1() {
 
         <Carousel.Caption>
           <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, Toast, ToastContainer
-} from 'react-bootstrap';
+import { Container, Row, Col, Toast, ToastContainer } from 'react-bootstrap';
 import ToastsAutohide from './ToastsAutohide';
 import ToastPlacement from './ToastPlacement';
 import ToastsDismissible from './ToastsDismissible';
@@ -14,7 +12,11 @@ function Toasts() {
           <h4> Basic Example</h4>
           <Toast>
             <Toast.Header>
-              <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+              <img
+                src="holder.js/20x20?text=%20"
+                className="rounded me-2"
+                alt=""
+              />
               <strong className="me-auto">Bootstrap</strong>
               <small>11 mins ago</small>
             </Toast.Header>
@@ -26,7 +28,11 @@ function Toasts() {
           <ToastContainer>
             <Toast>
               <Toast.Header>
-                <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                <img
+                  src="holder.js/20x20?text=%20"
+                  className="rounded me-2"
+                  alt=""
+                />
                 <strong className="me-auto">Bootstrap</strong>
                 <small className="text-muted">just now</small>
               </Toast.Header>
@@ -34,7 +40,11 @@ function Toasts() {
             </Toast>
             <Toast>
               <Toast.Header>
-                <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                <img
+                  src="holder.js/20x20?text=%20"
+                  className="rounded me-2"
+                  alt=""
+                />
                 <strong className="me-auto">Bootstrap</strong>
                 <small className="text-muted">2 seconds ago</small>
               </Toast.Header>
@@ -53,7 +63,11 @@ function Toasts() {
             <ToastContainer position="top-end" className="p-3">
               <Toast>
                 <Toast.Header>
-                  <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                  <img
+                    src="holder.js/20x20?text=%20"
+                    className="rounded me-2"
+                    alt=""
+                  />
                   <strong className="me-auto">Bootstrap</strong>
                   <small className="text-muted">just now</small>
                 </Toast.Header>
@@ -61,11 +75,17 @@ function Toasts() {
               </Toast>
               <Toast>
                 <Toast.Header>
-                  <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                  <img
+                    src="holder.js/20x20?text=%20"
+                    className="rounded me-2"
+                    alt=""
+                  />
                   <strong className="me-auto">Bootstrap</strong>
                   <small className="text-muted">2 seconds ago</small>
                 </Toast.Header>
-                <Toast.Body>Heads up, toasts will stack automatically</Toast.Body>
+                <Toast.Body>
+                  Heads up, toasts will stack automatically
+                </Toast.Body>
               </Toast>
             </ToastContainer>
           </div>
@@ -83,10 +103,18 @@ function Toasts() {
               'Light',
               'Dark',
             ].map((variant, idx) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Toast className="d-inline-block m-1" bg={variant.toLowerCase()} key={idx}>
+              <Toast
+                className="d-inline-block m-1"
+                bg={variant.toLowerCase()}
+                // eslint-disable-next-line react/no-array-index-key
+                key={idx}
+              >
                 <Toast.Header>
-                  <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
+                  <img
+                    src="holder.js/20x20?text=%20"
+                    className="rounded me-2"
+                    alt=""
+                  />
                   <strong className="me-auto">Bootstrap</strong>
                   <small>11 mins ago</small>
                 </Toast.Header>

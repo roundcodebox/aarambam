@@ -1,6 +1,15 @@
 import React from 'react';
 import {
-  Nav, Navbar, Container, Row, Col, Offcanvas, NavDropdown, Form, FormControl, Button
+  Nav,
+  Navbar,
+  Container,
+  Row,
+  Col,
+  Offcanvas,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
 } from 'react-bootstrap';
 
 function Navbars() {
@@ -49,14 +58,18 @@ function Navbars() {
             <Navbar key={expand} bg="light" expand={expand} className="mb-3">
               <Container fluid>
                 <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                <Navbar.Toggle
+                  aria-controls={`offcanvasNavbar-expand-${expand}`}
+                />
                 <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}
                   aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                   placement="end"
                 >
                   <Offcanvas.Header closeButton>
-                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                    <Offcanvas.Title
+                      id={`offcanvasNavbarLabel-expand-${expand}`}
+                    >
                       Offcanvas
                     </Offcanvas.Title>
                   </Offcanvas.Header>
@@ -68,7 +81,9 @@ function Navbars() {
                         title="Dropdown"
                         id={`offcanvasNavbarDropdown-expand-${expand}`}
                       >
-                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action3">
+                          Action
+                        </NavDropdown.Item>
                         <NavDropdown.Item href="#action4">
                           Another action
                         </NavDropdown.Item>
@@ -102,11 +117,19 @@ function Navbars() {
                   <Nav.Link href="#features">Features</Nav.Link>
                   <Nav.Link href="#pricing">Pricing</Nav.Link>
                   <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Separated link
+                    </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Nav>
@@ -133,7 +156,9 @@ function Navbars() {
                   <Nav.Link href="#action2">Link</Nav.Link>
                   <NavDropdown title="Link" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Something else here

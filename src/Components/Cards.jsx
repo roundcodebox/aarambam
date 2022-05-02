@@ -1,6 +1,13 @@
 import React from 'react';
 import {
-  Card, Container, Row, Col, Button, ListGroup, ListGroupItem, Nav
+  Card,
+  Container,
+  Row,
+  Col,
+  Button,
+  ListGroup,
+  ListGroupItem,
+  Nav,
 } from 'react-bootstrap';
 
 function Cards() {
@@ -29,15 +36,10 @@ function Cards() {
             >
               <Card.Header>Header</Card.Header>
               <Card.Body>
-                <Card.Title>
-                  {variant}
-                  {' '}
-                  Card Title
-                  {' '}
-                </Card.Title>
+                <Card.Title>{variant} Card Title </Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -51,8 +53,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Primary Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -63,8 +65,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Secondary Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -75,8 +77,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Success Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -87,8 +89,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Danger Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -99,8 +101,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Warning Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -111,8 +113,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Info Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -123,8 +125,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Dark Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -134,8 +136,8 @@ function Cards() {
               <Card.Body>
                 <Card.Title>Light Card Title</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -145,12 +147,15 @@ function Cards() {
         <Col sm={4}>
           <h4>Basic Card</h4>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="/assets/images/card-image-286-180.png" />
+            <Card.Img
+              variant="top"
+              src="/assets/images/card-image-286-180.png"
+            />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
@@ -159,10 +164,12 @@ function Cards() {
           <Card style={{ width: '18rem' }}>
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted">
+                Card Subtitle
+              </Card.Subtitle>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </Card.Text>
               <Card.Link href="#">Card Link</Card.Link>
               <Card.Link href="#">Another Link</Card.Link>
@@ -182,8 +189,8 @@ function Cards() {
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
@@ -202,7 +209,8 @@ function Cards() {
             <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
+                With supporting text below as a natural lead-in to additional
+                content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
@@ -215,7 +223,8 @@ function Cards() {
             <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
+                With supporting text below as a natural lead-in to additional
+                content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>
@@ -229,8 +238,8 @@ function Cards() {
             <Card.Body>
               <blockquote className="blockquote mb-0">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                  erat a ante.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
                 </p>
                 <footer className="blockquote-footer">
                   Someone famous in
@@ -243,12 +252,16 @@ function Cards() {
         <Col sm={6}>
           <h4>Card with Image Overlays</h4>
           <Card className="bg-dark text-white">
-            <Card.Img src="/assets/images/card-image-673-270.png" alt="Card image" />
+            <Card.Img
+              src="/assets/images/card-image-673-270.png"
+              alt="Card image"
+            />
             <Card.ImgOverlay>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
               </Card.Text>
               <Card.Text>Last updated 3 mins ago</Card.Text>
             </Card.ImgOverlay>
@@ -275,7 +288,8 @@ function Cards() {
             <Card.Body>
               <Card.Title>Special title treatment</Card.Title>
               <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
+                With supporting text below as a natural lead-in to additional
+                content.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>
             </Card.Body>

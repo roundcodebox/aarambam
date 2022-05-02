@@ -1,6 +1,16 @@
 import React from 'react';
 import {
-  Container, Row, Col, Dropdown, DropdownButton, ButtonGroup, Button, SplitButton, NavDropdown, Navbar, Nav
+  Container,
+  Row,
+  Col,
+  Dropdown,
+  DropdownButton,
+  ButtonGroup,
+  Button,
+  SplitButton,
+  NavDropdown,
+  Navbar,
+  Nav,
 } from 'react-bootstrap';
 
 function Dropdowns() {
@@ -48,7 +58,7 @@ function Dropdowns() {
                 <Dropdown.Divider />
                 <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
               </DropdownButton>
-            ),
+            )
           )}
         </Col>
         <Col sm={4}>
@@ -56,7 +66,11 @@ function Dropdowns() {
           <Dropdown as={ButtonGroup}>
             <Button variant="success">Split Button</Button>
 
-            <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+            <Dropdown.Toggle
+              split
+              variant="success"
+              id="dropdown-split-basic"
+            />
 
             <Dropdown.Menu>
               <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -66,7 +80,6 @@ function Dropdowns() {
           </Dropdown>
         </Col>
         <Col sm={8}>
-
           <h4>Split button dropdowns</h4>
           {['Primary', 'Secondary', 'Success', 'Info', 'Warning', 'Danger'].map(
             (variant) => (
@@ -84,7 +97,7 @@ function Dropdowns() {
                 <Dropdown.Divider />
                 <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
               </SplitButton>
-            ),
+            )
           )}
         </Col>
         <Col sm={4}>
@@ -130,7 +143,10 @@ function Dropdowns() {
         <Col sm={4}>
           <h4>Dark dropdowns</h4>
           <Dropdown>
-            <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
+            <Dropdown.Toggle
+              id="dropdown-button-dark-example1"
+              variant="secondary"
+            >
               Dropdown Button
             </Dropdown.Toggle>
 
@@ -174,11 +190,19 @@ function Dropdowns() {
                     title="Dropdown"
                     menuVariant="dark"
                   >
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Something
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">
+                      Separated link
+                    </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
               </Navbar.Collapse>
@@ -244,7 +268,11 @@ function Dropdowns() {
         </Col>
         <Col sm={4}>
           <h4>Dropdown Menu alignment</h4>
-          <DropdownButton align="end" title="Dropdown end" id="dropdown-menu-align-end">
+          <DropdownButton
+            align="end"
+            title="Dropdown end"
+            id="dropdown-menu-align-end"
+          >
             <Dropdown.Item eventKey="1">Action</Dropdown.Item>
             <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
             <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>

@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Row, Col, Button, Toast
-} from 'react-bootstrap';
+import { Row, Col, Button, Toast } from 'react-bootstrap';
 
 function ToastsDismissible() {
   const [showA, setShowA] = useState(true);
@@ -14,11 +12,7 @@ function ToastsDismissible() {
     <Row>
       <Col md={6} className="mb-2">
         <Button onClick={toggleShowA} className="mb-2">
-          Toggle Toast
-          {' '}
-          <strong>with</strong>
-          {' '}
-          Animation
+          Toggle Toast <strong>with</strong> Animation
         </Button>
         <Toast show={showA} onClose={toggleShowA}>
           <Toast.Header>
@@ -35,11 +29,7 @@ function ToastsDismissible() {
       </Col>
       <Col md={6} className="mb-2">
         <Button onClick={toggleShowB} className="mb-2">
-          Toggle Toast
-          {' '}
-          <strong>without</strong>
-          {' '}
-          Animation
+          Toggle Toast <strong>without</strong> Animation
         </Button>
         <Toast onClose={toggleShowB} show={showB} animation={false}>
           <Toast.Header>

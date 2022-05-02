@@ -1,7 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import {
-  Container, Row, Col, Form, ToastContainer, Toast
+  Container,
+  Row,
+  Col,
+  Form,
+  ToastContainer,
+  Toast,
 } from 'react-bootstrap';
 
 function ToastPlacement() {

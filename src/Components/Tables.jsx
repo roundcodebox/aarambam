@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Table, Row, Col
-} from 'react-bootstrap';
+import { Container, Table, Row, Col } from 'react-bootstrap';
 
 function Tables() {
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, ProgressBar
-} from 'react-bootstrap';
+import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
 
 function ProgressBars() {
   return (

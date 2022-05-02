@@ -16,7 +16,9 @@ function Shadows() {
           <div className="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
         </Col>
         <Col sm={6}>
-          <div className="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+          <div className="shadow-lg p-3 mb-5 bg-body rounded">
+            Larger shadow
+          </div>
         </Col>
       </Row>
     </Container>

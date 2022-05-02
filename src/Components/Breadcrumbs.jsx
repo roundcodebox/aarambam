@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Breadcrumb, Container, Row, Col
-} from 'react-bootstrap';
+import { Breadcrumb, Container, Row, Col } from 'react-bootstrap';
 
 function Breadcrumbs() {
   return (
@@ -11,7 +9,10 @@ function Breadcrumbs() {
           <h4>Breadcrumbs Example</h4>
           <Breadcrumb>
             <Breadcrumb.Item href="#/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+            <Breadcrumb.Item
+              active
+              href="https://getbootstrap.com/docs/4.0/components/breadcrumb/"
+            >
               Library
             </Breadcrumb.Item>
           </Breadcrumb>

@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Container, Row, Col, Toast, Button
-} from 'react-bootstrap';
+import { Container, Row, Col, Toast, Button } from 'react-bootstrap';
 
 function ToastsAutohide() {
   const [show, setShow] = useState(false);
@@ -11,7 +9,12 @@ function ToastsAutohide() {
       <Row>
         <Col xs={6}>
           <h4>Autohidable toasts</h4>
-          <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+          <Toast
+            onClose={() => setShow(false)}
+            show={show}
+            delay={3000}
+            autohide
+          >
             <Toast.Header>
               <img
                 src="holder.js/20x20?text=%20"
@@ -21,7 +24,9 @@ function ToastsAutohide() {
               <strong className="me-auto">Bootstrap</strong>
               <small>11 mins ago</small>
             </Toast.Header>
-            <Toast.Body>Woohoo, you're reading this text in a Toast!</Toast.Body>
+            <Toast.Body>
+              Woohoo, you're reading this text in a Toast!
+            </Toast.Body>
           </Toast>
           <Button onClick={() => setShow(true)}>Show Toast</Button>
         </Col>

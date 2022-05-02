@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Pagination, Container, Row, Col
-} from 'react-bootstrap';
+import { Pagination, Container, Row, Col } from 'react-bootstrap';
 
 function Paginations() {
   return (

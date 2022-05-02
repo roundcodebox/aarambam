@@ -14,7 +14,11 @@
     "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "standard",
+    "standard-react",
+    "plugin:prettier/recommended",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {

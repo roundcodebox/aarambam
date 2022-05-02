@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Row, Form, Col, InputGroup, Button
-} from 'react-bootstrap';
+import { Row, Form, Col, InputGroup, Button } from 'react-bootstrap';
 
 function FormValidationExample() {
   const [validated, setValidated] = useState(false);

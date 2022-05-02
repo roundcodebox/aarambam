@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Container, Row, Col, ListGroup, Badge, Tab
-} from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Badge, Tab } from 'react-bootstrap';
 
 function ListGroups() {
   return (
@@ -98,7 +96,6 @@ function ListGroups() {
           </ListGroup>
         </Col>
         <Col sm={6}>
-
           <h4>ListGroup Contextual classes Actionable</h4>
           <ListGroup>
             <ListGroup.Item>No style</ListGroup.Item>
