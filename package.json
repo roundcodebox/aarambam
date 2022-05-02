@@ -49,7 +49,8 @@
     "**/*.{js,jsx}": [
       "npm run lint:fix",
       "npm run lint",
-      "prettier --write"
+      "npm run prettier:write",
+      "npm run prettier:check"
     ],
     "*.{json,md}": [
       "prettier --write"
