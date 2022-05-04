@@ -1,4 +1,13 @@
 import React from 'react';
+import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import CheatSheet from './Pages/CheatSheet';
+import ErrorPage from './Pages/ErrorPage';
+import AllNavBar from './Pages/Layouts/AllNavBar';
+import Footer from './Pages/Layouts/Footer';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Shadows from './Components/Shadows';
@@ -27,40 +36,50 @@ import Heros from './Components/Heros';
 import Footers from './Components/Footers';
 import Features from './Components/Features';
 import Grid from './Components/Grid';
-import './App.scss';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Navbars />
-      <Jumbotron />
-      <Heros />
-      <Navs />
-      <Features />
-      <Buttons />
-      <Dropdowns />
-      <Typography />
-      <Tables />
-      <Forms />
-      <Alerts />
-      <AccordionExample />
-      <Badges />
-      <Breadcrumbs />
-      <ListGroups />
-      <Spinners />
-      <ProgressBars />
-      <ModalExamples />
-      <CarouselsExamples />
-      <Cards />
-      <Shadows />
-      <Paginations />
-      <Toasts />
-      <Stacks />
-      <Borders />
-      <Footers />
-      <Grid />
-    </>
+    <Router>
+      <AllNavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/cheatSheet" element={<CheatSheet />} />
+        <Route path="/header" element={<Header />} />
+        <Route path="/cards" element={<Cards />} />
+        <Route path="/shadows" element={<Shadows />} />
+        <Route path="/navbars" element={<Navbars />} />
+        <Route path="/buttons" element={<Buttons />} />
+        <Route path="/dropdowns" element={<Dropdowns />} />
+        <Route path="/typography" element={<Typography />} />
+        <Route path="/tables" element={<Tables />} />
+        <Route path="/forms" element={<Forms />} />
+        <Route path="/accordionexample" element={<AccordionExample />} />
+        <Route path="/badges" element={<Badges />} />
+        <Route path="/breadcrumbs" element={<Breadcrumbs />} />
+        <Route path="/listgroups" element={<ListGroups />} />
+        <Route path="/spinners" element={<Spinners />} />
+        <Route path="/listgroups" element={<ListGroups />} />
+        <Route path="/progressbars" element={<ProgressBars />} />
+        <Route path="/modalexamples" element={<ModalExamples />} />
+        <Route path="/carouselsexamples" element={<CarouselsExamples />} />
+        <Route path="/paginations" element={<Paginations />} />
+        <Route path="/navs" element={<Navs />} />
+        <Route path="/toasts" element={<Toasts />} />
+        <Route path="/stacks" element={<Stacks />} />
+        <Route path="/borders" element={<Borders />} />
+        <Route path="/jumbotron" element={<Jumbotron />} />
+        <Route path="/footers" element={<Footers />} />
+        <Route path="/heros" element={<Heros />} />
+        <Route path="/grid" element={<Grid />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/alerts" element={<Alerts />} />
+
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import './Header.scss';
+import MegaMenu from './MegaMenu';
 
 function Header() {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
+      <MegaMenu />
       <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Aarambam</Navbar.Brand>
