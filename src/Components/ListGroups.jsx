@@ -16,6 +16,16 @@ function ListGroups() {
           </ListGroup>
         </Col>
         <Col sm={6}>
+          <h4>ListGroup Basic Example</h4>
+          <ListGroup>
+            <ListGroup.Item action>Cras justo odio</ListGroup.Item>
+            <ListGroup.Item action>Dapibus ac facilisis in</ListGroup.Item>
+            <ListGroup.Item action>Morbi leo risus</ListGroup.Item>
+            <ListGroup.Item action>Porta ac consectetur ac</ListGroup.Item>
+            <ListGroup.Item action>Vestibulum at eros</ListGroup.Item>
+          </ListGroup>
+        </Col>
+        <Col sm={6}>
           <h4>ListGroup Active items</h4>
           <ListGroup as="ul">
             <ListGroup.Item as="li" active>
@@ -44,6 +54,15 @@ function ListGroups() {
             <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
             <ListGroup.Item>Morbi leo risus</ListGroup.Item>
             <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+          </ListGroup>
+        </Col>
+        <Col sm={6}>
+          <h4>ListGroup Flush Action</h4>
+          <ListGroup variant="flush">
+            <ListGroup.Item action>Cras justo odio</ListGroup.Item>
+            <ListGroup.Item action>Dapibus ac facilisis in</ListGroup.Item>
+            <ListGroup.Item action>Morbi leo risus</ListGroup.Item>
+            <ListGroup.Item action>Porta ac consectetur ac</ListGroup.Item>
           </ListGroup>
         </Col>
         <Col sm={6}>
@@ -159,6 +178,9 @@ function ListGroups() {
                   <ListGroup.Item action href="#link2">
                     Link 2
                   </ListGroup.Item>
+                  <ListGroup.Item action href="#link3">
+                    Link 3
+                  </ListGroup.Item>
                 </ListGroup>
               </Col>
               <Col sm={8}>
@@ -168,6 +190,9 @@ function ListGroups() {
                   </Tab.Pane>
                   <Tab.Pane eventKey="#link2">
                     <p>Tab content 2 </p>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="#link3">
+                    <p>Tab content 3 </p>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>

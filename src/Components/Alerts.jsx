@@ -9,7 +9,6 @@ function Alerts() {
       <Row>
         <Col sm={6}>
           <h4>Alerts Example</h4>
-
           {[
             'primary',
             'secondary',
@@ -39,8 +38,8 @@ function Alerts() {
           ].map((variant) => (
             <Alert key={variant} variant={variant}>
               This is a {variant} alert with{' '}
-              <Alert.Link href="#">an example link</Alert.Link>. Give it a click
-              if you like.
+              <Alert.Link href="#/">an example link</Alert.Link>. Give it a
+              click if you like.
             </Alert>
           ))}
         </Col>
