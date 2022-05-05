@@ -6,8 +6,10 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import CheatSheet from './Pages/CheatSheet';
 import ErrorPage from './Pages/ErrorPage';
+import Profile from './Pages/Profile';
 import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
+import TypographyLayout from './Pages/Layouts/TypographyLayout';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Shadows from './Components/Shadows';
@@ -46,6 +48,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cheatSheet" element={<CheatSheet />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/typographylayout" element={<TypographyLayout />} />
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/shadows" element={<Shadows />} />

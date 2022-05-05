@@ -44,3 +44,5 @@ Below are some of the pages that are available in aarambam.
 ## Documentation
 
 ## Getting Started
+
+### _Thank you for your contribution to the React Stater Kit repo._
