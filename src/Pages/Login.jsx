@@ -12,25 +12,33 @@ import {
 
 function Login() {
   return (
-    <Container className="container col-xxl-8 px-4 py-5">
+    <Container className="px-4 py-5">
       <Row className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <Col className="col-lg-6">
           <Card style={{ width: '100%' }}>
             <Card.Body>
-              <Card.Title className="display-4 fw-bold lh-1">Login</Card.Title>
+              <Card.Title className="display-4">Login</Card.Title>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Email address"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="name@example.com" />
+                <Form.Control
+                  size="sm"
+                  type="email"
+                  placeholder="name@example.com"
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingPassword"
                 label="Password"
                 className="mb-3"
               >
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control
+                  size="sm"
+                  type="password"
+                  placeholder="Password"
+                />
               </FloatingLabel>{' '}
               <Form.Check label="Remember me" />{' '}
               <Stack gap={5} direction="horizontal">
@@ -41,6 +49,7 @@ function Login() {
                   <Button variant="outline-primary">Register</Button>{' '}
                 </div>
               </Stack>
+              <p>New on our platform? Create an account</p>
             </Card.Body>
           </Card>
         </Col>

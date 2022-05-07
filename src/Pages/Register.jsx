@@ -12,14 +12,35 @@ import {
 
 function Register() {
   return (
-    <Container className="container col-xxl-8 px-4 py-5">
+    <Container className="px-4 py-5">
       <Row className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <Col className="col-lg-6">
           <Card style={{ width: '100%' }}>
             <Card.Body>
-              <Card.Title className="display-4 fw-bold lh-1">
-                Register
-              </Card.Title>
+              <Card.Title className="display-4">Register</Card.Title>
+              <Form>
+                <Row>
+                  <Col>
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="First name"
+                      className="mb-3"
+                    >
+                      <Form.Control type="text" placeholder="First name" />
+                    </FloatingLabel>
+                  </Col>
+                  <Col>
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="Last name"
+                      className="mb-3"
+                      type="text"
+                    >
+                      <Form.Control type="text" placeholder="Last name" />
+                    </FloatingLabel>
+                  </Col>
+                </Row>
+              </Form>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Email address"
@@ -39,11 +60,16 @@ function Register() {
                 label="Confirm Password"
                 className="mb-3"
               >
-                <Form.Control
-                  type="confirmPassword"
-                  placeholder="Confirm Password"
-                />
+                <Form.Control type="password" placeholder="Confirm Password" />
               </FloatingLabel>{' '}
+              <Form.Group className="mb-3">
+                <Form.Check
+                  required
+                  label="I agree to privacy policy & terms"
+                  feedback="You must agree before submitting."
+                  feedbackType="invalid"
+                />
+              </Form.Group>
               <Stack gap={5} direction="horizontal">
                 <div className="bg-light border">
                   <Button variant="primary">Register</Button>{' '}
@@ -52,6 +78,7 @@ function Register() {
                   <Button variant="outline-primary">Login</Button>{' '}
                 </div>
               </Stack>
+              <p> Already have an account? Sign in instead </p>
             </Card.Body>
           </Card>
         </Col>
