@@ -1,6 +1,6 @@
 # Aarambam
 
-Aarambam is a starter kit for React based web applications. Goal of this repository is to faster and easier to build react project faster.
+Aarambam is a starter kit for React based web applications. Goal of this repository is make it easier and faster to build react project.
 
 ## Features
 
@@ -15,6 +15,7 @@ Below are some of the pages that are available in aarambam.
 - Register Page
 - Profile Page
 - Dashboard Page
+- Error Page
 
 ### Components
 

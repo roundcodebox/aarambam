@@ -10,6 +10,7 @@ import Profile from './Pages/Profile';
 import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
 import TypographyLayout from './Pages/Layouts/TypographyLayout';
+import ForgotPassword from './Pages/ForgotPassword';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Shadows from './Components/Shadows';
@@ -50,6 +51,7 @@ function App() {
         <Route path="/cheatSheet" element={<CheatSheet />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/typographylayout" element={<TypographyLayout />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/shadows" element={<Shadows />} />
