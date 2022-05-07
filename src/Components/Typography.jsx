@@ -71,30 +71,34 @@ function Typography() {
             </p>
           </div>
           <h1>Blockquotes</h1>
-          <div className="col-sm-12">
-            <blockquote className="blockquote">
-              <p>A well-known quote, contained in a blockquote element.</p>
-            </blockquote>
-          </div>
-          <div className="col-sm-12">
-            <figure>
+          <div className="row">
+            <div className="col-sm-4">
               <blockquote className="blockquote">
                 <p>A well-known quote, contained in a blockquote element.</p>
               </blockquote>
-              <figcaption className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
-          </div>
-          <div className="col-sm-12">
-            <figure className="text-center">
-              <blockquote className="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </figcaption>
-            </figure>
+            </div>
+            <div className="col-sm-4">
+              <figure>
+                <blockquote className="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  Someone famous in{' '}
+                  <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-sm-4">
+              <figure className="text-center">
+                <blockquote className="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption className="blockquote-footer">
+                  Someone famous in{' '}
+                  <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+            </div>
           </div>
           <div className="col-sm-12">
             <h1 className="display-1">Display 1</h1>
