@@ -10,10 +10,11 @@ This repository will have more than 50 components and many pages. I will list al
 
 Below are some of the pages that are available in aarambam.
 
+- Homepage
 - Login Page
 - Register Page
-- Homepage
 - Profile Page
+- Dashboard Page
 
 ### Components
 
