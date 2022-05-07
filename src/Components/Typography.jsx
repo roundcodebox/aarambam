@@ -1,14 +1,13 @@
 import React from 'react';
-import { Row, Container, Col } from 'react-bootstrap';
 
 function Typography() {
   return (
-    <Container className="pt-5">
-      <Row>
-        <Col className="pt-5">
+    <div className="container py-5">
+      <div className="row">
+        <div className="col-sm-12 pt-5">
           <h2>Typography</h2>
           <hr />
-          <Col>
+          <div className="col-sm-12">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
@@ -19,8 +18,8 @@ function Typography() {
               Fancy display heading
               <small className="text-muted">With faded secondary text</small>
             </h3>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <h2>Example body text</h2>
             <p>
               Nullam quis risus eget
@@ -46,8 +45,8 @@ function Typography() {
               An abbreviation of the word attribute is
               <abbr title="attribute">attr</abbr>.
             </p>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <h2>Emphasis classes</h2>
             <p className="text-muted">
               Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
@@ -70,14 +69,14 @@ function Typography() {
             <p className="text-info">
               Maecenas sed diam eget risus varius blandit sit amet non magna.
             </p>
-          </Col>
+          </div>
           <h1>Blockquotes</h1>
-          <Col>
+          <div className="col-sm-12">
             <blockquote className="blockquote">
               <p>A well-known quote, contained in a blockquote element.</p>
             </blockquote>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <figure>
               <blockquote className="blockquote">
                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -86,8 +85,8 @@ function Typography() {
                 Someone famous in <cite title="Source Title">Source Title</cite>
               </figcaption>
             </figure>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <figure className="text-center">
               <blockquote className="blockquote">
                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -96,20 +95,20 @@ function Typography() {
                 Someone famous in <cite title="Source Title">Source Title</cite>
               </figcaption>
             </figure>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <h1 className="display-1">Display 1</h1>
             <h1 className="display-2">Display 2</h1>
             <h1 className="display-3">Display 3</h1>
             <h1 className="display-4">Display 4</h1>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <p className="lead">
               Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
               auctor. Duis mollis, est non commodo luctus.
             </p>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <p>
               You can use the mark tag to <mark>highlight</mark> text.
             </p>
@@ -143,8 +142,8 @@ function Typography() {
             <p>
               <em>This line rendered as italicized text.</em>
             </p>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <ul className="list-unstyled">
               <li>This is a list.</li>
               <li>It appears completely unstyled.</li>
@@ -162,8 +161,8 @@ function Typography() {
               </li>
               <li>This may still come in handy in some situations.</li>
             </ul>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-12">
             <figure className="text-end">
               <blockquote className="blockquote">
                 <p>A well-known quote, contained in a blockquote element.</p>
@@ -172,10 +171,10 @@ function Typography() {
                 Someone famous in <cite title="Source Title">Source Title</cite>
               </figcaption>
             </figure>
-          </Col>
-        </Col>
-      </Row>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Typography;
