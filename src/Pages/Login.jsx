@@ -5,7 +5,7 @@ function Login() {
     <div className="container px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-sm-6">
-          <div style={{ width: '100%' }} className=" card shadow-sm login-card">
+          <div className=" card shadow-sm login-card">
             <div className="card-body">
               <h4 className="display-4">Login</h4>
               <div className="col-sm-12 my-2">
@@ -21,8 +21,6 @@ function Login() {
                     placeholder="Enter email address"
                   />
                 </label>
-              </div>
-              <div className="col-sm-12 my-2">
                 <label
                   htmlFor="exampleFormControlInput1"
                   className="form-label col-sm-12"
@@ -39,7 +37,7 @@ function Login() {
                   />
                 </label>
               </div>
-              <div className="row my-4">
+              <div className="row my-2">
                 <div className="col-sm-8">
                   <div className="form-check form-switch">
                     <label
@@ -62,17 +60,15 @@ function Login() {
                   </button>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-sm-8 d-grid gap-2 d-md-flex justify-content-md-start">
-                  <p>
-                    New on our platform?{' '}
-                    <a href="/register" className="link-primary">
-                      Create an account
-                    </a>
-                  </p>
-                </div>
-                <div className="col-sm-8 d-grid gap-2 d-md-flex justify-content-md-end" />
+              <div className="col-sm-8 d-grid d-md-flex justify-content-md-start">
+                <p>
+                  New on our platform?{' '}
+                  <a href="/register" className="link-primary">
+                    Create an account
+                  </a>
+                </p>
               </div>
+              <div className="col-sm-8 d-grid d-md-flex justify-content-md-end" />
             </div>
           </div>
         </div>

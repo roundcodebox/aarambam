@@ -5,39 +5,34 @@ function Register() {
     <div className="container px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-sm-6">
-          <div
-            style={{ width: '100%' }}
-            className="card shadow-sm register-card"
-          >
+          <div className="card shadow-sm register-card">
             <div className="card-body">
               <h4 className="display-4">Register</h4>
-              <div className="row justify-content-center">
-                <div className="col-sm-12">
-                  <label
-                    htmlFor="exampleFormControlInput1"
-                    className="form-label col-sm-6 p-1"
-                  >
-                    First Name
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="First Name"
-                    />
-                  </label>
-                  <label
-                    htmlFor="exampleFormControlInput1"
-                    className="form-label col-sm-6 p-1"
-                  >
-                    Last Name
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Last Name"
-                    />
-                  </label>
-                </div>
+              <div className="col-sm-12">
+                <label
+                  htmlFor="exampleFormControlInput1"
+                  className="form-label col-sm-6 p-1"
+                >
+                  First Name
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="First Name"
+                  />
+                </label>
+                <label
+                  htmlFor="exampleFormControlInput1"
+                  className="form-label col-sm-6 p-1"
+                >
+                  Last Name
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Last Name"
+                  />
+                </label>
               </div>
               <div className="col-sm-12">
                 <label
@@ -56,7 +51,7 @@ function Register() {
               <div className="col-sm-12">
                 <label
                   htmlFor="exampleFormControlInput1"
-                  className="form-label col-sm-12"
+                  className="form-label col-sm-12 my-2"
                 >
                   Forgot Password
                   <input
@@ -70,7 +65,7 @@ function Register() {
               <div className="col-sm-12">
                 <label
                   htmlFor="exampleFormControlInput1"
-                  className="form-label col-sm-12"
+                  className="form-label col-sm-12 my-2"
                 >
                   Confirm Password
                   <input
@@ -85,7 +80,7 @@ function Register() {
                 <div className="col-sm-8">
                   <div className="form-check form-switch">
                     <label
-                      className="form-check-label"
+                      className="form-check-label my-2"
                       htmlFor="flexSwitchCheckDefault"
                     >
                       <input

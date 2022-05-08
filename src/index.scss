@@ -9,6 +9,7 @@
     inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 .login-card:hover,
-.register-card:hover {
+.register-card:hover,
+.forgotPassword-card:hover {
   box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !important;
 }
