@@ -39,6 +39,7 @@ import Heros from './Components/Heros';
 import Footers from './Components/Footers';
 import Features from './Components/Features';
 import Grid from './Components/Grid';
+import Tooltips from './Components/Tooltips';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/grid" element={<Grid />} />
         <Route path="/features" element={<Features />} />
         <Route path="/alerts" element={<Alerts />} />
+        <Route path="/tooltips" element={<Tooltips />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
