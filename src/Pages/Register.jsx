@@ -3,7 +3,7 @@ import React from 'react';
 function Register() {
   return (
     <div className="container px-4 py-5">
-      <div className="row align-items-center g-5 py-5">
+      <div className="row g-5 py-5">
         <div className="col-sm-6 col-lg-6">
           <img
             src="/assets/images/bootstrap-themes.png"

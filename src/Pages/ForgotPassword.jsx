@@ -3,7 +3,7 @@ import React from 'react';
 function ForgotPassword() {
   return (
     <div className="container px-4 py-5">
-      <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div className="row g-5 py-5">
         <div className="col-sm-6">
           <div className=" card shadow-sm forgotPassword-card">
             <div className="card-body">
