@@ -6,7 +6,7 @@ function MegaMenu() {
       {' '}
       <nav className="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#/">
+          <a className="navbar-brand" href="/header">
             Bootstrap 5 <span className="badge bg-primary">Mega Menu</span>
           </a>
           <button
@@ -26,14 +26,18 @@ function MegaMenu() {
           <div className="collapse navbar-collapse" id="navbar-content">
             <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#/">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/header"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#/"
+                  href="/header"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
                 >
@@ -41,7 +45,7 @@ function MegaMenu() {
                 </a>
                 <ul className="dropdown-menu shadow">
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/header">
                       Gallery
                     </a>
                   </li>
@@ -52,7 +56,7 @@ function MegaMenu() {
                   </li>
                   <li className="dropstart">
                     <a
-                      href="#/"
+                      href="/header"
                       className="dropdown-item dropdown-toggle"
                       data-bs-toggle="dropdown"
                     >
@@ -60,31 +64,31 @@ function MegaMenu() {
                     </a>
                     <ul className="dropdown-menu shadow">
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 1
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 2
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 3
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 4
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 5
                         </a>
@@ -93,7 +97,7 @@ function MegaMenu() {
                   </li>
                   <li className="dropend">
                     <a
-                      href="#/"
+                      href="/header"
                       className="dropdown-item dropdown-toggle"
                       data-bs-toggle="dropdown"
                       data-bs-auto-close="outside"
@@ -102,26 +106,26 @@ function MegaMenu() {
                     </a>
                     <ul className="dropdown-menu shadow">
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Second level 1
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Second level 2
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Second level 3
                         </a>
                       </li>
                       <li className="dropend">
                         <a
-                          href="#/"
+                          href="/header"
                           className="dropdown-item dropdown-toggle"
                           data-bs-toggle="dropdown"
                         >
@@ -129,31 +133,31 @@ function MegaMenu() {
                         </a>
                         <ul className="dropdown-menu dropdown-submenu shadow">
                           <li>
-                            <a className="dropdown-item" href="#/">
+                            <a className="dropdown-item" href="/header">
                               {' '}
                               Third level 1
                             </a>
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#/">
+                            <a className="dropdown-item" href="/header">
                               {' '}
                               Third level 2
                             </a>
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#/">
+                            <a className="dropdown-item" href="/header">
                               {' '}
                               Third level 3
                             </a>
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#/">
+                            <a className="dropdown-item" href="/header">
                               {' '}
                               Third level 4
                             </a>
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#/">
+                            <a className="dropdown-item" href="/header">
                               {' '}
                               Third level 5
                             </a>
@@ -161,7 +165,7 @@ function MegaMenu() {
                         </ul>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#/">
+                        <a className="dropdown-item" href="/header">
                           {' '}
                           Third level 5
                         </a>
@@ -172,21 +176,21 @@ function MegaMenu() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/header">
                       Something else here
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
+                <a className="nav-link" href="/header">
                   Link
                 </a>
               </li>
               <li className="nav-item dropdown dropdown-mega position-static">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#/"
+                  href="/header"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
                 >
@@ -199,13 +203,13 @@ function MegaMenu() {
                         <div className="col-12 col-sm-4 col-md-3 py-4">
                           <h5>Pages</h5>
                           <div className="list-group">
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Accomodations
                             </a>
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Terms & Conditions
                             </a>
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Privacy
                             </a>
                           </div>
@@ -239,13 +243,13 @@ function MegaMenu() {
                         <div className="col-12 col-sm-12 col-md-3 py-4">
                           <h5>Damn, so many</h5>
                           <div className="list-group">
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Accomodations
                             </a>
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Terms & Conditions
                             </a>
-                            <a className="list-group-item" href="#/">
+                            <a className="list-group-item" href="/header">
                               Privacy
                             </a>
                           </div>
@@ -258,7 +262,7 @@ function MegaMenu() {
               <li className="nav-item">
                 <a
                   className="nav-link disabled"
-                  href="#/"
+                  href="/header"
                   tabIndex="-1"
                   aria-disabled="true"
                 >

@@ -1,87 +1,157 @@
 import React from 'react';
-import { Container, Row, Col, Spinner, Button } from 'react-bootstrap';
-import Sidebar from '../Pages/Layouts/Sidebar';
 
 function Spinners() {
   return (
-    <Container className="pt-5">
-      <Row>
-        <Col sm={9} className="pt-5">
-          <Col sm={9}>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
+          <div className="col-sm-9 col-lg-9">
             <h2>Spinners</h2>
             <h4>Border Spinner</h4>
-            <Spinner animation="border" role="status">
+            <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
-            </Spinner>
-          </Col>
-          <Col sm={9}>
+            </div>
+          </div>
+          <div className="col-sm-9 col-lg-9">
             <h4>Grow Spinner</h4>
-            <Spinner animation="grow" />
-          </Col>
-          <Col sm={9}>
+            <div className="spinner-grow" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div className="col-sm-9 col-lg-9">
             <h4>Spinner Variants</h4>
-            <Spinner animation="border" variant="primary" />
-            <Spinner animation="border" variant="secondary" />
-            <Spinner animation="border" variant="success" />
-            <Spinner animation="border" variant="danger" />
-            <Spinner animation="border" variant="warning" />
-            <Spinner animation="border" variant="info" />
-            <Spinner animation="border" variant="light" />
-            <Spinner animation="border" variant="dark" />
-          </Col>
-          <Col sm={9}>
-            <Spinner animation="grow" variant="primary" />
-            <Spinner animation="grow" variant="secondary" />
-            <Spinner animation="grow" variant="success" />
-            <Spinner animation="grow" variant="danger" />
-            <Spinner animation="grow" variant="warning" />
-            <Spinner animation="grow" variant="info" />
-            <Spinner animation="grow" variant="light" />
-            <Spinner animation="grow" variant="dark" />
-          </Col>
-          <Col sm={9}>
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-secondary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-success" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-danger" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-warning" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-info" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-light" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border text-dark" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div className="col-sm-9 col-lg-9">
+            <div className="spinner-grow text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-secondary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-success" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-danger" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-warning" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-info" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-light" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow text-dark" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div className="col-sm-9 col-lg-9">
             <h4>Spinner sizes</h4>
-            <Spinner animation="border" size="sm" />
-            <Spinner animation="border" />
-            <Spinner animation="grow" size="sm" />
-            <Spinner animation="grow" />
-          </Col>
-          <Col sm={9}>
+            <div className="spinner-border spinner-border-sm" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-grow spinner-grow-sm" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="col-sm-9 col-lg-9">
+              <div
+                className="spinner-border"
+                style={{ width: ' 3rem; height: 3rem;' }}
+                role="status"
+              >
+                <span className="visually-hidden">Loading...</span>
+              </div>
+              <div
+                className="spinner-grow"
+                style={{ width: '3rem; height: 3rem;' }}
+                role="status"
+              >
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-9 col-lg-9">
             <h4>Spinner in Buttons</h4>
-            <Button variant="primary" disabled>
-              <Spinner
-                as="span"
-                animation="border"
-                size="sm"
+            <button className="btn btn-primary" type="button" disabled>
+              <span
+                className="spinner-border spinner-border-sm"
                 role="status"
                 aria-hidden="true"
               />
               <span className="visually-hidden">Loading...</span>
-            </Button>
-
-            <Button variant="primary" disabled>
-              <Spinner
-                as="span"
-                animation="grow"
-                size="sm"
+            </button>{' '}
+            <button className="btn btn-primary" type="button" disabled>
+              <span
+                className="spinner-border spinner-border-sm"
                 role="status"
                 aria-hidden="true"
               />
               Loading...
-            </Button>
-          </Col>
-          <Col sm={9}>
-            <h4>Spinner with Accessibility</h4>
-            <Spinner animation="border" role="status">
+            </button>{' '}
+            <button className="btn btn-primary" type="button" disabled>
+              <span
+                className="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              />
               <span className="visually-hidden">Loading...</span>
-            </Spinner>
-          </Col>
-        </Col>
-        <Col sm={3} className="pt-5">
-          <Sidebar />
-        </Col>
-      </Row>
-    </Container>
+            </button>{' '}
+            <button className="btn btn-primary" type="button" disabled>
+              <span
+                className="spinner-grow spinner-grow-sm"
+                role="status"
+                aria-hidden="true"
+              />
+              Loading...
+            </button>{' '}
+          </div>
+          <h4>Spinner width</h4>
+          <div className="col-sm-9 col-lg-9">
+            <div className="spinner-border border-1 m-1" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border border-2 m-2" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border border-3 m-1" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border border-4 m-1" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <div className="spinner-border border-5 m-1" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Spinners;

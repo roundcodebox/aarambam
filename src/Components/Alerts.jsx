@@ -1,6 +1,4 @@
 import React from 'react';
-import AlertDismissible from './AlertDismissible';
-import AlertDismissibleExample from './AlertDismissibleExample';
 
 function Alerts() {
   return (
@@ -92,9 +90,12 @@ function Alerts() {
             . Give it a click if you like.
           </div>
         </div>
-        <div sm={12}>
+        <div className="col-sm-12">
           <h4>Alerts with additional content</h4>
-          <div className="alert alert-success" role="alert">
+          <div
+            className="alert alert-primary alert-dismissible fade show"
+            role="alert"
+          >
             <h4 className="alert-heading">Well done!</h4>
             <p>
               Aww yeah, you successfully read this important alert message. This
@@ -106,9 +107,273 @@ function Alerts() {
               Whenever you need to, be sure to use margin utilities to keep
               things nice and tidy.
             </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
           </div>
-          <AlertDismissibleExample />
-          <AlertDismissible />
+          <div
+            className="alert alert-secondary alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-success alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-danger alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-info alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-light alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div
+            className="alert alert-dark alert-dismissible fade show"
+            role="alert"
+          >
+            <h4 className="alert-heading">Well done!</h4>
+            <p>
+              Aww yeah, you successfully read this important alert message. This
+              example text is going to run a bit longer so that you can see how
+              spacing within an alert works with this kind of content.
+            </p>
+            <hr />
+            <p className="mb-0">
+              Whenever you need to, be sure to use margin utilities to keep
+              things nice and tidy.
+            </p>
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            />
+          </div>
+          <div className="col-sm-12">
+            <div
+              className="alert alert-primary alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-secondary alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-success alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-warning alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-info alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-light alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+            <div
+              className="alert alert-dark alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> You should check in on some of
+              those fields below.
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

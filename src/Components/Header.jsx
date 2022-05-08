@@ -58,27 +58,27 @@ function Header() {
 
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a href="#/" className="nav-link active" aria-current="page">
+              <a href="/header" className="nav-link active" aria-current="page">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 Features
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 Pricing
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 FAQs
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 About
               </a>
             </li>
@@ -91,27 +91,27 @@ function Header() {
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pills">
             <li className="nav-item">
-              <a href="#/" className="nav-link active" aria-current="page">
+              <a href="/header" className="nav-link active" aria-current="page">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 Features
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 Pricing
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 FAQs
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link">
+              <a href="/header" className="nav-link">
                 About
               </a>
             </li>
@@ -142,27 +142,27 @@ function Header() {
 
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a href="#/" className="nav-link px-2 link-secondary">
+              <a href="/header" className="nav-link px-2 link-secondary">
                 Home
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 Features
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 FAQs
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 About
               </a>
             </li>
@@ -200,27 +200,27 @@ function Header() {
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
-                <a href="#/" className="nav-link px-2 text-secondary">
+                <a href="/header" className="nav-link px-2 text-secondary">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   FAQs
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   About
                 </a>
               </li>
@@ -273,27 +273,27 @@ function Header() {
 
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a href="#/" className="nav-link px-2 link-secondary">
+              <a href="/header" className="nav-link px-2 link-secondary">
                 Home
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 Features
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 FAQs
               </a>
             </li>
             <li>
-              <a href="#/" className="nav-link px-2 link-dark">
+              <a href="/header" className="nav-link px-2 link-dark">
                 About
               </a>
             </li>
@@ -316,7 +316,7 @@ function Header() {
         <Container>
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
-              href="#/"
+              href="/header"
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <svg
@@ -332,27 +332,27 @@ function Header() {
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
-                <a href="#/" className="nav-link px-2 text-secondary">
+                <a href="/header" className="nav-link px-2 text-secondary">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   FAQs
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 text-white">
+                <a href="/header" className="nav-link px-2 text-white">
                   About
                 </a>
               </li>
@@ -385,7 +385,7 @@ function Header() {
         <Container>
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
-              href="#/"
+              href="/header"
               className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
             >
               <svg
@@ -401,22 +401,22 @@ function Header() {
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li>
-                <a href="#/" className="nav-link px-2 link-secondary">
+                <a href="/header" className="nav-link px-2 link-secondary">
                   Overview
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 link-dark">
+                <a href="/header" className="nav-link px-2 link-dark">
                   Inventory
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 link-dark">
+                <a href="/header" className="nav-link px-2 link-dark">
                   Customers
                 </a>
               </li>
               <li>
-                <a href="#/" className="nav-link px-2 link-dark">
+                <a href="/header" className="nav-link px-2 link-dark">
                   Products
                 </a>
               </li>
@@ -433,7 +433,7 @@ function Header() {
 
             <div className="dropdown text-end">
               <a
-                href="#/"
+                href="/header"
                 className="d-block link-dark text-decoration-none dropdown-toggle"
                 id="dropdownUser1"
                 data-bs-toggle="dropdown"
@@ -452,17 +452,17 @@ function Header() {
                 aria-labelledby="dropdownUser1"
               >
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     New project...
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Settings
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Profile
                   </a>
                 </li>
@@ -470,7 +470,7 @@ function Header() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Sign out
                   </a>
                 </li>
@@ -489,7 +489,7 @@ function Header() {
         >
           <div className="dropdown">
             <a
-              href="#/"
+              href="/header"
               className="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle"
               id="dropdownNavLink"
               data-bs-toggle="dropdown"
@@ -506,24 +506,24 @@ function Header() {
               <li>
                 <a
                   className="dropdown-item active"
-                  href="#/"
+                  href="/header"
                   aria-current="page"
                 >
                   Overview
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#/">
+                <a className="dropdown-item" href="/header">
                   Inventory
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#/">
+                <a className="dropdown-item" href="/header">
                   Customers
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#/">
+                <a className="dropdown-item" href="/header">
                   Products
                 </a>
               </li>
@@ -531,12 +531,12 @@ function Header() {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="#/">
+                <a className="dropdown-item" href="/header">
                   Reports
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#/">
+                <a className="dropdown-item" href="/header">
                   Analytics
                 </a>
               </li>
@@ -555,7 +555,7 @@ function Header() {
 
             <div className="flex-shrink-0 dropdown">
               <a
-                href="#/"
+                href="/header"
                 className="d-block link-dark text-decoration-none dropdown-toggle"
                 id="dropdownUser2"
                 data-bs-toggle="dropdown"
@@ -574,17 +574,17 @@ function Header() {
                 aria-labelledby="dropdownUser2"
               >
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     New project...
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Settings
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Profile
                   </a>
                 </li>
@@ -592,7 +592,7 @@ function Header() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#/">
+                  <a className="dropdown-item" href="/header">
                     Sign out
                   </a>
                 </li>
@@ -641,7 +641,7 @@ function Header() {
           <ul className="nav me-auto">
             <li className="nav-item">
               <a
-                href="#/"
+                href="/header"
                 className="nav-link link-dark px-2 active"
                 aria-current="page"
               >
@@ -649,34 +649,34 @@ function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 Features
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 Pricing
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 FAQs
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 About
               </a>
             </li>
           </ul>
           <ul className="nav">
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 Login
               </a>
             </li>
             <li className="nav-item">
-              <a href="#/" className="nav-link link-dark px-2">
+              <a href="/header" className="nav-link link-dark px-2">
                 Sign up
               </a>
             </li>
@@ -712,7 +712,7 @@ function Header() {
           <Container>
             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <a
-                href="#/"
+                href="/header"
                 className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
               >
                 <svg
@@ -728,7 +728,7 @@ function Header() {
 
               <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="#/" className="nav-link text-secondary">
+                  <a href="/header" className="nav-link text-secondary">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width="24"
@@ -740,7 +740,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="#/" className="nav-link text-white">
+                  <a href="/header" className="nav-link text-white">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width="24"
@@ -752,7 +752,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="#/" className="nav-link text-white">
+                  <a href="/header" className="nav-link text-white">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width="24"
@@ -764,7 +764,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="#/" className="nav-link text-white">
+                  <a href="/header" className="nav-link text-white">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width="24"
@@ -776,7 +776,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="#/" className="nav-link text-white">
+                  <a href="/header" className="nav-link text-white">
                     <svg
                       className="bi d-block mx-auto mb-1"
                       width="24"

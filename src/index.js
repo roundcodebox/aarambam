@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
 import '@popperjs/core';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './App';
+import './index.scss';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

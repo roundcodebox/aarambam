@@ -24,7 +24,7 @@ function Border() {
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-success m-2 sm-4">
+            <div className="col bg-light border border-success m-2 sm-4">
               <p>
                 <small>
                   <small>Success Border</small>
@@ -33,21 +33,21 @@ function Border() {
             </div>
           </div>
           <div className="row g-5 py-4">
-            <div sm={3} className=" col bg-light border border-danger m-2 sm-4">
+            <div className=" col bg-light border border-danger m-2 sm-4">
               <p>
                 <small>
                   <small>Danger Border</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-warning m-2 sm-4">
+            <div className="col bg-light border border-warning m-2 sm-4">
               <p>
                 <small>
                   <small>Warning Border</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-info m-2 sm-4">
+            <div className="col bg-light border border-info m-2 sm-4">
               <p>
                 <small>
                   <small>Info Border</small>
@@ -56,21 +56,21 @@ function Border() {
             </div>
           </div>
           <div className="row g-5 py-4">
-            <div sm={3} className="col bg-light border border-light m-2 sm-4">
+            <div className="col bg-light border border-light m-2 sm-4">
               <p>
                 <small>
                   <small>Light Border</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-dark m-2 sm-4">
+            <div className="col bg-light border border-dark m-2 sm-4">
               <p>
                 <small>
                   <small>Dark Border</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-white m-2 sm-4">
+            <div className="col bg-light border border-white m-2 sm-4">
               <p>
                 <small>
                   <small>White Border</small>
@@ -80,35 +80,35 @@ function Border() {
           </div>
           <div className="row g-5">
             <h4>Border Width</h4>
-            <div sm={3} className="col bg-light border border-1 m-1 sm-3">
+            <div className="col bg-light border border-1 m-1 sm-3">
               <p>
                 <small>
                   <small>Border width of 1</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-2 m-1 sm-3">
+            <div className="col bg-light border border-2 m-1 sm-3">
               <p>
                 <small>
                   <small>Border width of 2</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-3 m-1 sm-3">
+            <div className="col bg-light border border-3 m-1 sm-3">
               <p>
                 <small>
                   <small>Border width of 3</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-4 m-1 sm-3">
+            <div className="col bg-light border border-4 m-1 sm-3">
               <p>
                 <small>
                   <small>Border width of 4</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border border-5 m-1">
+            <div className="col bg-light border border-5 m-1">
               <p>
                 <small>
                   <small>Border width of 4</small>
@@ -118,21 +118,21 @@ function Border() {
           </div>
           <div className="row g-5">
             <h4>Add borders selectively</h4>
-            <div sm={3} className="col bg-light border border-2 m-1 sm-3">
+            <div className="col bg-light border border-2 m-1 sm-3">
               <p>
                 <small>
                   <small>All borders added</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light border-2 border-top m-1 sm-3">
+            <div className="col bg-light border-2 border-top m-1 sm-3">
               <p>
                 <small>
                   <small>Top border added</small>
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light  border-2 border-end m-1 sm-3">
+            <div className="col bg-light  border-2 border-end m-1 sm-3">
               <p>
                 <small>
                   <small>End border added</small>
@@ -149,7 +149,7 @@ function Border() {
                 </small>
               </p>
             </div>
-            <div sm={3} className="col bg-light  border-2 border-start m-1">
+            <div className="col bg-light  border-2 border-start m-1">
               <p>
                 <small>
                   <small>Start border added</small>
@@ -159,7 +159,7 @@ function Border() {
           </div>
           <div className="row g-5">
             <h4>Remove borders selectively</h4>
-            <div sm={3} className="col bg-light border border-0 m-1 sm-3">
+            <div className="col bg-light border border-0 m-1 sm-3">
               <p>
                 <small>
                   <small>All borders removed</small>
@@ -209,7 +209,7 @@ function Border() {
           </div>
           <div className="row g-5">
             <h4>Border radius</h4>
-            <div sm={3} className="col sm-3">
+            <div className="col sm-3">
               <p>
                 <small>Border rounded</small>
               </p>
@@ -222,7 +222,7 @@ function Border() {
                 loading="lazy"
               />
             </div>
-            <div sm={3} className="col sm-3">
+            <div className="col sm-3">
               <p>
                 <small>Border rounded top</small>
               </p>
@@ -235,7 +235,7 @@ function Border() {
                 loading="lazy"
               />
             </div>
-            <div sm={3} className="col sm-3">
+            <div className="col sm-3">
               <p>
                 <small>Border rounded end</small>
               </p>
@@ -248,7 +248,7 @@ function Border() {
                 loading="lazy"
               />
             </div>
-            <div sm={3} className="col sm-3">
+            <div className="col sm-3">
               <p>
                 <small>Border rounded bottom</small>
               </p>
@@ -261,7 +261,7 @@ function Border() {
                 loading="lazy"
               />
             </div>
-            <div sm={3} className="col sm-3">
+            <div className="col sm-3">
               <p>
                 <small>Border rounded start</small>
               </p>
@@ -275,7 +275,7 @@ function Border() {
               />
             </div>
             <div className="row g-5">
-              <div sm={3} className="col sm-3">
+              <div className="col sm-3">
                 <p>
                   <small>Border rounded circle</small>
                 </p>
@@ -288,7 +288,7 @@ function Border() {
                   loading="lazy"
                 />
               </div>
-              <div sm={3} className="col sm-3">
+              <div className="col sm-3">
                 <p>
                   <small>Border rounded pill</small>
                 </p>
