@@ -1,52 +1,101 @@
 import React from 'react';
-import { Alert, Container, Row, Col } from 'react-bootstrap';
 import AlertDismissible from './AlertDismissible';
 import AlertDismissibleExample from './AlertDismissibleExample';
 
 function Alerts() {
   return (
-    <Container>
-      <Row>
-        <Col sm={6}>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6">
           <h4>Alerts Example</h4>
-          {[
-            'primary',
-            'secondary',
-            'success',
-            'danger',
-            'warning',
-            'info',
-            'light',
-            'dark',
-          ].map((variant) => (
-            <Alert key={variant} variant={variant}>
-              This is a {variant} alert—check it out!
-            </Alert>
-          ))}
-        </Col>
-        <Col sm={6}>
-          <h4>Alerts with Links Example</h4>
-          {[
-            'primary',
-            'secondary',
-            'success',
-            'danger',
-            'warning',
-            'info',
-            'light',
-            'dark',
-          ].map((variant) => (
-            <Alert key={variant} variant={variant}>
-              This is a {variant} alert with{' '}
-              <Alert.Link href="#/">an example link</Alert.Link>. Give it a
-              click if you like.
-            </Alert>
-          ))}
-        </Col>
-        <Col sm={12}>
+          <div className="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div className="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+          </div>
+          <div className="alert alert-success" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <div className="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+          </div>
+          <div className="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+          </div>
+          <div className="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+          <div className="alert alert-light" role="alert">
+            A simple light alert—check it out!
+          </div>
+          <div className="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+          </div>
+        </div>
+        <div className="col-sm-6">
+          <h4>Alerts with links</h4>
+          <div className="alert alert-primary" role="alert">
+            A simple primary alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-secondary" role="alert">
+            A simple secondary alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-success" role="alert">
+            A simple success alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-danger" role="alert">
+            A simple danger alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-warning" role="alert">
+            A simple warning alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-info" role="alert">
+            A simple info alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-light" role="alert">
+            A simple light alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+          <div className="alert alert-dark" role="alert">
+            A simple dark alert with{' '}
+            <a href="#/" className="alert-link">
+              an example link
+            </a>
+            . Give it a click if you like.
+          </div>
+        </div>
+        <div sm={12}>
           <h4>Alerts with additional content</h4>
-          <Alert variant="success">
-            <Alert.Heading>Hey, nice to see you</Alert.Heading>
+          <div className="alert alert-success" role="alert">
+            <h4 className="alert-heading">Well done!</h4>
             <p>
               Aww yeah, you successfully read this important alert message. This
               example text is going to run a bit longer so that you can see how
@@ -57,12 +106,12 @@ function Alerts() {
               Whenever you need to, be sure to use margin utilities to keep
               things nice and tidy.
             </p>
-          </Alert>
+          </div>
           <AlertDismissibleExample />
           <AlertDismissible />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Alerts;
