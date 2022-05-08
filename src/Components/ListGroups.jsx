@@ -1,206 +1,354 @@
 import React from 'react';
-import { Container, Row, Col, ListGroup, Badge, Tab } from 'react-bootstrap';
 
 function ListGroups() {
   return (
-    <Container>
-      <Row>
-        <Col sm={6}>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Basic Example</h4>
-          <ListGroup>
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Basic Example</h4>
-          <ListGroup>
-            <ListGroup.Item action>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item action>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item action>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item action>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item action>Vestibulum at eros</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
-          <h4>ListGroup Active items</h4>
-          <ListGroup as="ul">
-            <ListGroup.Item as="li" active>
-              Cras justo odio
-            </ListGroup.Item>
-            <ListGroup.Item as="li">Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item as="li" disabled>
-              Morbi leo risus
-            </ListGroup.Item>
-            <ListGroup.Item as="li">Porta ac consectetur ac</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group">
+            <li className="list-group-item active" aria-current="true">
+              An active item
+            </li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>Disabled items</h4>
-          <ListGroup>
-            <ListGroup.Item disabled>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group">
+            <li className="list-group-item disabled">A disabled item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h4>Disabled items</h4>
+          <div className="list-group">
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              The current link item
+            </a>
+            <a href="#/" className="list-group-item list-group-item-action">
+              A second link item
+            </a>
+            <a href="#/" className="list-group-item list-group-item-action">
+              A third link item
+            </a>
+            <a href="#/" className="list-group-item list-group-item-action">
+              A fourth link item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action disabled"
+            >
+              A disabled link item
+            </a>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Flush</h4>
-          <ListGroup variant="flush">
-            <ListGroup.Item>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ol className="list-group list-group-numbered">
+            <li className="list-group-item d-flex justify-content-between align-items-start">
+              <div className="ms-2 me-auto">
+                <div className="fw-bold">Subheading</div>
+                Content for list item
+              </div>
+              <span className="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-start">
+              <div className="ms-2 me-auto">
+                <div className="fw-bold">Subheading</div>
+                Content for list item
+              </div>
+              <span className="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-start">
+              <div className="ms-2 me-auto">
+                <div className="fw-bold">Subheading</div>
+                Content for list item
+              </div>
+              <span className="badge bg-primary rounded-pill">14</span>
+            </li>
+          </ol>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Flush Action</h4>
-          <ListGroup variant="flush">
-            <ListGroup.Item action>Cras justo odio</ListGroup.Item>
-            <ListGroup.Item action>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item action>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item action>Porta ac consectetur ac</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Numbered</h4>
-          <ListGroup as="ol" numbered>
-            <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-            <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-            <ListGroup.Item as="li">Cras justo odio</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
-          <h4>ListGroup Custom Content</h4>
-          <ListGroup as="ol" numbered>
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ol className="list-group list-group-numbered">
+            <li className="list-group-item">A list item</li>
+            <li className="list-group-item">A list item</li>
+            <li className="list-group-item">A list item</li>
+          </ol>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Contextual classes Actionable</h4>
-          <ListGroup>
-            <ListGroup.Item>No style</ListGroup.Item>
-            <ListGroup.Item variant="primary">Primary</ListGroup.Item>
-            <ListGroup.Item action variant="secondary">
-              Secondary
-            </ListGroup.Item>
-            <ListGroup.Item action variant="success">
-              Success
-            </ListGroup.Item>
-            <ListGroup.Item action variant="danger">
-              Danger
-            </ListGroup.Item>
-            <ListGroup.Item action variant="warning">
-              Warning
-            </ListGroup.Item>
-            <ListGroup.Item action variant="info">
-              Info
-            </ListGroup.Item>
-            <ListGroup.Item action variant="light">
-              Light
-            </ListGroup.Item>
-            <ListGroup.Item action variant="dark">
-              Dark
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group">
+            <li className="list-group-item">
+              A simple default list group item
+            </li>
+
+            <li className="list-group-item list-group-item-primary">
+              A simple primary list group item
+            </li>
+            <li className="list-group-item list-group-item-secondary">
+              A simple secondary list group item
+            </li>
+            <li className="list-group-item list-group-item-success">
+              A simple success list group item
+            </li>
+            <li className="list-group-item list-group-item-danger">
+              A simple danger list group item
+            </li>
+            <li className="list-group-item list-group-item-warning">
+              A simple warning list group item
+            </li>
+            <li className="list-group-item list-group-item-info">
+              A simple info list group item
+            </li>
+            <li className="list-group-item list-group-item-light">
+              A simple light list group item
+            </li>
+            <li className="list-group-item list-group-item-dark">
+              A simple dark list group item
+            </li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Contextual classes</h4>
-          <ListGroup>
-            <ListGroup.Item>No style</ListGroup.Item>
-            <ListGroup.Item variant="primary">Primary</ListGroup.Item>
-            <ListGroup.Item variant="secondary">Secondary</ListGroup.Item>
-            <ListGroup.Item variant="success">Success</ListGroup.Item>
-            <ListGroup.Item variant="danger">Danger</ListGroup.Item>
-            <ListGroup.Item variant="warning">Warning</ListGroup.Item>
-            <ListGroup.Item variant="info">Info</ListGroup.Item>
-            <ListGroup.Item variant="light">Light</ListGroup.Item>
-            <ListGroup.Item variant="dark">Dark</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <div className="list-group">
+            <a href="#/" className="list-group-item list-group-item-action">
+              A simple default list group item
+            </a>
+
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-primary"
+            >
+              A simple primary list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-secondary"
+            >
+              A simple secondary list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-success"
+            >
+              A simple success list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-danger"
+            >
+              A simple danger list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-warning"
+            >
+              A simple warning list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-info"
+            >
+              A simple info list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-light"
+            >
+              A simple light list group item
+            </a>
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action list-group-item-dark"
+            >
+              A simple dark list group item
+            </a>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Horizontal</h4>
-          <ListGroup horizontal>
-            <ListGroup.Item>This</ListGroup.Item>
-            <ListGroup.Item>ListGroup</ListGroup.Item>
-            <ListGroup.Item>that</ListGroup.Item>
-            <ListGroup.Item>renders</ListGroup.Item>
-            <ListGroup.Item>horizontally!</ListGroup.Item>
-          </ListGroup>
-        </Col>
-        <Col sm={6}>
+          <ul className="list-group">
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              A list item
+              <span className="badge bg-primary rounded-pill">14</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              A second list item
+              <span className="badge bg-primary rounded-pill">2</span>
+            </li>
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              A third list item
+              <span className="badge bg-primary rounded-pill">1</span>
+            </li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <h4>ListGroup Tabbed Interfaces</h4>
-          <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
-            <Row>
-              <Col sm={4}>
-                <ListGroup>
-                  <ListGroup.Item action href="#link1">
-                    Link 1
-                  </ListGroup.Item>
-                  <ListGroup.Item action href="#link2">
-                    Link 2
-                  </ListGroup.Item>
-                  <ListGroup.Item action href="#link3">
-                    Link 3
-                  </ListGroup.Item>
-                </ListGroup>
-              </Col>
-              <Col sm={8}>
-                <Tab.Content>
-                  <Tab.Pane eventKey="#link1">
-                    <p>Tab content 1 </p>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="#link2">
-                    <p>Tab content 2 </p>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="#link3">
-                    <p>Tab content 3 </p>
-                  </Tab.Pane>
-                </Tab.Content>
-              </Col>
-            </Row>
-          </Tab.Container>
-        </Col>
-      </Row>
-    </Container>
+          <div className="list-group">
+            <a
+              href="#/"
+              className="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5>
+                <small>3 days ago</small>
+              </div>
+              <p className="mb-1">Some placeholder content in a paragraph.</p>
+              <small>And some small print.</small>
+            </a>
+            <a href="#/" className="list-group-item list-group-item-action">
+              <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5>
+                <small className="text-muted">3 days ago</small>
+              </div>
+              <p className="mb-1">Some placeholder content in a paragraph.</p>
+              <small className="text-muted">And some muted small print.</small>
+            </a>
+            <a href="#/" className="list-group-item list-group-item-action">
+              <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5>
+                <small className="text-muted">3 days ago</small>
+              </div>
+              <p className="mb-1">Some placeholder content in a paragraph.</p>
+              <small className="text-muted">And some muted small print.</small>
+            </a>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h4>ListGroup Tabbed Interfaces</h4>
+          <ul className="list-group">
+            <li className="list-group-item">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              First checkbox
+            </li>
+            <li className="list-group-item">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              Second checkbox
+            </li>
+            <li className="list-group-item">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              Third checkbox
+            </li>
+            <li className="list-group-item">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              Fourth checkbox
+            </li>
+            <li className="list-group-item">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                aria-label="..."
+              />
+              Fifth checkbox
+            </li>
+          </ul>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h4>Labels as listgroup </h4>
+          <div className="list-group">
+            <label className="list-group-item" htmlFor="first-checkbox">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="first-checkbox"
+              />
+              First checkbox
+            </label>
+            <label className="list-group-item" htmlFor="third-checkbox">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="second-checkbox"
+              />
+              Second checkbox
+            </label>
+            <label className="list-group-item" htmlFor="third-checkbox">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="third-checkbox"
+              />
+              Third checkbox
+            </label>
+            <label className="list-group-item" htmlFor="fourth-checkbox">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="fourth-checkbox"
+              />
+              Fourth checkbox
+            </label>
+            <label className="list-group-item" htmlFor="fifth-checkbox">
+              <input
+                className="form-check-input me-1"
+                type="checkbox"
+                value=""
+                id="fifth-checkbox"
+              />
+              Fifth checkbox
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
