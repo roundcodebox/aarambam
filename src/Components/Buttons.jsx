@@ -1,65 +1,69 @@
 import React from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  ButtonGroup,
-  ButtonToolbar,
-  ToggleButtonGroup,
-  ToggleButton,
-  Dropdown,
-  DropdownButton,
-} from 'react-bootstrap';
 
 function Buttons() {
   return (
-    <Container>
-      <Row>
-        <Col sm={12}>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-12 col-lg-12">
           <h1>Buttons</h1>
-          <br />
-          <Button variant="primary">Primary</Button>{' '}
-          <Button variant="secondary">Secondary</Button>{' '}
-          <Button variant="success">Success</Button>{' '}
-          <Button variant="warning">Warning</Button>{' '}
-          <Button variant="danger">Danger</Button>{' '}
-          <Button variant="info">Info</Button>{' '}
-          <Button variant="light">Light</Button>{' '}
-          <Button variant="dark">Dark</Button>{' '}
-          <Button variant="link">Link</Button>{' '}
-        </Col>
-        <Col sm={12}>
-          <br />
-          <Button variant="primary" className="disabled">
+          <button type="button" className="btn btn-primary">
             Primary
-          </Button>{' '}
-          <Button variant="secondary" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-secondary">
             Secondary
-          </Button>{' '}
-          <Button variant="success" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-success">
             Success
-          </Button>{' '}
-          <Button variant="warning" className="disabled">
-            Warning
-          </Button>{' '}
-          <Button variant="danger" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-danger">
             Danger
-          </Button>{' '}
-          <Button variant="info" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-warning">
+            Warning
+          </button>{' '}
+          <button type="button" className="btn btn-info">
             Info
-          </Button>{' '}
-          <Button variant="light" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-light">
             Light
-          </Button>{' '}
-          <Button variant="dark" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-dark">
             Dark
-          </Button>{' '}
-          <Button variant="link" className="disabled">
+          </button>{' '}
+          <button type="button" className="btn btn-link">
             Link
-          </Button>{' '}
-        </Col>
-        <Col sm={12}>
+          </button>{' '}
+        </div>
+        <div className="col-sm-12 col-lg-12">
+          <button type="button" className="btn btn-primary" disabled>
+            Primary
+          </button>{' '}
+          <button type="button" className="btn btn-secondary" disabled>
+            Secondary
+          </button>{' '}
+          <button type="button" className="btn btn-success" disabled>
+            Success
+          </button>{' '}
+          <button type="button" className="btn btn-warning" disabled>
+            Warning
+          </button>{' '}
+          <button type="button" className="btn btn-danger" disabled>
+            Danger
+          </button>{' '}
+          <button type="button" className="btn btn-info" disabled>
+            Info
+          </button>{' '}
+          <button type="button" className="btn btn-light" disabled>
+            Light
+          </button>{' '}
+          <button type="button" className="btn btn-dark" disabled>
+            Dark
+          </button>{' '}
+          <button type="button" className="btn btn-link" disabled>
+            Link
+          </button>{' '}
+        </div>
+        <div className="col-sm-12 col-lg-12">
           <h4>Colored links</h4>
           <a href="#/" className="link-primary">
             Primary link
@@ -85,185 +89,583 @@ function Buttons() {
           <a href="#/" className="link-dark">
             Dark link
           </a>{' '}
-        </Col>
-        <Col sm={12}>
+        </div>
+        <div className="col-sm-12 col-lg-12">
           <h4>Outline Buttons</h4>
           <br />
-          <Button variant="outline-primary">Primary</Button>{' '}
-          <Button variant="outline-secondary">Secondary</Button>{' '}
-          <Button variant="outline-success">Success</Button>{' '}
-          <Button variant="outline-warning">Warning</Button>{' '}
-          <Button variant="outline-danger">Danger</Button>{' '}
-          <Button variant="outline-info">Info</Button>{' '}
-          <Button variant="outline-light">Light</Button>{' '}
-          <Button variant="outline-dark">Dark</Button>{' '}
-        </Col>
-        <Col sm={12}>
+          <button type="button" className="btn btn-outline-primary">
+            Primary
+          </button>{' '}
+          <button type="button" className="btn btn-outline-secondary">
+            Secondary
+          </button>{' '}
+          <button type="button" className="btn btn-outline-success">
+            Success
+          </button>{' '}
+          <button type="button" className="btn btn-outline-danger">
+            Danger
+          </button>{' '}
+          <button type="button" className="btn btn-outline-warning">
+            Warning
+          </button>{' '}
+          <button type="button" className="btn btn-outline-info">
+            Info
+          </button>{' '}
+          <button type="button" className="btn btn-outline-light">
+            Light
+          </button>
+          <button type="button" className="btn btn-outline-dark">
+            Dark
+          </button>{' '}
+        </div>
+        <div className="col-sm-12 col-lg-12">
           <br />
-          <Button href="#">Link</Button> <Button type="submit">Button</Button>{' '}
-          <Button as="input" type="button" value="Input" />{' '}
-          <Button as="input" type="submit" value="Submit" />{' '}
-          <Button as="input" type="reset" value="Reset" />{' '}
-        </Col>
-        <Col sm={12}>
+          <a className="btn btn-primary" href="#/" role="button">
+            Link
+          </a>
+          <button className="btn btn-primary" type="submit">
+            Button
+          </button>{' '}
+          <input className="btn btn-primary" type="button" value="Input" />{' '}
+          <input className="btn btn-primary" type="submit" value="Submit" />{' '}
+          <input className="btn btn-primary" type="reset" value="Reset" />{' '}
+        </div>
+        <div className="col-sm-12 col-lg-12">
           <br />
           <h4>Button Sizes</h4>
           <div className="mb-2">
-            <Button variant="primary" size="lg">
+            <button type="button" className="btn btn-primary btn-lg">
               Large button
-            </Button>{' '}
-            <Button variant="secondary" size="lg">
+            </button>{' '}
+            <button type="button" className="btn btn-secondary btn-lg">
               Large button
-            </Button>{' '}
+            </button>{' '}
           </div>
           <div>
-            <Button variant="primary" size="sm">
+            <button type="button" className="btn btn-primary btn-sm">
               Small button
-            </Button>{' '}
-            <Button variant="secondary" size="sm">
+            </button>{' '}
+            <button type="button" className="btn btn-secondary btn-sm">
               Small button
-            </Button>{' '}
+            </button>{' '}
           </div>
-        </Col>
-        <Col sm={12}>
+        </div>
+        <div className="col-sm-12 col-lg-12">
           <br />
           <h4>Block buttons</h4>
           <div className="d-grid gap-2">
-            <Button variant="primary" size="lg">
-              Block level button
-            </Button>{' '}
-            <Button variant="secondary" size="lg">
-              Block level button
-            </Button>{' '}
+            <button className="btn btn-primary" type="button">
+              Button
+            </button>{' '}
+            <button className="btn btn-primary" type="button">
+              Button
+            </button>{' '}
           </div>
-        </Col>
-        <Col sm={12}>
-          <br />
-          <Button variant="primary" size="lg" active>
-            Primary button
-          </Button>{' '}
-          <Button variant="secondary" size="lg" active>
-            Button
-          </Button>{' '}
-        </Col>
-        <Col sm={12}>
-          <br />
-          <Button variant="primary" size="lg" disabled>
-            Primary button
-          </Button>{' '}
-          <Button variant="secondary" size="lg" disabled>
-            Button
-          </Button>{' '}
-          <Button href="#" variant="secondary" size="lg" disabled>
-            Link
-          </Button>{' '}
-        </Col>
-        <Col sm={12}>
-          <br />
-          <h4>Checkbox / Radio Button</h4>
-          <h4>Checkbox / Radio Button Uncontrolled</h4>
-          <ToggleButtonGroup
-            type="checkbox"
-            defaultValue={[1, 3]}
-            className="mb-2"
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-12 my-2">
+        <br />
+        <button
+          type="button"
+          className="btn btn-primary"
+          data-bs-toggle="button"
+          autoComplete="off"
+        >
+          Toggle button
+        </button>{' '}
+        <button
+          type="button"
+          className="btn btn-primary active"
+          data-bs-toggle="button"
+          autoComplete="off"
+          aria-pressed="true"
+        >
+          Active toggle button
+        </button>{' '}
+        <button
+          type="button"
+          className="btn btn-primary"
+          disabled
+          data-bs-toggle="button"
+          autoComplete="off"
+        >
+          Disabled toggle button
+        </button>{' '}
+      </div>
+      <div className="col-sm-12 col-lg-12 my-2">
+        <a
+          href="#/"
+          className="btn btn-primary"
+          role="button"
+          data-bs-toggle="button"
+        >
+          Toggle link
+        </a>{' '}
+        <a
+          href="#/"
+          className="btn btn-primary active"
+          role="button"
+          data-bs-toggle="button"
+          aria-pressed="true"
+        >
+          Active toggle link
+        </a>{' '}
+        <a
+          href="#/"
+          className="btn btn-primary disabled"
+          aria-disabled="true"
+          role="button"
+          data-bs-toggle="button"
+        >
+          Disabled toggle link
+        </a>{' '}
+      </div>
+      <div className="col-sm-12 col-lg-12 my-2">
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button type="button" className="btn btn-primary">
+            Left
+          </button>
+          <button type="button" className="btn btn-primary">
+            Middle
+          </button>
+          <button type="button" className="btn btn-primary">
+            Right
+          </button>
+        </div>
+      </div>
+      <div className="col-sm-12 col-lg-12 my-2">
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <div className="btn-group">
+            <a href="#/" className="btn btn-primary active" aria-current="page">
+              Active link
+            </a>
+            <a href="#/" className="btn btn-primary">
+              Link
+            </a>
+            <a href="#/" className="btn btn-primary">
+              Link
+            </a>
+          </div>
+        </div>
+        <div className="col-sm-12 col-lg-12 my-2">
+          <div className="btn-group" role="group" aria-label="Basic example">
+            <div
+              className="btn-group"
+              role="group"
+              aria-label="Basic mixed styles example"
+            >
+              <button type="button" className="btn btn-danger">
+                Left
+              </button>
+              <button type="button" className="btn btn-warning">
+                Middle
+              </button>
+              <button type="button" className="btn btn-success">
+                Right
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-12 col-lg-12 my-2">
+          <div className="btn-group" role="group" aria-label="Basic example">
+            <div
+              className="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button type="button" className="btn btn-outline-primary">
+                Left
+              </button>
+              <button type="button" className="btn btn-outline-primary">
+                Middle
+              </button>
+              <button type="button" className="btn btn-outline-primary">
+                Right
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-12 col-lg-12 my-2">
+          <div
+            className="btn-group"
+            role="group"
+            aria-label="Basic checkbox toggle button group"
           >
-            <ToggleButton id="tbg-check-1" value={1}>
-              Checkbox 1 (pre-checked)
-            </ToggleButton>
-            <ToggleButton id="tbg-check-2" value={2}>
+            <label className="btn btn-outline-primary" htmlFor="btncheck1">
+              <input
+                type="checkbox"
+                className="btn-check"
+                id="btncheck1"
+                autoComplete="off"
+              />
+              Checkbox 1
+            </label>
+
+            <label className="btn btn-outline-primary" htmlFor="btncheck2">
+              <input
+                type="checkbox"
+                className="btn-check"
+                id="btncheck2"
+                autoComplete="off"
+              />
               Checkbox 2
-            </ToggleButton>
-            <ToggleButton id="tbg-check-3" value={3}>
-              Checkbox 3 (pre-checked)
-            </ToggleButton>
-          </ToggleButtonGroup>
-          <br />
-          <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-            <ToggleButton id="tbg-radio-1" value={1}>
-              Radio 1 (pre-checked)
-            </ToggleButton>
-            <ToggleButton id="tbg-radio-2" value={2}>
-              Radio 2
-            </ToggleButton>
-            <ToggleButton id="tbg-radio-3" value={3}>
-              Radio 3
-            </ToggleButton>
-          </ToggleButtonGroup>
-          <h4>Button groups</h4>
-          <ButtonGroup aria-label="Basic example">
-            <Button variant="secondary">Left</Button>{' '}
-            <Button variant="secondary">Middle</Button>{' '}
-            <Button variant="secondary">Right</Button>{' '}
-          </ButtonGroup>
-          <h4>Button toolbar</h4>
-          <ButtonToolbar aria-label="Toolbar with button groups">
-            <ButtonGroup className="me-2" aria-label="First group">
-              <Button>1</Button> <Button>2</Button> <Button>3</Button>{' '}
-              <Button>4</Button>{' '}
-            </ButtonGroup>
-            <ButtonGroup className="me-2" aria-label="Second group">
-              <Button>5</Button> <Button>6</Button> <Button>7</Button>{' '}
-            </ButtonGroup>
-            <ButtonGroup aria-label="Third group">
-              <Button>8</Button>{' '}
-            </ButtonGroup>
-          </ButtonToolbar>
-          <h4>ButtonGroup Sizing</h4>
-          <ButtonGroup size="lg" className="mb-2">
-            <Button>Left</Button> <Button>Middle</Button> <Button>Right</Button>{' '}
-          </ButtonGroup>
-          <br />
-          <ButtonGroup className="mb-2">
-            <Button>Left</Button> <Button>Middle</Button> <Button>Right</Button>{' '}
-          </ButtonGroup>
-          <br />
-          <ButtonGroup size="sm">
-            <Button>Left</Button> <Button>Middle</Button> <Button>Right</Button>{' '}
-          </ButtonGroup>
-          <h4>ButtonGroup Nesting</h4>
-          <ButtonGroup>
-            <Button>1</Button> <Button>2</Button>{' '}
-            <DropdownButton
-              as={ButtonGroup}
-              title="Dropdown"
-              id="bg-nested-dropdown"
+            </label>
+
+            <label className="btn btn-outline-primary" htmlFor="btncheck3">
+              <input
+                type="checkbox"
+                className="btn-check"
+                id="btncheck3"
+                autoComplete="off"
+              />
+              Checkbox 3
+            </label>
+          </div>
+          <div className="col-sm-12 col-lg-12 my-2">
+            <div
+              className="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
             >
-              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-            </DropdownButton>
-          </ButtonGroup>
-          <h4>ButtonGroup Vertical variation</h4>
-          <ButtonGroup vertical>
-            <Button>Button</Button> <Button>Button</Button>{' '}
-            <DropdownButton
-              as={ButtonGroup}
-              title="Dropdown"
-              id="bg-vertical-dropdown-1"
+              <label className="btn btn-outline-primary" htmlFor="btnradio1">
+                <input
+                  type="radio"
+                  className="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autoComplete="off"
+                  checked
+                />
+                Radio 1
+              </label>
+
+              <label className="btn btn-outline-primary" htmlFor="btnradio2">
+                <input
+                  type="radio"
+                  className="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autoComplete="off"
+                />
+                Radio 2
+              </label>
+
+              <label className="btn btn-outline-primary" htmlFor="btnradio3">
+                <input
+                  type="radio"
+                  className="btn-check"
+                  name="btnradio"
+                  id="btnradio3"
+                  autoComplete="off"
+                />
+                Radio 3
+              </label>
+            </div>
+          </div>
+          <div className="col-sm-12 col-lg-12 my-2">
+            <div
+              className="btn-toolbar"
+              role="toolbar"
+              aria-label="Toolbar with button groups"
             >
-              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-            </DropdownButton>
-            <Button>Button</Button> <Button>Button</Button>{' '}
-            <DropdownButton
-              as={ButtonGroup}
-              title="Dropdown"
-              id="bg-vertical-dropdown-2"
+              <div
+                className="btn-group me-2"
+                role="group"
+                aria-label="First group"
+              >
+                <button type="button" className="btn btn-primary">
+                  1
+                </button>
+                <button type="button" className="btn btn-primary">
+                  2
+                </button>
+                <button type="button" className="btn btn-primary">
+                  3
+                </button>
+                <button type="button" className="btn btn-primary">
+                  4
+                </button>
+              </div>
+              <div
+                className="btn-group me-2"
+                role="group"
+                aria-label="Second group"
+              >
+                <button type="button" className="btn btn-secondary">
+                  5
+                </button>
+                <button type="button" className="btn btn-secondary">
+                  6
+                </button>
+                <button type="button" className="btn btn-secondary">
+                  7
+                </button>
+              </div>
+              <div className="btn-group" role="group" aria-label="Third group">
+                <button type="button" className="btn btn-info">
+                  8
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-12 col-lg-12 my-2">
+            <div
+              className="btn-toolbar mb-3"
+              role="toolbar"
+              aria-label="Toolbar with button groups"
             >
-              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-            </DropdownButton>
-            <DropdownButton
-              as={ButtonGroup}
-              title="Dropdown"
-              id="bg-vertical-dropdown-3"
+              <div
+                className="btn-group me-2"
+                role="group"
+                aria-label="First group"
+              >
+                <button type="button" className="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  2
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  3
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  4
+                </button>
+              </div>
+              <div className="input-group">
+                <div className="input-group-text" id="btnGroupAddon">
+                  @
+                </div>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Input group example"
+                  aria-label="Input group example"
+                  aria-describedby="btnGroupAddon"
+                />
+              </div>
+            </div>
+
+            <div
+              className="btn-toolbar justify-content-between"
+              role="toolbar"
+              aria-label="Toolbar with button groups"
             >
-              <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-            </DropdownButton>
-          </ButtonGroup>
-        </Col>
-      </Row>
-    </Container>
+              <div className="btn-group" role="group" aria-label="First group">
+                <button type="button" className="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  2
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  3
+                </button>
+                <button type="button" className="btn btn-outline-secondary">
+                  4
+                </button>
+              </div>
+              <div className="input-group">
+                <div className="input-group-text" id="btnGroupAddon2">
+                  @
+                </div>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Input group example"
+                  aria-label="Input group example"
+                  aria-describedby="btnGroupAddon2"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-12 col-lg-12 my-2">
+            <div
+              className="btn-group btn-group-lg"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" className="btn btn-outline-secondary">
+                Left
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-secondary btn-group "
+              >
+                Middle
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-secondary btn-group btn-group-sm"
+              >
+                Right
+              </button>
+            </div>
+            <div className="col-sm-12 col-lg-12 my-2">
+              <div
+                className="btn-group"
+                role="group"
+                aria-label="Basic example"
+              >
+                <button type="button" className="btn btn-outline-secondary">
+                  Left
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-group "
+                >
+                  Middle
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-group btn-group-sm"
+                >
+                  Right
+                </button>
+              </div>
+            </div>
+            <div className="col-sm-12 col-lg-12 my-2">
+              <div
+                className="btn-group btn-group-sm"
+                role="group"
+                aria-label="Basic example"
+              >
+                <button type="button" className="btn btn-outline-secondary">
+                  Left
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-group "
+                >
+                  Middle
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-group btn-group-sm"
+                >
+                  Right
+                </button>
+              </div>
+              <div className="col-sm-12 col-lg-12 my-2">
+                <div
+                  className="btn-group"
+                  role="group"
+                  aria-label="Button group with nested dropdown"
+                >
+                  <button type="button" className="btn btn-primary">
+                    1
+                  </button>
+                  <button type="button" className="btn btn-primary">
+                    2
+                  </button>
+
+                  <div className="btn-group" role="group">
+                    <button
+                      id="btnGroupDrop1"
+                      type="button"
+                      className="btn btn-primary dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="btnGroupDrop1"
+                    >
+                      <li>
+                        <a className="dropdown-item" href="#/">
+                          Dropdown link
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#/">
+                          Dropdown link
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-lg-12 my-2">
+                <div
+                  className="btn-group-vertical"
+                  role="group"
+                  aria-label="Button group with nested dropdown"
+                >
+                  <button type="button" className="btn btn-primary">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-primary">
+                    Button
+                  </button>
+
+                  <div className="btn-group-vertical" role="group">
+                    <button
+                      id="btnGroupDrop1"
+                      type="button"
+                      className="btn btn-primary dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </button>
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="btnGroupDrop1"
+                    >
+                      <li>
+                        <a className="dropdown-item" href="#/">
+                          Dropdown link
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-item" href="#/">
+                          Dropdown link
+                        </a>
+                      </li>
+                    </ul>
+                    <button type="button" className="btn btn-primary">
+                      Button
+                    </button>
+                    <button type="button" className="btn btn-primary">
+                      Button
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-lg-12 my-2">
+                <div
+                  className="btn-group-vertical"
+                  role="group"
+                  aria-label="Button group with nested dropdown"
+                >
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                  <button type="button" className="btn btn-outline-danger">
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Buttons;
