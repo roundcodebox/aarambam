@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './Header.scss';
 import MegaMenu from './MegaMenu';
 
@@ -12,7 +12,7 @@ function Header() {
       <br />
       <MegaMenu />
       <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
+        <div className="container">
           <Navbar.Brand href="#home">Aarambam</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,11 +40,11 @@ function Header() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
       <div className="b-example-divider" />
       <div className="b-example-divider" />
-      <Container>
+      <div className="container">
         <Navbar className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a
             href="/"
@@ -84,10 +84,10 @@ function Header() {
             </li>
           </ul>
         </Navbar>
-      </Container>
+      </div>
 
       <div className="b-example-divider" />
-      <Container>
+      <div className="container">
         <header className="d-flex justify-content-center py-3">
           <ul className="nav nav-pills">
             <li className="nav-item">
@@ -117,10 +117,10 @@ function Header() {
             </li>
           </ul>
         </header>
-      </Container>
+      </div>
 
       <div className="b-example-divider" />
-      <Container>
+      <div className="container">
         <header
           className="d-flex flex-wrap align-items-center justify-content-center
         justify-content-md-between py-3 mb-4 border-bottom"
@@ -177,11 +177,11 @@ function Header() {
             </button>
           </div>
         </header>
-      </Container>
+      </div>
 
       <div className="b-example-divider" />
       <header className="p-3 bg-dark text-white">
-        <Container>
+        <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
               href="/"
@@ -244,14 +244,14 @@ function Header() {
               </button>
             </div>
           </div>
-        </Container>
+        </div>
       </header>
 
       <div className="b-example-divider" />
 
       <div className="b-example-divider" />
 
-      <Container>
+      <div className="container">
         <header
           className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3
      mb-4 border-bottom"
@@ -308,12 +308,12 @@ function Header() {
             </button>
           </div>
         </header>
-      </Container>
+      </div>
 
       <div className="b-example-divider" />
 
       <header className="p-3 bg-dark text-white">
-        <Container>
+        <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
               href="/header"
@@ -376,13 +376,13 @@ function Header() {
               </button>
             </div>
           </div>
-        </Container>
+        </div>
       </header>
 
       <div className="b-example-divider" />
 
       <header className="p-3 mb-3 border-bottom">
-        <Container>
+        <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a
               href="/header"
@@ -477,7 +477,7 @@ function Header() {
               </ul>
             </div>
           </div>
-        </Container>
+        </div>
       </header>
 
       <div className="b-example-divider" />
@@ -709,7 +709,7 @@ function Header() {
 
       <header>
         <div className="px-3 py-2 bg-dark text-white">
-          <Container>
+          <div className="container">
             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <a
                 href="/header"
@@ -789,7 +789,7 @@ function Header() {
                 </li>
               </ul>
             </div>
-          </Container>
+          </div>
         </div>
         <div className="px-3 py-2 border-bottom mb-3">
           <div className="container d-flex flex-wrap justify-content-center">

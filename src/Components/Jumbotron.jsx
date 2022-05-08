@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 
 function Jumbotron() {
   return (
-    <Container>
-      <Row>
-        <Col sm={12}>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-12 col-lg-12">
           <div className="p-5 mb-4 bg-light rounded-3">
             <div className="container-fluid py-5">
               <h1 className="display-5 fw-bold">Custom jumbotron</h1>
@@ -20,10 +19,10 @@ function Jumbotron() {
               </button>
             </div>
           </div>
-        </Col>
-      </Row>
-      <Row className="row align-items-md-stretch">
-        <Col className="col-md-6">
+        </div>
+      </div>
+      <div className="row align-items-md-stretch">
+        <div className="col-sm-6 col-lg-6">
           <div className="h-100 p-5 text-white bg-dark rounded-3">
             <h2>Change the background</h2>
             <p>
@@ -35,8 +34,8 @@ function Jumbotron() {
               Example button
             </button>
           </div>
-        </Col>
-        <Col className="col-md-6">
+        </div>
+        <div className="col-sm-6 col-lg-6">
           <div className="h-100 p-5 bg-light border rounded-3">
             <h2>Add borders</h2>
             <p>
@@ -49,9 +48,9 @@ function Jumbotron() {
               Example button
             </button>
           </div>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 
