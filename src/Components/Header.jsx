@@ -9,7 +9,6 @@ function Header() {
       <br />
       <br />
       <br />
-      <br />
       <MegaMenu />
       <div className="b-example-divider" />
       <div className="container">

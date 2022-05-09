@@ -36,8 +36,9 @@ import Jumbotron from './Components/Jumbotron';
 import Heros from './Components/Heros';
 import Footers from './Components/Footers';
 import Features from './Components/Features';
-import Grid from './Components/Grid';
+import Grids from './Components/Grids';
 import Tooltips from './Components/Tooltips';
+import Sidebar from './Pages/Layouts/Sidebar';
 
 function App() {
   return (
@@ -75,10 +76,11 @@ function App() {
         <Route path="/jumbotron" element={<Jumbotron />} />
         <Route path="/footers" element={<Footers />} />
         <Route path="/heros" element={<Heros />} />
-        <Route path="/grid" element={<Grid />} />
+        <Route path="/grids" element={<Grids />} />
         <Route path="/features" element={<Features />} />
         <Route path="/alerts" element={<Alerts />} />
         <Route path="/tooltips" element={<Tooltips />} />
+        <Route path="/sidebar" element={<Sidebar />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

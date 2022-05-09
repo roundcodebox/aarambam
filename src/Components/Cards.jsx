@@ -227,7 +227,7 @@ function Cards() {
             </div>
           </div>
           <h4>Card with ListGroup</h4>
-          <div className="card my-2" style={{ width: '18rem;' }}>
+          <div className="card my-2" style={{ width: '18rem' }}>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">An item</li>
               <li className="list-group-item">A second item</li>
@@ -235,7 +235,7 @@ function Cards() {
             </ul>
           </div>
 
-          <div className="card my-2" style={{ width: '18rem;' }}>
+          <div className="card my-2" style={{ width: '18rem' }}>
             <div className="card-header">Featured</div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">An item</li>
@@ -246,7 +246,7 @@ function Cards() {
           </div>
 
           <h4>Card Kitchen Sink</h4>
-          <div className="card my-2" style={{ width: '18rem;' }}>
+          <div className="card my-2" style={{ width: '18rem' }}>
             <img
               src="/assets/images/200x200.png"
               className="card-img-top"
@@ -384,7 +384,7 @@ function Cards() {
         </div>
         <div className="col-sm-12 col-lg-12">
           <h4>Card alignment</h4>
-          <div className="card my-2" style={{ width: '18rem;' }}>
+          <div className="card my-2" style={{ width: '18rem' }}>
             <div className="card-body">
               <h5 className="card-title">Special title treatment</h5>
               <p className="card-text">
@@ -397,7 +397,7 @@ function Cards() {
             </div>
           </div>
 
-          <div className="card text-center my-2" style={{ width: '18rem;' }}>
+          <div className="card text-center my-2" style={{ width: '18rem' }}>
             <div className="card-body">
               <h5 className="card-title">Special title treatment</h5>
               <p className="card-text">
@@ -410,7 +410,7 @@ function Cards() {
             </div>
           </div>
 
-          <div className="card text-end my-2" style={{ width: '18rem;' }}>
+          <div className="card text-end my-2" style={{ width: '18rem' }}>
             <div className="card-body">
               <h5 className="card-title">Special title treatment</h5>
               <p className="card-text">

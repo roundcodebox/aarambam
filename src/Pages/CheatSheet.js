@@ -25,7 +25,7 @@ import Jumbotron from '../Components/Jumbotron';
 import Heros from '../Components/Heros';
 import Footers from '../Components/Footers';
 import Features from '../Components/Features';
-import Grid from '../Components/Grid';
+import Grid from '../Components/Grids';
 
 function CheatSheet() {
   return (

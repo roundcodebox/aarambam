@@ -201,7 +201,7 @@ function MegaMenu() {
                   <div className="mega-content px-4">
                     <div className="container-fluid">
                       <div className="row">
-                        <div className="col-12 col-sm-4 col-md-3 py-4">
+                        <div className="col-12 col-sm-4 col-md-3 py-1">
                           <h5>Pages</h5>
                           <div className="list-group">
                             <a className="list-group-item" href="/header">
@@ -215,7 +215,7 @@ function MegaMenu() {
                             </a>
                           </div>
                         </div>
-                        <div className="col-12 col-sm-4 col-md-3 py-4">
+                        <div className="col-12 col-sm-4 col-md-3 py-1">
                           <h5>Card</h5>
                           <div className="card">
                             <img
@@ -232,7 +232,7 @@ function MegaMenu() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-12 col-sm-4 col-md-3 py-4">
+                        <div className="col-12 col-sm-4 col-md-3 py-1">
                           <h5>About CodeHim</h5>
                           <p>
                             <b>CodeHim</b> is one of the BEST developer websites
@@ -241,7 +241,7 @@ function MegaMenu() {
                             code & scripts.
                           </p>
                         </div>
-                        <div className="col-12 col-sm-12 col-md-3 py-4">
+                        <div className="col-12 col-sm-12 col-md-3 py-1">
                           <h5>Damn, so many</h5>
                           <div className="list-group">
                             <a className="list-group-item" href="/header">
@@ -259,16 +259,6 @@ function MegaMenu() {
                     </div>
                   </div>
                 </div>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link disabled"
-                  href="/header"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
-                </a>
               </li>
             </ul>
             <form className="d-flex ms-auto">
