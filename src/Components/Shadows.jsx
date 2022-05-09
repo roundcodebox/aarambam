@@ -3,7 +3,7 @@ import React from 'react';
 function Shadows() {
   return (
     <div className="container px-4 py-5">
-      <div className="row px-4 py-5">
+      <div className="row px-4 py-2">
         <h4>Shadows</h4>
         <div className="col-sm-3">
           <div className="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>

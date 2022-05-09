@@ -53,10 +53,10 @@ function CheatSheet() {
       <CarouselsExamples />
       <Cards />
       <Shadows />
+      <Borders />
       <Paginations />
       <Toasts />
       <Stacks />
-      <Borders />
       <Footers />
       <Grid />
     </>

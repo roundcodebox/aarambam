@@ -56,6 +56,7 @@ function App() {
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/shadows" element={<Shadows />} />
+        <Route path="/borders" element={<Borders />} />
         <Route path="/navbars" element={<Navbars />} />
         <Route path="/buttons" element={<Buttons />} />
         <Route path="/dropdowns" element={<Dropdowns />} />
@@ -75,7 +76,6 @@ function App() {
         <Route path="/navs" element={<Navs />} />
         <Route path="/toasts" element={<Toasts />} />
         <Route path="/stacks" element={<Stacks />} />
-        <Route path="/borders" element={<Borders />} />
         <Route path="/jumbotron" element={<Jumbotron />} />
         <Route path="/footers" element={<Footers />} />
         <Route path="/heros" element={<Heros />} />
