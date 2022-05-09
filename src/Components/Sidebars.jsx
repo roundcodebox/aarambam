@@ -1,51 +1,21 @@
 import React from 'react';
-import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 
-function Sidebar() {
+function Sidebars() {
   return (
-    <Container>
-      <Row className="mt-5">
-        <Col className="mt-5">
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
           <h1>Sidebar</h1>
-          <ListGroup>
-            <ListGroup.Item action>No style</ListGroup.Item>
-            <ListGroup.Item action variant="primary">
-              Primary
-            </ListGroup.Item>
-            <ListGroup.Item action variant="secondary">
-              Secondary
-            </ListGroup.Item>
-            <ListGroup.Item action variant="success">
-              Success
-            </ListGroup.Item>
-            <ListGroup.Item action variant="danger">
-              Danger
-            </ListGroup.Item>
-            <ListGroup.Item action variant="warning">
-              Warning
-            </ListGroup.Item>
-            <ListGroup.Item action variant="info">
-              Info
-            </ListGroup.Item>
-            <ListGroup.Item action variant="light">
-              Light
-            </ListGroup.Item>
-            <ListGroup.Item action variant="dark">
-              Dark
-            </ListGroup.Item>
-          </ListGroup>
-          <ListGroup className="pt-5">
-            <ListGroup.Item action active>
-              Cras justo odio
-            </ListGroup.Item>
-            <ListGroup.Item action>Dapibus ac facilisis in</ListGroup.Item>
-            <ListGroup.Item action>Morbi leo risus</ListGroup.Item>
-            <ListGroup.Item action>Porta ac consectetur ac</ListGroup.Item>
-            <ListGroup.Item action>Vestibulum at eros</ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-    </Container>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
-export default Sidebar;
+export default Sidebars;

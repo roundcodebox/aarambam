@@ -9,7 +9,6 @@ import ErrorPage from './Pages/ErrorPage';
 import Profile from './Pages/Profile';
 import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
-import TypographyLayout from './Pages/Layouts/TypographyLayout';
 import ForgotPassword from './Pages/ForgotPassword';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
@@ -31,7 +30,6 @@ import ModalExamples from './Components/ModalExamples';
 import CarouselsExamples from './Components/CarouselsExamples';
 import Navs from './Components/Navs';
 import Paginations from './Components/Paginations';
-import Toasts from './Components/Toasts';
 import Stacks from './Components/Stacks';
 import Borders from './Components/Borders';
 import Jumbotron from './Components/Jumbotron';
@@ -51,7 +49,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/cheatSheet" element={<CheatSheet />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/typographylayout" element={<TypographyLayout />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
@@ -74,7 +71,6 @@ function App() {
         <Route path="/carouselsexamples" element={<CarouselsExamples />} />
         <Route path="/paginations" element={<Paginations />} />
         <Route path="/navs" element={<Navs />} />
-        <Route path="/toasts" element={<Toasts />} />
         <Route path="/stacks" element={<Stacks />} />
         <Route path="/jumbotron" element={<Jumbotron />} />
         <Route path="/footers" element={<Footers />} />

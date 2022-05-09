@@ -19,7 +19,6 @@ import ModalExamples from '../Components/ModalExamples';
 import CarouselsExamples from '../Components/CarouselsExamples';
 import Navs from '../Components/Navs';
 import Paginations from '../Components/Paginations';
-import Toasts from '../Components/Toasts';
 import Stacks from '../Components/Stacks';
 import Borders from '../Components/Borders';
 import Jumbotron from '../Components/Jumbotron';
@@ -55,7 +54,6 @@ function CheatSheet() {
       <Shadows />
       <Borders />
       <Paginations />
-      <Toasts />
       <Stacks />
       <Footers />
       <Grid />

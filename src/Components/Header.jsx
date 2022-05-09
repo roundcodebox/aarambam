@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './Header.scss';
 import MegaMenu from './MegaMenu';
 
@@ -10,42 +9,11 @@ function Header() {
       <br />
       <br />
       <br />
+      <br />
       <MegaMenu />
-      <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <div className="container">
-          <Navbar.Brand href="#home">Aarambam</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
-      <div className="b-example-divider" />
       <div className="b-example-divider" />
       <div className="container">
-        <Navbar className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a
             href="/"
             className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
@@ -83,7 +51,7 @@ function Header() {
               </a>
             </li>
           </ul>
-        </Navbar>
+        </header>
       </div>
 
       <div className="b-example-divider" />

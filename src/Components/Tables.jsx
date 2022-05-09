@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container, Table, Row, Col } from 'react-bootstrap';
 
 function Tables() {
   return (
-    <Container>
-      <Row>
-        <Col>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
           <table className="table table-hover">
             <thead>
               <tr>
@@ -78,7 +77,7 @@ function Tables() {
               </tr>
             </tbody>
           </table>
-          <Table striped bordered hover>
+          <table striped bordered hover>
             <thead>
               <tr>
                 <th>#</th>
@@ -106,9 +105,9 @@ function Tables() {
                 <td>@twitter</td>
               </tr>
             </tbody>
-          </Table>
+          </table>
           <br />
-          <Table striped bordered hover size="sm">
+          <table striped bordered hover size="sm">
             <thead>
               <tr>
                 <th>#</th>
@@ -136,8 +135,8 @@ function Tables() {
                 <td>@twitter</td>
               </tr>
             </tbody>
-          </Table>
-          <Table striped bordered hover variant="dark">
+          </table>
+          <table striped bordered hover variant="dark">
             <thead>
               <tr>
                 <th>#</th>
@@ -165,9 +164,9 @@ function Tables() {
                 <td>@twitter</td>
               </tr>
             </tbody>
-          </Table>
+          </table>
           <div>
-            <Table responsive="sm">
+            <table responsive="sm">
               <thead>
                 <tr>
                   <th>#</th>
@@ -208,8 +207,8 @@ function Tables() {
                   <td>Table cell</td>
                 </tr>
               </tbody>
-            </Table>
-            <Table responsive="md">
+            </table>
+            <table responsive="md">
               <thead>
                 <tr>
                   <th>#</th>
@@ -250,8 +249,8 @@ function Tables() {
                   <td>Table cell</td>
                 </tr>
               </tbody>
-            </Table>
-            <Table responsive="lg">
+            </table>
+            <table responsive="lg">
               <thead>
                 <tr>
                   <th>#</th>
@@ -292,8 +291,8 @@ function Tables() {
                   <td>Table cell</td>
                 </tr>
               </tbody>
-            </Table>
-            <Table responsive="xl">
+            </table>
+            <table responsive="xl">
               <thead>
                 <tr>
                   <th>#</th>
@@ -334,11 +333,11 @@ function Tables() {
                   <td>Table cell</td>
                 </tr>
               </tbody>
-            </Table>
+            </table>
           </div>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 export default Tables;

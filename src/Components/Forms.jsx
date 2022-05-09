@@ -1,765 +1,575 @@
 import React from 'react';
-import {
-  Container,
-  Col,
-  Row,
-  Form,
-  InputGroup,
-  FormControl,
-  Dropdown,
-  DropdownButton,
-  Button,
-  SplitButton,
-  FloatingLabel,
-} from 'react-bootstrap';
-import FormValidationExample from './FormValidationExample';
 
 function Forms() {
   return (
-    <Container>
-      <Row>
-        <Col sm={6} className="pt-5">
-          <h1>Forms</h1>
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We&apos;ll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
-          <h4>Readonly plain text </h4>
-          <Form>
-            <Form.Group
-              as={Row}
-              className="mb-3"
-              controlId="formPlaintextEmail"
-            >
-              <Form.Label column sm="2">
-                Email
-              </Form.Label>
-              <Col sm="10">
-                <Form.Control
-                  plaintext
-                  readOnly
-                  defaultValue="email@example.com"
-                />
-              </Col>
-            </Form.Group>
-          </Form>
-          <h4>Disabled forms</h4>
-          <Form.Group className="mb-3">
-            <Form.Label>Disabled input</Form.Label>
-            <Form.Control placeholder="Disabled input" disabled />
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Label>Disabled select menu</Form.Label>
-            <Form.Select disabled>
-              <option>Disabled select</option>
-            </Form.Select>
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Check type="checkbox" label="Can't check this" disabled />
-          </Form.Group>
-          <h2>Forms Sizes</h2>
-          <Form.Label>Large text field</Form.Label>
-          <Form.Control size="lg" type="text" placeholder="Large text" />
-          <br />
-          <Form.Label>Normal text field</Form.Label>
-          <Form.Control type="text" placeholder="Normal text" />
-          <br />
-          <Form.Label>Small text field</Form.Label>
-          <Form.Control size="sm" type="text" placeholder="Small text" />
-          <br />
-          <h2>File input</h2>
-          <Form.Group controlId="formFile" className="mb-3">
-            <Form.Label>Default file input example</Form.Label>
-            <Form.Control type="file" />
-          </Form.Group>
-          <Form.Group controlId="formFileMultiple" className="mb-3">
-            <Form.Label>Multiple files input example</Form.Label>
-            <Form.Control type="file" multiple />
-          </Form.Group>
-          <Form.Group controlId="formFileDisabled" className="mb-3">
-            <Form.Label>Disabled file input example</Form.Label>
-            <Form.Control type="file" disabled />
-          </Form.Group>
-          <Form.Group controlId="formFileSm" className="mb-3">
-            <Form.Label>Small file input example</Form.Label>
-            <Form.Control type="file" size="sm" />
-          </Form.Group>
-          <Form.Group controlId="formFileLg" className="mb-3">
-            <Form.Label>Large file input example</Form.Label>
-            <Form.Control type="file" size="lg" />
-          </Form.Group>
-          <Form.Label htmlFor="exampleColorInput">Color picker</Form.Label>
-          <Form.Control
-            type="color"
-            id="exampleColorInput"
-            defaultValue="#563d7c"
-            title="Choose your color"
-          />
-          <h2>Select</h2>
-          <Form.Label>Default select</Form.Label>
-          <Form.Select aria-label="Default select example">
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <Form.Label>Large size select</Form.Label>
-          <Form.Select size="lg">
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <br />
-          <Form.Label>Default size select</Form.Label>
-          <Form.Select>
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <br />
-          <Form.Label>Small size select</Form.Label>
-          <Form.Select size="sm">
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <h2>Checks and radios</h2>
-          <h2>Default (stacked)</h2>
-          <Form>
-            {['checkbox', 'radio'].map((type) => (
-              <div key={`default-${type}`} className="mb-3">
-                <Form.Check
-                  type={type}
-                  id={`default-${type}`}
-                  label={`default ${type}`}
-                />
-
-                <Form.Check
-                  disabled
-                  type={type}
-                  label={`disabled ${type}`}
-                  id={`disabled-default-${type}`}
-                />
-              </div>
-            ))}
-          </Form>
-          <h2>Switches</h2>
-          <Form>
-            <Form.Check
-              type="switch"
-              id="custom-switch"
-              label="Check this switch"
-            />
-            <Form.Check
-              disabled
-              type="switch"
-              label="disabled switch"
-              id="disabled-custom-switch"
-            />
-          </Form>
-          <h2>Inline Checkbox and Radio</h2>
-          <Form>
-            {['checkbox', 'radio'].map((type) => (
-              <div key={`inline-${type}`} className="mb-3">
-                <Form.Check
-                  inline
-                  label="1"
-                  name="group1"
-                  type={type}
-                  id={`inline-${type}-1`}
-                />
-                <Form.Check
-                  inline
-                  label="2"
-                  name="group1"
-                  type={type}
-                  id={`inline-${type}-2`}
-                />
-                <Form.Check
-                  inline
-                  disabled
-                  label="3 (disabled)"
-                  type={type}
-                  id={`inline-${type}-3`}
-                />
-              </div>
-            ))}
-          </Form>
-          <Form.Label>Range</Form.Label>
-          <Form.Range />
-          <h2>Form InputGroup</h2>
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-            <FormControl
-              placeholder="Username"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <FormControl
-              placeholder="Recipient's username"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-          </InputGroup>
-
-          <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="basic-addon3">
-              https://example.com/users/
-            </InputGroup.Text>
-            <FormControl id="basic-url" aria-describedby="basic-addon3" />
-          </InputGroup>
-
-          <InputGroup className="mb-3">
-            <InputGroup.Text>$</InputGroup.Text>
-            <FormControl aria-label="Amount (to the nearest dollar)" />
-            <InputGroup.Text>.00</InputGroup.Text>
-          </InputGroup>
-
-          <InputGroup>
-            <InputGroup.Text>With textarea</InputGroup.Text>
-            <FormControl as="textarea" aria-label="With textarea" />
-          </InputGroup>
-          <h2>Form InputGroup Sizing</h2>
-          <InputGroup size="sm" className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-sm">Small</InputGroup.Text>
-            <FormControl
-              aria-label="Small"
-              aria-describedby="inputGroup-sizing-sm"
-            />
-          </InputGroup>
-          <br />
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-default">
-              Default
-            </InputGroup.Text>
-            <FormControl
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </InputGroup>
-          <br />
-          <InputGroup size="lg">
-            <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text>
-            <FormControl
-              aria-label="Large"
-              aria-describedby="inputGroup-sizing-sm"
-            />
-          </InputGroup>
-          <h2>Checkboxes and radios</h2>
-          <InputGroup className="mb-3">
-            <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-            <FormControl aria-label="Text input with checkbox" />
-          </InputGroup>
-          <InputGroup>
-            <InputGroup.Radio aria-label="Radio button for following text input" />
-            <FormControl aria-label="Text input with radio button" />
-          </InputGroup>
-          <h2>Multiple inputs</h2>
-          <InputGroup className="mb-3">
-            <InputGroup.Text>First and last name</InputGroup.Text>
-            <FormControl aria-label="First name" />
-            <FormControl aria-label="Last name" />
-          </InputGroup>
-          <h2>Multiple addons</h2>
-          <InputGroup className="mb-3">
-            <InputGroup.Text>$</InputGroup.Text>
-            <InputGroup.Text>0.00</InputGroup.Text>
-            <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
-          </InputGroup>
-          <InputGroup>
-            <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
-            <InputGroup.Text>$</InputGroup.Text>
-            <InputGroup.Text>0.00</InputGroup.Text>
-          </InputGroup>
-          <h2>Button addons</h2>
-          <InputGroup className="mb-3">
-            <Button variant="outline-secondary" id="button-addon1">
-              Button
-            </Button>
-            <FormControl
-              aria-label="Example text with button addon"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-
-          <InputGroup className="mb-3">
-            <FormControl
-              placeholder="Recipient's username"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <Button variant="outline-secondary" id="button-addon2">
-              Button
-            </Button>
-          </InputGroup>
-
-          <InputGroup className="mb-3">
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-            <FormControl aria-label="Example text with two button addons" />
-          </InputGroup>
-
-          <InputGroup>
-            <FormControl
-              placeholder="Recipient's username"
-              aria-label="Recipient's username with two button addons"
-            />
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup>
-          <h2>Buttons with Dropdowns</h2>
-          <InputGroup className="mb-3">
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-            <FormControl aria-label="Example text with two button addons" />
-          </InputGroup>
-
-          <InputGroup>
-            <FormControl
-              placeholder="Recipient's username"
-              aria-label="Recipient's username with two button addons"
-            />
-            <Button variant="outline-secondary">Button</Button>
-            <Button variant="outline-secondary">Button</Button>
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <DropdownButton
-              variant="outline-secondary"
-              title="Dropdown"
-              id="input-group-dropdown-1"
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </DropdownButton>
-            <FormControl aria-label="Text input with dropdown button" />
-          </InputGroup>
-
-          <InputGroup className="mb-3">
-            <FormControl aria-label="Text input with dropdown button" />
-
-            <DropdownButton
-              variant="outline-secondary"
-              title="Dropdown"
-              id="input-group-dropdown-2"
-              align="end"
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </DropdownButton>
-          </InputGroup>
-
-          <InputGroup>
-            <DropdownButton
-              variant="outline-secondary"
-              title="Dropdown"
-              id="input-group-dropdown-3"
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </DropdownButton>
-            <FormControl aria-label="Text input with 2 dropdown buttons" />
-            <DropdownButton
-              variant="outline-secondary"
-              title="Dropdown"
-              id="input-group-dropdown-4"
-              align="end"
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </DropdownButton>
-          </InputGroup>
-          <h2>Segmented buttons</h2>
-          <InputGroup className="mb-3">
-            <SplitButton
-              variant="outline-secondary"
-              title="Action"
-              id="segmented-button-dropdown-1"
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </SplitButton>
-            <FormControl aria-label="Text input with dropdown button" />
-          </InputGroup>
-
-          <InputGroup className="mb-3">
-            <FormControl aria-label="Text input with dropdown button" />
-            <SplitButton
-              variant="outline-secondary"
-              title="Action"
-              id="segmented-button-dropdown-2"
-              alignRight
-            >
-              <Dropdown.Item href="#">Action</Dropdown.Item>
-              <Dropdown.Item href="#">Another action</Dropdown.Item>
-              <Dropdown.Item href="#">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#">Separated link</Dropdown.Item>
-            </SplitButton>
-          </InputGroup>
-          <h3>Floating labels</h3>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Email address"
-            className="mb-3"
-          >
-            <Form.Control type="email" placeholder="name@example.com" />
-          </FloatingLabel>
-          <FloatingLabel controlId="floatingPassword" label="Password">
-            <Form.Control type="password" placeholder="Password" />
-          </FloatingLabel>
-          <h3>TextAreas Floating labels</h3>
-          <FloatingLabel
-            controlId="floatingTextarea"
-            label="Comments"
-            className="mb-3"
-          >
-            <Form.Control as="textarea" placeholder="Leave a comment here" />
-          </FloatingLabel>
-          <FloatingLabel controlId="floatingTextarea2" label="Comments">
-            <Form.Control
-              as="textarea"
-              placeholder="Leave a comment here"
-              style={{ height: '100px' }}
-            />
-          </FloatingLabel>
-          <h3>Selects with Floating Label</h3>
-          <FloatingLabel controlId="floatingSelect" label="Works with selects">
-            <Form.Select aria-label="Floating label select example">
-              <option>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-          </FloatingLabel>
-          <h3>Floating Label Layout</h3>
-          <Row className="g-2">
-            <Col md>
-              <FloatingLabel
-                controlId="floatingInputGrid"
-                label="Email address"
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
+          <h1>Forms Overview</h1>
+          <form>
+            <div className="mb-3">
+              <label
+                htmlFor="exampleInputEmail1"
+                className="form-label col-sm-12"
               >
-                <Form.Control type="email" placeholder="name@example.com" />
-              </FloatingLabel>
-            </Col>
-            <Col md>
-              <FloatingLabel
-                controlId="floatingSelectGrid"
-                label="Works with selects"
+                Email address
+                <input
+                  type="email"
+                  className="form-control col-sm-12"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </label>
+              <div id="emailHelp" className="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div className="mb-3">
+              <label
+                htmlFor="exampleInputPassword1"
+                className="form-label col-sm-12"
               >
-                <Form.Select aria-label="Floating label select example">
-                  <option>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </Form.Select>
-              </FloatingLabel>
-            </Col>
-          </Row>
-          <h3>Form Layout</h3>
-
-          <Form>
-            <Form.Group className="mb-3" controlId="formGroupEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formGroupPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-          </Form>
-          <h3>Form grid Layout</h3>
-          <Form>
-            <Row>
-              <Col>
-                <Form.Control placeholder="First name" />
-              </Col>
-              <Col>
-                <Form.Control placeholder="Last name" />
-              </Col>
-            </Row>
-          </Form>
-          <h3>Form Complex Layouts</h3>
-          <Form>
-            <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
-
-              <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-            </Row>
-
-            <Form.Group className="mb-3" controlId="formGridAddress1">
-              <Form.Label>Address</Form.Label>
-              <Form.Control placeholder="1234 Main St" />
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formGridAddress2">
-              <Form.Label>Address 2</Form.Label>
-              <Form.Control placeholder="Apartment, studio, or floor" />
-            </Form.Group>
-
-            <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridCity">
-                <Form.Label>City</Form.Label>
-                <Form.Control />
-              </Form.Group>
-
-              <Form.Group as={Col} controlId="formGridState">
-                <Form.Label>State</Form.Label>
-                <Form.Select defaultValue="Choose...">
-                  <option>Choose...</option>
-                  <option>...</option>
-                </Form.Select>
-              </Form.Group>
-
-              <Form.Group as={Col} controlId="formGridZip">
-                <Form.Label>Zip</Form.Label>
-                <Form.Control />
-              </Form.Group>
-            </Row>
-
-            <Form.Group className="mb-3" id="formGridCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
-          <h3>Horizontal Form Layout</h3>
-          <Form>
-            <Form.Group
-              as={Row}
-              className="mb-3"
-              controlId="formHorizontalEmail"
-            >
-              <Form.Label column sm={2}>
-                Email
-              </Form.Label>
-              <Col sm={10}>
-                <Form.Control type="email" placeholder="Email" />
-              </Col>
-            </Form.Group>
-
-            <Form.Group
-              as={Row}
-              className="mb-3"
-              controlId="formHorizontalPassword"
-            >
-              <Form.Label column sm={2}>
                 Password
-              </Form.Label>
-              <Col sm={10}>
-                <Form.Control type="password" placeholder="Password" />
-              </Col>
-            </Form.Group>
-            <fieldset>
-              <Form.Group as={Row} className="mb-3">
-                <Form.Label as="legend" column sm={2}>
-                  Radios
-                </Form.Label>
-                <Col sm={10}>
-                  <Form.Check
-                    type="radio"
-                    label="first radio"
-                    name="formHorizontalRadios"
-                    id="formHorizontalRadios1"
-                  />
-                  <Form.Check
-                    type="radio"
-                    label="second radio"
-                    name="formHorizontalRadios"
-                    id="formHorizontalRadios2"
-                  />
-                  <Form.Check
-                    type="radio"
-                    label="third radio"
-                    name="formHorizontalRadios"
-                    id="formHorizontalRadios3"
-                  />
-                </Col>
-              </Form.Group>
-            </fieldset>
-            <Form.Group
-              as={Row}
-              className="mb-3"
-              controlId="formHorizontalCheck"
-            >
-              <Col sm={{ span: 10, offset: 2 }}>
-                <Form.Check label="Remember me" />
-              </Col>
-            </Form.Group>
-
-            <Form.Group as={Row} className="mb-3">
-              <Col sm={{ span: 10, offset: 2 }}>
-                <Button type="submit">Sign in</Button>
-              </Col>
-            </Form.Group>
-          </Form>
-          <h3>Horizontal form label sizing</h3>
-          <Row>
-            <Form.Label column="lg" lg={2}>
-              Large Text
-            </Form.Label>
-            <Col>
-              <Form.Control size="lg" type="text" placeholder="Large text" />
-            </Col>
-          </Row>
-          <br />
-          <Row>
-            <Form.Label column lg={2}>
-              Normal Text
-            </Form.Label>
-            <Col>
-              <Form.Control type="text" placeholder="Normal text" />
-            </Col>
-          </Row>
-          <br />
-          <Row>
-            <Form.Label column="sm" lg={2}>
-              Small Text
-            </Form.Label>
-            <Col>
-              <Form.Control size="sm" type="text" placeholder="Small text" />
-            </Col>
-          </Row>
-          <h3>Form Layout Column sizing</h3>
-          <Form>
-            <Row>
-              <Col xs={7}>
-                <Form.Control placeholder="City" />
-              </Col>
-              <Col>
-                <Form.Control placeholder="State" />
-              </Col>
-              <Col>
-                <Form.Control placeholder="Zip" />
-              </Col>
-            </Row>
-          </Form>
-          <h3>Form Layout Auto-sizing</h3>
-          <Form>
-            <Row className="align-items-center">
-              <Col xs="auto">
-                <Form.Label htmlFor="inlineFormInput" visuallyHidden>
-                  Name
-                </Form.Label>
-                <Form.Control
-                  className="mb-2"
-                  id="inlineFormInput"
-                  placeholder="Jane Doe"
+                <input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword1"
                 />
-              </Col>
-              <Col xs="auto">
-                <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
-                  Username
-                </Form.Label>
-                <InputGroup className="mb-2">
-                  <InputGroup.Text>@</InputGroup.Text>
-                  <FormControl
-                    id="inlineFormInputGroup"
-                    placeholder="Username"
-                  />
-                </InputGroup>
-              </Col>
-              <Col xs="auto">
-                <Form.Check
+              </label>
+            </div>
+            <div className="mb-3 form-check">
+              <label
+                className="form-check-label col-sm-12"
+                htmlFor="exampleCheck1"
+              >
+                Check me out
+                <input
                   type="checkbox"
-                  id="autoSizingCheck"
-                  className="mb-2"
-                  label="Remember me"
+                  className="form-check-input col-sm-12"
+                  id="exampleCheck1"
                 />
-              </Col>
-              <Col xs="auto">
-                <Button type="submit" className="mb-2">
+              </label>
+            </div>
+            <button type="submit" className="btn btn-primary col-sm-12">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h1>Disabled Forms</h1>
+          <form>
+            <form>
+              <fieldset disabled>
+                <div className="mb-3">
+                  <label
+                    htmlFor="disabledTextInput"
+                    className="form-label  col-sm-12"
+                  >
+                    <input
+                      type="text"
+                      id="disabledTextInput"
+                      className="form-control  col-sm-12"
+                      placeholder="Disabled input"
+                    />
+                    Disabled input
+                  </label>
+                </div>
+                <div className="mb-3">
+                  <label
+                    htmlFor="disabledSelect"
+                    className="form-label  col-sm-12"
+                  >
+                    Disabled select menu
+                    <select id="disabledSelect" className="form-select">
+                      <option>Disabled select</option>
+                    </select>
+                  </label>
+                </div>
+                <div className="mb-3">
+                  <div className="form-check">
+                    <label
+                      className="form-check-label col-sm-12"
+                      htmlFor="disabledFieldsetCheck"
+                    >
+                      Can't check this
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="disabledFieldsetCheck"
+                        disabled
+                      />
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" className="btn btn-primary  col-sm-12">
                   Submit
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-          <h3>Form Layout size-specific</h3>
-          <Form>
-            <Row className="align-items-center">
-              <Col sm={3} className="my-1">
-                <Form.Label htmlFor="inlineFormInputName" visuallyHidden>
-                  Name
-                </Form.Label>
-                <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
-              </Col>
-              <Col sm={3} className="my-1">
-                <Form.Label
-                  htmlFor="inlineFormInputGroupUsername"
-                  visuallyHidden
-                >
-                  Username
-                </Form.Label>
-                <InputGroup>
-                  <InputGroup.Text>@</InputGroup.Text>
-                  <FormControl
-                    id="inlineFormInputGroupUsername"
-                    placeholder="Username"
-                  />
-                </InputGroup>
-              </Col>
-              <Col xs="auto" className="my-1">
-                <Form.Check
-                  type="checkbox"
-                  id="autoSizingCheck2"
-                  label="Remember me"
-                />
-              </Col>
-              <Col xs="auto" className="my-1">
-                <Button type="submit">Submit</Button>
-              </Col>
-            </Row>
-          </Form>
-          <h4>Form Validations</h4>
-          <FormValidationExample />
-        </Col>
-      </Row>
-    </Container>
+                </button>
+              </fieldset>
+            </form>
+          </form>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h2>Forms controls</h2>
+          <div className="mb-3">
+            <label
+              htmlFor="exampleFormControlInput1"
+              className="form-label col-sm-12"
+            >
+              <input
+                type="email"
+                className="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              Email address
+            </label>
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="exampleFormControlTextarea1"
+              className="form-label col-sm-12"
+            >
+              <textarea
+                className="form-control col-sm-12"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              />
+              Example textarea
+            </label>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Input field Size</h6>
+          <input
+            className="form-control form-control-lg my-2"
+            type="text"
+            placeholder=".form-control-lg"
+            aria-label=".form-control-lg example"
+          />
+          <input
+            className="form-control my-2"
+            type="text"
+            placeholder="Default input"
+            aria-label="default input example"
+          />
+          <input
+            className="form-control form-control-sm my-2"
+            type="text"
+            placeholder=".form-control-sm"
+            aria-label=".form-control-sm example"
+          />
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Readonly plain text</h6>
+          <div className="mb-3 row">
+            <label
+              htmlFor="staticEmail"
+              className="col-sm-2 col-form-label col-sm-12"
+            >
+              Email
+              <input
+                type="text"
+                readOnly
+                className="form-control-plaintext col-sm-12"
+                id="staticEmail"
+                value="email@example.com"
+              />
+            </label>
+          </div>
+          <div className="mb-3 row">
+            <label
+              htmlFor="inputPassword"
+              className="col-sm-2 col-form-label col-sm-12"
+            >
+              Password
+              <input
+                type="password"
+                className="form-control col-sm-12"
+                id="inputPassword"
+              />
+            </label>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>File input sizes</h6>
+          <div className="mb-3">
+            <label htmlFor="formFile" className="form-label col-sm-12">
+              Default file input example
+              <input className="form-control" type="file" id="formFile" />
+            </label>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="formFileMultiple" className="form-label col-sm-12">
+              Multiple files input example
+              <input
+                className="form-control"
+                type="file"
+                id="formFileMultiple"
+                multiple
+              />
+            </label>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="formFileDisabled" className="form-label col-sm-12">
+              Disabled file input example
+              <input
+                className="form-control"
+                type="file"
+                id="formFileDisabled"
+                disabled
+              />
+            </label>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="formFileSm" className="form-label col-sm-12">
+              Small file input example
+              <input
+                className="form-control form-control-sm"
+                id="formFileSm"
+                type="file"
+              />
+            </label>
+          </div>
+          <div>
+            <label htmlFor="formFileLg" className="form-label col-sm-12">
+              Large file input example
+              <input
+                className="form-control form-control-lg"
+                id="formFileLg"
+                type="file"
+              />
+            </label>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Readonly plain text </h6>
+          <label htmlFor="exampleColorInput" className="form-label">
+            Color picker
+            <input
+              type="color"
+              className="form-control form-control-color"
+              id="exampleColorInput"
+              value="#563d7c"
+              title="Choose your color"
+            />
+          </label>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Select from datalists</h6>
+          <label htmlFor="exampleDataList" className="form-label col-sm-12">
+            Datalist example
+            <input
+              className="form-control col-sm-12"
+              list="datalistOptions"
+              id="exampleDataList"
+              placeholder="Type to search..."
+            />
+          </label>
+          <datalist id="datalistOptions">
+            <option value="San Francisco">San Francisco</option>
+            <option value="New York">New York</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+          </datalist>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Select </h6>
+          <select className="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>select sizes</h6>
+
+          <select
+            className="form-select form-select-lg mb-3"
+            aria-label=".form-select-lg example"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select
+            className="form-select my-2"
+            aria-label="Default select example"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select
+            className="form-select form-select-sm my-2"
+            aria-label=".form-select-sm example"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div className="col-sm-6 col-lg-6">
+          <h6>Checkboxes</h6>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="flexCheckDefault">
+              Default checkbox
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+            </label>
+          </div>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="flexCheckChecked">
+              Checked checkbox
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+                checked
+              />
+            </label>
+          </div>
+          <div className="form-check">
+            <label
+              className="form-check-label"
+              htmlFor="flexCheckIndeterminate"
+            >
+              Indeterminate checkbox
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckIndeterminate"
+              />
+            </label>
+          </div>
+          <h6>Switches</h6>
+          <div className="form-check form-switch">
+            <label
+              className="form-check-label"
+              htmlFor="flexSwitchCheckDefault"
+            >
+              Default switch checkbox input
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+            </label>
+          </div>
+          <div className="form-check form-switch">
+            <label
+              className="form-check-label"
+              htmlFor="flexSwitchCheckChecked"
+            >
+              Checked switch checkbox input
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+            </label>
+          </div>
+          <div className="form-check form-switch">
+            <label
+              className="form-check-label"
+              htmlFor="flexSwitchCheckDisabled"
+            >
+              Disabled switch checkbox input
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDisabled"
+                disabled
+              />
+            </label>
+          </div>
+          <div className="form-check form-switch">
+            <label
+              className="form-check-label"
+              htmlFor="flexSwitchCheckCheckedDisabled"
+            >
+              Disabled checked switch checkbox input
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckCheckedDisabled"
+                checked
+                disabled
+              />
+            </label>
+          </div>
+          <h6>Vertically stacked checkboxes</h6>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="defaultCheck1">
+              Default checkbox
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+              />
+            </label>
+          </div>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="defaultCheck2">
+              Disabled checkbox
+              <input
+                className="form-check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck2"
+                disabled
+              />
+            </label>
+          </div>
+          <h6>Vertically stacked radioboxes</h6>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="exampleRadios1">
+              Default radio
+              <input
+                className="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="option1"
+                checked
+              />
+            </label>
+          </div>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="exampleRadios2">
+              Second default radio
+              <input
+                className="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios2"
+                value="option2"
+              />
+            </label>
+          </div>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="exampleRadios3">
+              Disabled radio
+              <input
+                className="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios3"
+                value="option3"
+                disabled
+              />
+            </label>
+          </div>
+          <h6>horizontal stacked checkboxes</h6>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineCheckbox1">
+              1
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+            </label>
+          </div>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineCheckbox2">
+              2
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+            </label>
+          </div>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineCheckbox3">
+              3 (disabled)
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+                disabled
+              />
+            </label>
+          </div>
+          <h6>horizontal stacked radioboxes</h6>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineRadio1">
+              1
+              <input
+                className="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+            </label>
+          </div>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineRadio2">
+              2
+              <input
+                className="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+            </label>
+          </div>
+          <div className="form-check form-check-inline">
+            <label className="form-check-label" htmlFor="inlineRadio3">
+              3 (disabled)
+              <input
+                className="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio3"
+                value="option3"
+                disabled
+              />
+            </label>
+          </div>
+          <div className="col-sm-6 col-lg-6">
+            <h6>Range Examples</h6>
+            <label htmlFor="customRange1" className="form-label">
+              Range
+              <input type="range" className="form-range" id="customRange1" />
+            </label>
+            <label htmlFor="customRange2" className="form-label">
+              Range with steps
+              <input
+                type="range"
+                className="form-range"
+                min="0"
+                max="5"
+                id="customRange2"
+              />
+            </label>
+          </div>
+          <div className="col-sm-12 col-lg-12" />
+        </div>
+      </div>
+    </div>
   );
 }
 export default Forms;

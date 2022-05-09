@@ -4,10 +4,11 @@ function MegaMenu() {
   return (
     <div>
       {' '}
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
-        <div className="container-fluid">
+      <nav className=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+        <div className="container">
           <a className="navbar-brand" href="/header">
-            Bootstrap 5 <span className="badge bg-primary">Mega Menu</span>
+            React Starter Kit{' '}
+            <span className="badge bg-primary">Bootstrap 5</span>
           </a>
           <button
             className="navbar-toggler collapsed"

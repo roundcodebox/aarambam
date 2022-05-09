@@ -22,7 +22,7 @@ Below are some of the pages that are available in aarambam.
 ## Tech Stack
 
 - React
-- react-bootstrap
+- Bootstrap
 - Sass
 - ESLint
 - Prettier

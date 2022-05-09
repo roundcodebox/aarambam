@@ -1,22 +1,21 @@
 import React from 'react';
-import { Row, Container, Col, ListGroup } from 'react-bootstrap';
 
 function Sidebar() {
   return (
-    <Container>
-      <Row>
-        <Col>
+    <div className="container px-4 py-5">
+      <div className="row g-5 py-5">
+        <div className="col-sm-6 col-lg-6">
           <h2>Components</h2>
-          <ListGroup variant="flush">
-            <ListGroup.Item action>Typography</ListGroup.Item>
-            <ListGroup.Item action>Headers</ListGroup.Item>
-            <ListGroup.Item action>Forms</ListGroup.Item>
-            <ListGroup.Item action>Alerts</ListGroup.Item>
-            <ListGroup.Item action>Alerts</ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-    </Container>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">An item</li>
+            <li className="list-group-item">A second item</li>
+            <li className="list-group-item">A third item</li>
+            <li className="list-group-item">A fourth item</li>
+            <li className="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
 
