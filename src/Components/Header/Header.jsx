@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import MegaMenu from './MegaMenu';
+import MegaMenu from '../MegaMenu/MegaMenu';
 
 function Header() {
   return (
