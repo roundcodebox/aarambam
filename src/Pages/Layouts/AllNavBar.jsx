@@ -1,6 +1,7 @@
 import React from 'react';
+import MegaMenu from '../../Components/MegaMenu';
 
 function AllNavBar() {
-  return <h4>navbar</h4>;
+  return <MegaMenu />;
 }
 export default AllNavBar;

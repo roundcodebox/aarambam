@@ -1,10 +1,195 @@
 import React from 'react';
+import './MegaMenu.scss';
 
 function MegaMenu() {
   return (
     <div>
-      {' '}
-      <nav className=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+      <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/header">
+            Brand
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+          <div className="collapse navbar-collapse" id="main_nav">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                {' '}
+                <a className="nav-link" href="/header">
+                  Home{' '}
+                </a>{' '}
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/header">
+                  {' '}
+                  About{' '}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/header">
+                  {' '}
+                  Services{' '}
+                </a>
+              </li>
+              <li className="nav-item dropdown has-megamenu">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="/header"
+                  data-bs-toggle="dropdown"
+                >
+                  {' '}
+                  Mega menu{' '}
+                </a>
+                <div className="dropdown-menu megamenu" role="menu">
+                  <div className="row g-3">
+                    <div className="col-lg-3 col-6">
+                      <div className="col-megamenu">
+                        <h6 className="title">Title Menu One</h6>
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 col-6">
+                      <div className="col-megamenu">
+                        <h6 className="title">Title Menu Two</h6>
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 col-6">
+                      <div className="col-megamenu">
+                        <h6 className="title">Title Menu Three</h6>
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-lg-3 col-6">
+                      <div className="col-megamenu">
+                        <h6 className="title">Title Menu Four</h6>
+                        <ul className="list-unstyled">
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                          <li>
+                            <a href="/header">Custom Menu</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <a className="nav-link" href="/header">
+                  {' '}
+                  Menu item{' '}
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link  dropdown-toggle"
+                  href="/header"
+                  data-bs-toggle="dropdown"
+                >
+                  {' '}
+                  Dropdown right{' '}
+                </a>
+                <ul className="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a className="dropdown-item" href="/header">
+                      {' '}
+                      Submenu item 1
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/header">
+                      {' '}
+                      Submenu item 2{' '}
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <nav className=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
         <div className="container">
           <a className="navbar-brand" href="/header">
             React Starter Kit{' '}
@@ -276,7 +461,7 @@ function MegaMenu() {
             </form>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 }
