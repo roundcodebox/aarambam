@@ -7,7 +7,7 @@ function MegaMenu() {
       <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/header">
-            Brand
+            React Starter Kit
           </a>
           <button
             className="navbar-toggler"
@@ -22,21 +22,18 @@ function MegaMenu() {
           <div className="collapse navbar-collapse" id="main_nav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                {' '}
                 <a className="nav-link" href="/header">
-                  Home{' '}
-                </a>{' '}
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/header">
-                  {' '}
-                  About{' '}
+                  Home
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/header">
-                  {' '}
-                  Services{' '}
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/header">
+                  Services
                 </a>
               </li>
               <li className="nav-item dropdown has-megamenu">
@@ -45,8 +42,7 @@ function MegaMenu() {
                   href="/header"
                   data-bs-toggle="dropdown"
                 >
-                  {' '}
-                  Mega menu{' '}
+                  Mega menu
                 </a>
                 <div className="dropdown-menu megamenu" role="menu">
                   <div className="row g-3">
@@ -157,8 +153,7 @@ function MegaMenu() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link" href="/header">
-                  {' '}
-                  Menu item{' '}
+                  Menu item
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -167,20 +162,17 @@ function MegaMenu() {
                   href="/header"
                   data-bs-toggle="dropdown"
                 >
-                  {' '}
-                  Dropdown right{' '}
+                  Dropdown right
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end">
                   <li>
                     <a className="dropdown-item" href="/header">
-                      {' '}
                       Submenu item 1
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="/header">
-                      {' '}
-                      Submenu item 2{' '}
+                      Submenu item 2
                     </a>
                   </li>
                 </ul>
@@ -192,7 +184,7 @@ function MegaMenu() {
       {/* <nav className=" fixed-top navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
         <div className="container">
           <a className="navbar-brand" href="/header">
-            React Starter Kit{' '}
+            React Starter Kit
             <span className="badge bg-primary">Bootstrap 5</span>
           </a>
           <button
@@ -251,31 +243,31 @@ function MegaMenu() {
                     <ul className="dropdown-menu shadow">
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 1
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 2
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 3
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 4
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 5
                         </a>
                       </li>
@@ -293,19 +285,19 @@ function MegaMenu() {
                     <ul className="dropdown-menu shadow">
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Second level 1
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Second level 2
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Second level 3
                         </a>
                       </li>
@@ -320,31 +312,31 @@ function MegaMenu() {
                         <ul className="dropdown-menu dropdown-submenu shadow">
                           <li>
                             <a className="dropdown-item" href="/header">
-                              {' '}
+
                               Third level 1
                             </a>
                           </li>
                           <li>
                             <a className="dropdown-item" href="/header">
-                              {' '}
+
                               Third level 2
                             </a>
                           </li>
                           <li>
                             <a className="dropdown-item" href="/header">
-                              {' '}
+
                               Third level 3
                             </a>
                           </li>
                           <li>
                             <a className="dropdown-item" href="/header">
-                              {' '}
+
                               Third level 4
                             </a>
                           </li>
                           <li>
                             <a className="dropdown-item" href="/header">
-                              {' '}
+
                               Third level 5
                             </a>
                           </li>
@@ -352,7 +344,7 @@ function MegaMenu() {
                       </li>
                       <li>
                         <a className="dropdown-item" href="/header">
-                          {' '}
+
                           Third level 5
                         </a>
                       </li>
