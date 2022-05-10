@@ -26,6 +26,7 @@ import Heros from '../Components/Heros/Heros';
 import Footers from '../Components/Footers/Footers';
 import Features from '../Components/Features/Features';
 import Grid from '../Components/Grids/Grids';
+import HorizontalLines from '../Components/HorizontalLines/HorizontalLines';
 
 function CheatSheet() {
   return (
@@ -57,6 +58,7 @@ function CheatSheet() {
       <Stacks />
       <Footers />
       <Grid />
+      <HorizontalLines />
     </>
   );
 }
