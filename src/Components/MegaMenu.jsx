@@ -6,7 +6,7 @@ function MegaMenu() {
     <div>
       <nav className="fixed-top navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/header">
+          <a className="navbar-brand" href="/">
             React Starter Kit
           </a>
           <button
@@ -44,7 +44,7 @@ function MegaMenu() {
                 >
                   Mega menu
                 </a>
-                <div className="dropdown-menu megamenu" role="menu">
+                <div className=" dropdown-menu megamenu" role="menu">
                   <div className="row g-3">
                     <div className="col-lg-3 col-6">
                       <div className="col-megamenu">

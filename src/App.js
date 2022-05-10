@@ -7,9 +7,10 @@ import Register from './Pages/Register';
 import CheatSheet from './Pages/CheatSheet';
 import ErrorPage from './Pages/ErrorPage';
 import Profile from './Pages/Profile';
-import AllNavBar from './Pages/Layouts/AllNavBar';
+// import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
 import ForgotPassword from './Pages/ForgotPassword';
+import Dashboard from './Pages/Dashboard';
 import Header from './Components/Header';
 import Cards from './Components/Cards';
 import Shadows from './Components/Shadows';
@@ -43,7 +44,7 @@ import Sidebar from './Pages/Layouts/Sidebar';
 function App() {
   return (
     <Router>
-      <AllNavBar />
+      {/* <AllNavBar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -81,6 +82,7 @@ function App() {
         <Route path="/alerts" element={<Alerts />} />
         <Route path="/tooltips" element={<Tooltips />} />
         <Route path="/sidebar" element={<Sidebar />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
