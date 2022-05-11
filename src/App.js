@@ -10,7 +10,8 @@ import Profile from './Pages/Profile';
 // import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
 import ForgotPassword from './Pages/ForgotPassword';
-import Dashboard from './Pages/Dashboard';
+import Dashboard from './Components/Dashboard/Dashboard';
+import DashboardTemplate from './Pages/Layouts/DashboardTemplate';
 import Header from './Components/Header/Header';
 import Cards from './Components/Cards/Cards';
 import Shadows from './Components/Shadows/Shadows';
@@ -84,6 +85,7 @@ function App() {
         <Route path="/tooltips" element={<Tooltips />} />
         <Route path="/sidebar" element={<Sidebar />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboardtemplate" element={<DashboardTemplate />} />
         <Route path="/horizontallines" element={<HorizontalLines />} />
 
         <Route path="*" element={<ErrorPage />} />
