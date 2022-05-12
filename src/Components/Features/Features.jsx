@@ -187,7 +187,7 @@ function Features() {
                     <svg className="bi me-2" width="1em" height="1em">
                       <use xlinkHref="#geo-fill" />
                     </svg>
-                    <small>Pakistan</small>
+                    <small>Paris</small>
                   </li>
                   <li className="d-flex align-items-center">
                     <svg className="bi me-2" width="1em" height="1em">

@@ -122,7 +122,7 @@ function Buttons() {
           <br />
           <a className="btn btn-primary" href="#/" role="button">
             Link
-          </a>
+          </a>{' '}
           <button className="btn btn-primary" type="submit">
             Button
           </button>{' '}
