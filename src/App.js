@@ -6,7 +6,10 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import CheatSheet from './Pages/CheatSheet';
 import ErrorPage from './Pages/ErrorPage';
-import Profile from './Pages/Profile';
+import ProfileEdit from './Pages/ProfileEdit/ProfileEdit';
+import ProfileBilling from './Pages/ProfileBilling/ProfileBilling';
+import ProfileSecurity from './Pages/ProfileSecurity/ProfileSecurity';
+import ProfileNotifications from './Pages/ProfileNotifications/ProfileNotifications';
 // import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
 import ForgotPassword from './Pages/ForgotPassword';
@@ -52,7 +55,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cheatSheet" element={<CheatSheet />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profileedit" element={<ProfileEdit />} />
+        <Route path="/profilebilling" element={<ProfileBilling />} />
+        <Route path="/profilesecurity" element={<ProfileSecurity />} />
+        <Route
+          path="/profilenotifications"
+          element={<ProfileNotifications />}
+        />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
