@@ -10,9 +10,11 @@ import ProfileEdit from './Pages/ProfileEdit/ProfileEdit';
 import ProfileBilling from './Pages/ProfileBilling/ProfileBilling';
 import ProfileSecurity from './Pages/ProfileSecurity/ProfileSecurity';
 import ProfileNotifications from './Pages/ProfileNotifications/ProfileNotifications';
+import TimeTable from './Pages/TimeTable/TimeTable';
+// import ProfileSettings from './Pages/ProfileSettings/ProfileSettings';
+import ForgotPassword from './Pages/ForgotPassword';
 // import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
-import ForgotPassword from './Pages/ForgotPassword';
 import Dashboard from './Components/Dashboard/Dashboard';
 import DashboardTemplate from './Pages/Layouts/DashboardTemplate';
 import Header from './Components/Header/Header';
@@ -62,6 +64,8 @@ function App() {
           path="/profilenotifications"
           element={<ProfileNotifications />}
         />
+        <Route path="/timetable" element={<TimeTable />} />
+        {/* <Route path="/profilesettings" element={<ProfileSettings />} /> */}
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/header" element={<Header />} />
         <Route path="/cards" element={<Cards />} />
