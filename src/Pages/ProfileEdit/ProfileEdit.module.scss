@@ -3,28 +3,28 @@
   background-color: #f2f6fc;
   color: #69707a;
 }
-.img-account-profile {
+.imgAccountProfile {
   height: 10rem;
 }
-.rounded-circle {
+.roundedCircle {
   border-radius: 50% !important;
 }
-.card {
+.ProfileEditCard {
   box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
 }
-.card .card-header {
+.ProfileEditCard .ProfileEditCardHeader {
   font-weight: 500;
 }
-.card-header:first-child {
+.ProfileEditCardHeader:first-child {
   border-radius: 0.35rem 0.35rem 0 0;
 }
-.card-header {
+.ProfileEditCardHeader {
   padding: 1rem 1.35rem;
   margin-bottom: 0;
   background-color: rgba(33, 40, 50, 0.03);
   border-bottom: 1px solid rgba(33, 40, 50, 0.125);
 }
-.form-control,
+.formControl,
 .dataTable-input {
   display: block;
   width: 100%;
@@ -43,11 +43,11 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.nav-borders .nav-link.active {
+.navBorders .navLink.active {
   color: #0061f2;
   border-bottom-color: #0061f2;
 }
-.nav-borders .nav-link {
+.navBorders .navLink {
   color: #69707a;
   border-bottom-width: 0.125rem;
   border-bottom-style: solid;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './ProfileEdit.scss';
+import Styles from './ProfileEdit.module.scss';
 import DashboardHeader from '../../Components/Dashboard/DashboardHeader';
 import DashboardNav from '../../Components/Dashboard/DashboardNav';
 
@@ -17,17 +17,20 @@ function ProfileEdit() {
       <DashboardHeader />
       <DashboardNav />
       <div className="container-xl px-4 mt-4 py-5">
-        <nav className="nav nav-borders">
-          <Link className="nav-link active ms-0" to="/profileedit">
+        <nav className={`nav ${Styles.navBorders}`}>
+          <Link
+            className={`${Styles.navLink} ${Styles.active} ms-0`}
+            to="/profileedit"
+          >
             Profile
           </Link>
-          <Link className="nav-link ms-0" to="/profilebilling">
+          <Link className={`${Styles.navLink} ms-0`} to="/profilebilling">
             Billing
           </Link>
-          <Link className="nav-link ms-0" to="/profilesecurity">
+          <Link className={`${Styles.navLink} ms-0`} to="/profilesecurity">
             Security
           </Link>
-          <Link className="nav-link ms-0" to="/profilenotifications">
+          <Link className={`${Styles.navLink} ms-0`} to="/profilenotifications">
             Notifications
           </Link>
         </nav>
@@ -35,14 +38,16 @@ function ProfileEdit() {
         <div className="row">
           <div className="col-xl-4">
             <div className="card mb-4 mb-xl-0">
-              <div className="card-header">Profile Picture</div>
+              <div className={`${Styles.ProfileEditCardHeader}`}>
+                Profile Picture
+              </div>
               <div className="card-body text-center">
                 <img
-                  className="img-account-profile rounded-circle mb-2"
+                  className={` ${Styles.imgAccountProfile} ${Styles.roundedCircle} mb-2`}
                   src="http://bootdey.com/img/Content/avatar/avatar1.png"
                   alt=""
                 />
-                <div className="small font-italic text-muted mb-4">
+                <div className="small fst-italic text-muted mb-4">
                   JPG or PNG no larger than 5 MB
                 </div>
                 <button className="btn btn-primary" type="button">
@@ -52,8 +57,10 @@ function ProfileEdit() {
             </div>
           </div>
           <div className="col-xl-8">
-            <div className="card mb-4">
-              <div className="card-header">Account Details</div>
+            <div className={`${Styles.ProfileEditCard} mb-4`}>
+              <div className={`${Styles.ProfileEditCardHeader}`}>
+                Account Details
+              </div>
               <div className="card-body">
                 <form>
                   <div className="mb-3">
@@ -64,11 +71,11 @@ function ProfileEdit() {
                       Username (how your name will appear to other users on the
                       site)
                       <input
-                        className="form-control"
+                        className={`${Styles.formControl}`}
                         id="inputUsername"
                         type="text"
                         placeholder="Enter your username"
-                        value="username"
+                        defaultValue="username"
                       />
                     </label>
                   </div>
@@ -80,11 +87,11 @@ function ProfileEdit() {
                       >
                         First name
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputFirstName"
                           type="text"
                           placeholder="Enter your first name"
-                          value="Valerie"
+                          defaultValue="Valerie"
                         />
                       </label>
                     </div>
@@ -95,11 +102,11 @@ function ProfileEdit() {
                       >
                         Last name
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputLastName"
                           type="text"
                           placeholder="Enter your last name"
-                          value="Luna"
+                          defaultValue="Luna"
                         />
                       </label>
                     </div>
@@ -112,11 +119,11 @@ function ProfileEdit() {
                       >
                         Organization name
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputOrgName"
                           type="text"
                           placeholder="Enter your organization name"
-                          value="Start Bootstrap"
+                          defaultValue="Start Bootstrap"
                         />
                       </label>
                     </div>
@@ -127,11 +134,11 @@ function ProfileEdit() {
                       >
                         Location
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputLocation"
                           type="text"
                           placeholder="Enter your location"
-                          value="San Francisco, CA"
+                          defaultValue="San Francisco, CA"
                         />
                       </label>
                     </div>
@@ -143,11 +150,11 @@ function ProfileEdit() {
                     >
                       Email address
                       <input
-                        className="form-control"
+                        className={`${Styles.formControl}`}
                         id="inputEmailAddress"
                         type="email"
                         placeholder="Enter your email address"
-                        value="name@example.com"
+                        defaultValue="name@example.com"
                       />
                     </label>
                   </div>
@@ -159,11 +166,11 @@ function ProfileEdit() {
                       >
                         Phone number
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputPhone"
                           type="tel"
                           placeholder="Enter your phone number"
-                          value="555-123-4567"
+                          defaultValue="555-123-4567"
                         />
                       </label>
                     </div>
@@ -174,12 +181,12 @@ function ProfileEdit() {
                       >
                         Birthday
                         <input
-                          className="form-control"
+                          className={`${Styles.formControl}`}
                           id="inputBirthday"
                           type="text"
                           name="birthday"
                           placeholder="Enter your birthday"
-                          value="06/10/1988"
+                          defaultValue="06/10/1988"
                         />
                       </label>
                     </div>
