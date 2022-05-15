@@ -1,32 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BiSearch, BiMenu } from 'react-icons/bi';
-import './Dashboard.scss';
+import Styles from './Dashboard.module.scss';
 
 function DashboardHeader() {
+  useEffect(() => {
+    document.body.classList.add('dashboard-body');
+
+    return function cleanup() {
+      document.body.classList.remove('body');
+    };
+  }, []);
   return (
-    <header className="dashboard-header">
-      <div className="dashboard-header__container">
+    <header className={`${Styles.dashboardHeader}`}>
+      <div className={`${Styles.dashboardHeaderContainer}`}>
         {/* <img
                 src="assets/images/perfil.jpg"
                 alt=""
-                className="dashboard-header__img"
+                className="dashboardHeaderImg"
               /> */}
-        <a href="/dashboard" className="header__logo">
+        <a href="/dashboard" className={`${Styles.dashboardHeaderLogo}`}>
           React Starter Kit
         </a>
-        <div className="dashboard-header__search">
+        <div className={`${Styles.dashboardHeaderSearch}`}>
           <input
             type="search"
             placeholder="Search"
-            className="dashboard-header__input"
+            className={`${Styles.dashboardHeaderInput}`}
           />
-          <BiSearch className="bx bx-search dashboard-header__icon" />
+          <BiSearch className={`${Styles.dashboardHeaderIcon} bx bx-search`} />
         </div>
 
-        <div className="dashboard-header__toggle">
+        <div className={`${Styles.dashboardHeaderToggle}`}>
           <BiMenu className="bx bx-menu" id="header-toggle" />
         </div>
-        <div className="dropdown text-end dashboard-header__container">
+        <div className={`${Styles.dashboardHeaderContainer} dropdown text-end`}>
           <a
             href="/header"
             className="d-block link-dark text-decoration-none dropdown-toggle"
@@ -39,7 +46,7 @@ function DashboardHeader() {
               alt="mdo"
               width="32"
               height="32"
-              className="rounded-circle dashboard-header__img"
+              className={`${Styles.dashboardHeaderImg} rounded-circle`}
             />
           </a>
           <ul

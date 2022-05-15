@@ -11,7 +11,7 @@ function Dashboard() {
     };
   }, []);
   return (
-    <div className="container px-4 py-1">
+    <div className="container px-4 py-5">
       <div className="row g-5 py-1">
         <div className="col-sm-12 col-lg-12">
           <DashboardHeader />

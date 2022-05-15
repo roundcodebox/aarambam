@@ -14,7 +14,7 @@ function TimeTable() {
     <>
       <DashboardHeader />
       <DashboardNav />
-      <div className="container col-sm-12">
+      <div className="container col-sm-12 py-5">
         <div className="timetable-img text-center">
           <img src="img/content/timetable.png" alt="" />
         </div>

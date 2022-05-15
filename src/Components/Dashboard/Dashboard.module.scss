@@ -67,7 +67,7 @@ img {
 }
 
 /*========== HEADER ==========*/
-.dashboard-header {
+.dashboardHeader {
   position: fixed;
   top: 0;
   left: 0;
@@ -78,56 +78,56 @@ img {
   z-index: var(--z-fixed);
 }
 
-.dashboard-header__container {
+.dashboardHeaderContainer {
   display: flex;
   align-items: center;
   height: var(--header-height);
   justify-content: space-between;
 }
 
-.dashboard-header__img {
+.dashboardHeaderImg {
   width: 35px;
   height: 35px;
   border-radius: 50%;
 }
 
-.dashboard-header__logo {
+.dashboardHeaderLogo {
   color: var(--title-color);
   font-weight: var(--font-medium);
   display: none;
 }
 
-.dashboard-header__search {
+.dashboardHeaderSearch {
   display: flex;
   padding: 0.4rem 0.75rem;
   background-color: var(--first-color-light);
   border-radius: 0.25rem;
 }
 
-.dashboard-header__input {
+.dashboardHeaderInput {
   width: 100%;
   border: none;
   outline: none;
   background-color: var(--first-color-light);
 }
 
-.dashboard-header__input::placeholder {
+.dashboardHeaderInput::placeholder {
   font-family: var(--body-font);
   color: var(--text-color);
 }
 
-.dashboard-header__icon,
-.dashboard-header__toggle {
+.dashboardHeaderIcon,
+.dashboardHeaderToggle {
   font-size: 1.2rem;
 }
 
-.dashboard-header__toggle {
+.dashboardHeaderToggle {
   color: var(--title-color);
   cursor: pointer;
 }
 
 /*========== NAV ==========*/
-.dashboard-nav {
+.dashboardNav {
   position: fixed;
   top: 0;
   left: -100%;
@@ -139,7 +139,7 @@ img {
   transition: 0.4s;
 }
 
-.dashboard-nav__container {
+.dashboardNavContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -150,101 +150,101 @@ img {
 }
 
 /* For Google Chrome and others */
-.dashboard-nav__container::-webkit-scrollbar {
+.dashboardNavContainer::-webkit-scrollbar {
   display: none;
 }
 
-.dashboard-nav__logo {
+.dashboardNavLogo {
   font-weight: var(--font-semi-bold);
   margin-bottom: 2.5rem;
 }
 
-.dashboard-nav__list,
-.dashboard-nav__items {
+.dashboardNavList,
+.dashboardNavItems {
   display: grid;
 }
 
-.dashboard-nav__list {
+.dashboardNavList {
   row-gap: 2.5rem;
 }
 
-.dashboard-nav__items {
+.dashboardNavItems {
   row-gap: 1.5rem;
 }
 
-.dashboard-nav__subtitle {
+.dashboardNavSubtitle {
   font-size: var(--normal-font-size);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--text-color-light);
 }
 
-.dashboard-nav__link {
+.dashboardNavLink {
   display: flex;
   align-items: center;
   color: var(--text-color);
 }
 
-.dashboard-nav__link:hover {
+.dashboardNavLink:hover {
   color: var(--first-color);
 }
 
-.dashboard-nav__icon {
+.dashboardNavIcon {
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
 
-.dashboard-nav__name {
+.dashboardNavName {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   white-space: nowrap;
 }
 
-.nav__logout {
+.dashboardNavLogout {
   margin-top: 2rem;
 }
 
 /* Dropdown */
-.dashboard-nav__dropdown {
+.dashboardNavDropdown {
   overflow: hidden;
   max-height: 21px;
   transition: 0.4s ease-in-out;
 }
 
-.dashboard-nav__dropdown-collapse {
+.dashboardNavDropdownCollapse {
   background-color: var(--first-color-light);
   border-radius: 0.25rem;
   margin-top: 1rem;
 }
 
-.dashboard-nav__dropdown-content {
+.dashboardNavDropdownContent {
   display: grid;
   row-gap: 0.5rem;
   padding: 0.75rem 2.5rem 0.75rem 1.8rem;
 }
 
-.dashboard-nav__dropdown-item {
+.dashboardNavDropdownItem {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
 }
 
-.dashboard-nav__dropdown-item:hover {
+.dashboardNavDropdownItem:hover {
   color: var(--first-color);
 }
 
-.dashboard-nav__dropdown-icon {
+.dashboardNavDropdownIcon {
   margin-left: auto;
   transition: 0.4s;
 }
 
 /* Show dropdown collapse */
-.dashboard-nav__dropdown:hover {
+.dashboardNavDropdown:hover {
   max-height: 100rem;
 }
 
 /* Rotate icon arrow */
-.dashboard-nav__dropdown:hover .dashboard-nav__dropdown-icon {
+.dashboardNavDropdown:hover .dashboardNavDropdownIcon {
   transform: rotate(180deg);
 }
 
@@ -261,73 +261,73 @@ img {
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 @media screen and (max-width: 320px) {
-  .dashboard-header__search {
+  .dashboardHeaderSearch {
     width: 70%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .dashboard-body {
     padding: 1rem 3rem 0 6rem;
   }
-  .dashboard-header {
+  .dashboardHeader {
     padding: 0 3rem 0 6rem;
   }
-  .dashboard-header__container {
+  .dashboardHeaderContainer {
     height: calc(var(--header-height) + 0.5rem);
   }
-  .dashboard-header__search {
+  .dashboardHeaderSearch {
     width: 300px;
     padding: 0.55rem 0.75rem;
   }
-  .dashboard-header__toggle {
+  .dashboardHeaderToggle {
     display: none;
   }
-  .dashboard-header__logo {
+  .dashboardHeaderLogo {
     display: block;
   }
-  .dashboard-header__img {
+  .dashboardHeaderImg {
     width: 40px;
     height: 40px;
     order: 1;
   }
-  .dashboard-nav {
+  .dashboardNav {
     left: 0;
     padding: 1.2rem 1.5rem 0;
     width: 68px; /* Reduced navbar */
   }
-  .dashboard-nav__items {
+  .dashboardNavItems {
     row-gap: 1.7rem;
   }
-  .dashboard-nav__icon {
+  .dashboardNavIcon {
     font-size: 1.3rem;
   }
 
   /* Element opacity */
-  .dashboard-nav__logo-name,
-  .dashboard-nav__name,
-  .dashboard-nav__subtitle,
-  .dashboard-nav__dropdown-icon {
+  .dashboardNavLogoName,
+  .dashboardNavName,
+  .dashboardNavSubtitle,
+  .dashboardNavDropdownIcon {
     opacity: 0;
     transition: 0.3s;
   }
 
   /* Navbar expanded */
-  .dashboard-nav:hover {
+  .dashboardNav:hover {
     width: var(--nav-width);
   }
 
   /* Visible elements */
-  .dashboard-nav:hover .dashboard-nav__logo-name {
+  .dashboardNav:hover .dashboardNavLogoName {
     opacity: 1;
   }
-  .dashboard-nav:hover .dashboard-nav__subtitle {
+  .dashboardNav:hover .dashboardNavSubtitle {
     opacity: 1;
   }
-  .dashboard-nav:hover .dashboard-nav__name {
+  .dashboardNav:hover .dashboardNavName {
     opacity: 1;
   }
-  .dashboard-nav:hover .dashboard-nav__dropdown-icon {
+  .dashboardNav:hover .dashboardNavDropdownIcon {
     opacity: 1;
   }
 }
