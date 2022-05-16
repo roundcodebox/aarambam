@@ -9,6 +9,7 @@ import {
   BiLogOut,
   BiDisc,
 } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 import Styles from './Dashboard.module.scss';
 
 function DashboardNav() {
@@ -23,140 +24,140 @@ function DashboardNav() {
     <div className={`${Styles.dashboardNav}`} id="navbar">
       <nav className={`${Styles.dashboardNavContainer}`}>
         <div>
-          <a
-            href="/dashboard"
+          <Link
+            to="/dashboard"
             className={`${Styles.dashboardNavLogo} ${Styles.dashboardNavLink}`}
           >
             <BiDisc className={`${Styles.dashboardNavIcon} bx bx-disc`} />
             <span className={`${Styles.dashboardNavIcon}`}>
               ReactStarterKit
             </span>
-          </a>
+          </Link>
 
           <div className={`${Styles.dashboardNavList}`}>
             <div className={`${Styles.dashboardNavItems}`}>
               <h3 className={`${Styles.dashboardNavSubtitle}`}>Profile</h3>
-              <a
-                href="/dashboard"
+              <Link
+                to="/dashboard"
                 className={`${Styles.dashboardNavLink} active`}
               >
                 <BiHomeAlt
                   className={`${Styles.dashboardNavIcon} bx bx-home`}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Home</span>
-              </a>
+              </Link>
 
               <div className={`${Styles.dashboardNavDropdown}`}>
-                <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+                <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                   <BiUser className={`${Styles.dashboardNavIcon} bx bx-user`} />
                   <span className={`${Styles.dashboardNavName}`}>Profile</span>
                   <BiChevronDown
                     className={`${Styles.dashboardNavIcon}
                         ${Styles.dashboardNavDropdownIcon} bx bx-chevron-down`}
                   />
-                </a>
+                </Link>
 
                 <div className={`${Styles.dashboardNavDropdownCollapse}`}>
                   <div className={`${Styles.dashboardNavDropdownContent}`}>
-                    <a
-                      href="/profileedit"
+                    <Link
+                      to="/profileedit"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Edit Profile
-                    </a>
-                    <a
-                      href="/profilebilling"
+                    </Link>
+                    <Link
+                      to="/profilebilling"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Billing Details
-                    </a>
-                    <a
-                      href="/dashboard"
+                    </Link>
+                    <Link
+                      to="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Security
-                    </a>
-                    <a
-                      href="/dashboard"
+                    </Link>
+                    <Link
+                      to="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Notifications
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
 
-              <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+              <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                 <BiMessageRounded
                   className={`${Styles.dashboardNavIcon} bx bx-message-rounded `}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Messages</span>
-              </a>
+              </Link>
             </div>
 
             <div className={`${Styles.dashboardNavItems}`}>
               <h3 className={`${Styles.dashboardNavSubtitle}`}>Profile</h3>
               <div className={`${Styles.dashboardNavDropdown}`}>
-                <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+                <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                   <BiUser className={`${Styles.dashboardNavIcon} bx bx-user`} />
                   <span className={`${Styles.dashboardNavName}`}>Profile</span>
                   <BiChevronDown
                     className={`${Styles.dashboardNavIcon} bx
                         bx-chevron-down ${Styles.dashboardNavDropdownIcon}`}
                   />
-                </a>
+                </Link>
 
                 <div className={`${Styles.dashboardNavDropdownCollapse}`}>
                   <div className={`${Styles.dashboardNavDropdownContent}`}>
-                    <a
-                      href="/dashboard"
+                    <Link
+                      to="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Passwords
-                    </a>
-                    <a
-                      href="/dashboard"
+                    </Link>
+                    <Link
+                      to="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Mail
-                    </a>
-                    <a
-                      href="/dashboard"
+                    </Link>
+                    <Link
+                      to="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
                       Accounts
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
 
-              <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+              <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                 <BiCompass
                   className={`${Styles.dashboardNavIcon} bx bx-compass `}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Explore</span>
-              </a>
-              <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+              </Link>
+              <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                 <BiCompass
                   className={`${Styles.dashboardNavIcon} bx bx-compass `}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Explore</span>
-              </a>
-              <a href="/dashboard" className={`${Styles.dashboardNavLink}`}>
+              </Link>
+              <Link to="/dashboard" className={`${Styles.dashboardNavLink}`}>
                 <BiBookmark
                   className={`${Styles.dashboardNavIcon} bx bx-bookmark`}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Saved</span>
-              </a>
-              <a
-                href="/dashboard"
+              </Link>
+              <Link
+                to="/dashboard"
                 className={`${Styles.dashboardNavLink} ${Styles.dashboardNavLogout}`}
               >
                 <BiLogOut
                   className={`${Styles.dashboardNavIcon} bx bx-log-out `}
                 />
                 <span className={`${Styles.dashboardNavName}`}>Log Out</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
