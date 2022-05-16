@@ -59,22 +59,28 @@ function DashboardNav() {
                 <div className={`${Styles.dashboardNavDropdownCollapse}`}>
                   <div className={`${Styles.dashboardNavDropdownContent}`}>
                     <a
-                      href="/dashboard"
+                      href="/profileedit"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
-                      Passwords
+                      Edit Profile
+                    </a>
+                    <a
+                      href="/profilebilling"
+                      className={`${Styles.dashboardNavDropdownItem}`}
+                    >
+                      Billing Details
                     </a>
                     <a
                       href="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
-                      Mail
+                      Security
                     </a>
                     <a
                       href="/dashboard"
                       className={`${Styles.dashboardNavDropdownItem}`}
                     >
-                      Accounts
+                      Notifications
                     </a>
                   </div>
                 </div>
