@@ -1,8 +1,7 @@
-/* eslint-disable */
 import React, { useEffect } from 'react';
 import Styles from './ContactInfo.module.scss';
-import DashboardHeader from '../../Components/Dashboard/DashboardHeader';
-import DashboardNav from '../../Components/Dashboard/DashboardNav';
+import DashboardHeader from '../Dashboard/DashboardHeader';
+import DashboardNav from '../Dashboard/DashboardNav';
 
 function ContactInfo() {
   useEffect(() => {

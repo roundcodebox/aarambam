@@ -48,6 +48,8 @@ import Tooltips from './Components/Tooltips/Tooltips';
 import Sidebar from './Pages/Layouts/Sidebar';
 import HorizontalLines from './Components/HorizontalLines/HorizontalLines';
 import ContactInfo from './Components/ContactInfo/ContactInfo';
+import AuthorsCard from './Components/AuthorsCard/AuthorsCard';
+import ContactCards from './Components/ContactCards/ContactCards';
 
 function App() {
   return (
@@ -102,6 +104,8 @@ function App() {
         <Route path="/dashboardtemplate" element={<DashboardTemplate />} />
         <Route path="/horizontallines" element={<HorizontalLines />} />
         <Route path="/contactinfo" element={<ContactInfo />} />
+        <Route path="/authorscard" element={<AuthorsCard />} />
+        <Route path="/contactcards" element={<ContactCards />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

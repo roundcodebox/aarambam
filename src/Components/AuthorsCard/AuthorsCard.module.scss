@@ -1,0 +1,394 @@
+.dashboard-body {
+  margin-top: 20px;
+  background: #eee;
+}
+.teamCardStyle1,
+.teamCardStyle3,
+.teamCardStyle5 {
+  position: relative;
+  max-width: 360px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 22px 36px -12px rgba(64, 64, 64, 0.13);
+}
+.teamContactLink {
+  display: block;
+  margin-top: 4px;
+  transition: all 0.25s;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.teamContactLink > i {
+  display: inline-block;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+.teamCardStyle1 .teamPosition,
+.teamCardStyle3 .teamPosition,
+.teamCardStyle4 .teamPosition {
+  display: block;
+  margin-bottom: 8px;
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.teamCardStyle3 .teamName,
+.teamCardStyle4 .teamName,
+.teamCardStyle5 .teamName {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.teamThumb > img {
+  display: block;
+  width: 100%;
+}
+.teamCardStyle1 {
+  padding-bottom: 36px;
+}
+.teamCardStyle1 > * {
+  position: relative;
+  z-index: 5;
+}
+.teamCardStyle1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all 0.3s 0.12s;
+  content: '';
+  opacity: 0;
+}
+.teamCardStyle1 .team-card-inner {
+  margin-bottom: 16px;
+  padding-top: 48px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  background-color: #fff;
+  box-shadow: 0 22px 36px -12px rgba(64, 64, 64, 0.13);
+}
+.teamCardStyle1 .teamThumb {
+  width: 108px;
+  height: 108px;
+  margin: auto;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.teamCardStyle1 .teamSocialBar {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  transform: scale(0.8);
+}
+.teamCardStyle1 .teamContactLink {
+  transition-delay: 0.12s;
+  color: #8c8c8c;
+  opacity: 0.6;
+}
+.teamCardStyle1 .teamContactLink:hover {
+  color: #8c8c8c;
+  opacity: 1;
+}
+.teamCardStyle1 .team-card-inner,
+.teamCardStyle1 .teamThumb,
+.teamCardStyle1 .teamSocialBar {
+  transition: all 0.3s 0.12s;
+}
+.teamCardStyle1 .teamPosition,
+.teamCardStyle1 .teamName {
+  transition: color 0.3s 0.12s;
+}
+.teamCardStyle1 .teamName {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.no-touchevents .teamCardStyle1:hover::before {
+  height: 100%;
+  box-shadow: 0 22px 36px -12px rgba(64, 64, 64, 0.13);
+  opacity: 1;
+}
+.no-touchevents .teamCardStyle1:hover .team-card-inner {
+  background-color: transparent;
+  box-shadow: none;
+}
+.no-touchevents .teamCardStyle1:hover .teamThumb {
+  transform: scale(1.1);
+}
+.no-touchevents .teamCardStyle1:hover .teamSocialBar {
+  transform: scale(1);
+}
+.no-touchevents .teamCardStyle1:hover .teamContactLink,
+.no-touchevents .teamCardStyle1:hover .teamPosition,
+.no-touchevents .teamCardStyle1:hover .teamName {
+  color: #fff;
+}
+.no-touchevents .teamCardStyle1:hover .teamContactLink {
+  opacity: 1;
+}
+.teamCardStyle2 {
+  position: relative;
+}
+.teamCardStyle2 > img {
+  display: block;
+  width: 100%;
+}
+.teamCardStyle2::before,
+.teamCardStyle2::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.35s 0.12s;
+  content: '';
+  z-index: 1;
+}
+.teamCardStyle2::before {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.teamCardStyle2::after {
+  opacity: 0;
+}
+.teamCardStyle2 .team-card-inner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 20px;
+  transform: translateY(-45%);
+  transition: all 0.35s 0.12s;
+  text-align: center;
+  opacity: 0;
+  z-index: 5;
+}
+.teamCardStyle2 .teamName,
+.teamCardStyle2 .teamPosition,
+.teamCardStyle2 .teamContactLink {
+  color: #fff;
+}
+.teamCardStyle2 .teamName {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.teamCardStyle2 .teamPosition {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.teamCardStyle2 .teamSocialBar {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.teamCardStyle2 .teamContactLink {
+  opacity: 1;
+}
+.teamCardStyle2:hover::before {
+  opacity: 0;
+}
+.teamCardStyle2:hover::after {
+  opacity: 0.7;
+}
+.teamCardStyle2:hover .team-card-inner {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.teamCardStyle3,
+.teamCardStyle4 {
+  position: relative;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+  padding-left: 20px;
+  transition: all 0.35s;
+  border: 1px solid #e7e7e7;
+}
+.teamCardStyle3 .teamThumb,
+.teamCardStyle4 .teamThumb {
+  width: 90px;
+  margin: auto;
+  margin-bottom: 17px;
+}
+.teamCardStyle3 .teamPosition,
+.teamCardStyle4 .teamPosition {
+  margin-bottom: 0;
+}
+.teamCardStyle3 .teamContactLink,
+.teamCardStyle4 .teamContactLink {
+  color: #404040;
+  font-weight: 600;
+}
+.teamCardStyle3 .teamContactLink > i,
+.teamCardStyle4 .teamContactLink > i {
+  color: #8c8c8c !important;
+}
+.teamCardStyle3 .teamContactLink:hover,
+.teamCardStyle4 .teamContactLink:hover {
+  color: rgba(64, 64, 64, 0.6);
+}
+.teamCardStyle3 .teamSocialBarWrap,
+.teamCardStyle4 .teamSocialBarWrap {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+}
+.teamCardStyle3 .teamSocialBarWrap > .teamSocialBar,
+.teamCardStyle4 .teamSocialBarWrap > .teamSocialBar {
+  display: table;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
+}
+.teamCardStyle3:hover,
+.teamCardStyle4:hover {
+  border-color: transparent;
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
+}
+.teamCardStyle4 {
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 24px;
+}
+.teamCardStyle4 .teamName {
+  margin-bottom: 5px;
+}
+.teamCardStyle4 .teamSocialBarWrap {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-top: 20px;
+}
+.teamCardStyle4 .teamSocialBarWrap > .teamSocialBar {
+  margin: 0;
+}
+.teamCardStyle5 {
+  padding-bottom: 24px;
+  transition: box-shadow 0.35s 0.12s;
+}
+.teamCardStyle5 .teamThumb {
+  position: relative;
+  margin-bottom: 24px;
+}
+.teamCardStyle5 .teamThumb::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.35s 0.12s;
+  background-color: #ac32e4;
+  content: '';
+  opacity: 0;
+  z-index: 1;
+}
+.teamCardStyle5 .team-card-inner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  padding-bottom: 26px;
+  transform: translateY(10px);
+  transition: all 0.35s 0.12s;
+  text-align: center;
+  opacity: 0;
+  z-index: 5;
+}
+.teamCardStyle5 .teamContactLink,
+.teamCardStyle5 .teamContactLink:hover {
+  color: #fff;
+}
+.teamCardStyle5 .sb-style-6.sb-light-skin,
+.teamCardStyle5 .sb-style-7.sb-light-skin {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.teamCardStyle5 .teamName {
+  margin-bottom: 6px;
+  padding: 0 16px;
+}
+.teamCardStyle5 .teamPosition {
+  display: block;
+  padding: 0 16px;
+  transition: color 0.35s 0.12s;
+}
+.teamCardStyle5:hover {
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.09);
+}
+.teamCardStyle5:hover .teamThumb::after {
+  opacity: 0.7;
+}
+.teamCardStyle5:hover .team-card-inner {
+  transform: translateY(0);
+  opacity: 1;
+}
+.teamCardStyle5:hover .teamPosition {
+  color: #ac32e4;
+}
+.teamCardStyle3 .teamSocialBarWrap > .teamSocialBar,
+.teamCardStyle4 .teamSocialBarWrap > .teamSocialBar {
+  display: table;
+  margin: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
+}
+.socialBtn {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 18px;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: center !important;
+  text-decoration: none;
+}
+.sbTwitter {
+  color: #55acee !important;
+}
+.sbGithub {
+  color: #4183c4 !important;
+}
+.sbLinkedin {
+  color: #0976b4 !important;
+}
+.sbSkype {
+  color: #00aff0 !important;
+}
+.sbStyle2,
+.sbStyle3,
+.sbStyle4,
+.sbStyle5 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.sbStyle2.sb-light-skin,
+.sbStyle3.sb-light-skin,
+.sbStyle4.sb-light-skin,
+.sbStyle5.sb-light-skin {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sbStyle2:hover,
+.sbStyle3:hover,
+.sbStyle4:hover,
+.sbStyle5:hover,
+.sbStyle2.hover,
+.sbStyle3.hover,
+.sbStyle4.hover,
+.sbStyle5.hover {
+  background-color: #fff;
+  box-shadow: 0 12px 20px 1px rgba(64, 64, 64, 0.11);
+}
