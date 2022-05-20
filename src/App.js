@@ -47,6 +47,7 @@ import Grids from './Components/Grids/Grids';
 import Tooltips from './Components/Tooltips/Tooltips';
 import Sidebar from './Pages/Layouts/Sidebar';
 import HorizontalLines from './Components/HorizontalLines/HorizontalLines';
+import ContactInfo from './Components/ContactInfo/ContactInfo';
 
 function App() {
   return (
@@ -100,6 +101,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboardtemplate" element={<DashboardTemplate />} />
         <Route path="/horizontallines" element={<HorizontalLines />} />
+        <Route path="/contactinfo" element={<ContactInfo />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>
