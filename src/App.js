@@ -16,6 +16,7 @@ import ForgotPassword from './Pages/ForgotPassword';
 // import AllNavBar from './Pages/Layouts/AllNavBar';
 import Footer from './Pages/Layouts/Footer';
 import Dashboard from './Components/Dashboard/Dashboard';
+import DashboardNavNew from './Components/Dashboard/DashboardNavNew';
 import DashboardTemplate from './Pages/Layouts/DashboardTemplate';
 import Header from './Components/Header/Header';
 import Cards from './Components/Cards/Cards';
@@ -102,6 +103,7 @@ function App() {
         <Route path="/tooltips" element={<Tooltips />} />
         <Route path="/sidebar" element={<Sidebar />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboardnavnew" element={<DashboardNavNew />} />
         <Route path="/dashboardtemplate" element={<DashboardTemplate />} />
         <Route path="/horizontallines" element={<HorizontalLines />} />
         <Route path="/contactinfo" element={<ContactInfo />} />
