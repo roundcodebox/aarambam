@@ -50,6 +50,7 @@ import HorizontalLines from './Components/HorizontalLines/HorizontalLines';
 import ContactInfo from './Components/ContactInfo/ContactInfo';
 import AuthorsCard from './Components/AuthorsCard/AuthorsCard';
 import ContactCards from './Components/ContactCards/ContactCards';
+import ProductTracking from './Components/ProductTracking/ProductTracking';
 
 function App() {
   return (
@@ -106,6 +107,7 @@ function App() {
         <Route path="/contactinfo" element={<ContactInfo />} />
         <Route path="/authorscard" element={<AuthorsCard />} />
         <Route path="/contactcards" element={<ContactCards />} />
+        <Route path="/producttracking" element={<ProductTracking />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

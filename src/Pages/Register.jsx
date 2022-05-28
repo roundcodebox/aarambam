@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AllNavBar from './Layouts/AllNavBar';
+import './Register.scss';
 
 function Register() {
+  useEffect(() => {
+    document.body.classList.add('dashboard-body');
+    return function cleanup() {
+      document.body.classList.remove('body');
+    };
+  }, []);
   return (
     <div className="container px-4 py-5">
       <AllNavBar />
